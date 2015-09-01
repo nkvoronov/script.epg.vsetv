@@ -1,0 +1,151 @@
+﻿# Kodi Media Center language file
+# Addon Name: Vse TV
+# Addon id: script.epg.vsetv
+# Addon Provider: YLLOW_DRAGON
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32001"
+msgid "General"
+msgstr "Общие"
+
+msgctxt "#32002"
+msgid "XMLTV"
+msgstr ""
+
+msgctxt "#32003"
+msgid "XMLTV file"
+msgstr "XMLTV файл"
+
+msgctxt "#32004"
+msgid "Count days"
+msgstr "Количество дней"
+
+msgctxt "#32005"
+msgid "Language"
+msgstr "Язык"
+
+msgctxt "#32006"
+msgid "Time zone"
+msgstr "Часовой пояс"
+
+msgctxt "#32010"
+msgid "Channels"
+msgstr "Каналы"
+
+msgctxt "#32011"
+msgid "Sort by index"
+msgstr "Сортировать по индексу"
+
+msgctxt "#32012"
+msgid "Refresh channels"
+msgstr "Обновить каналы"
+
+msgctxt "#32013"
+msgid "Name"
+msgstr "Название"
+
+msgctxt "#32014"
+msgid "Icon"
+msgstr "Иконка"
+
+msgctxt "#32015"
+msgid "Enable"
+msgstr "Разрешить"
+
+msgctxt "#32020"
+msgid "Service"
+msgstr "Сервис"
+
+msgctxt "#32040"
+msgid "Params run"
+msgstr "Параметры запуска"
+
+msgctxt "#32041"
+msgid "Last update"
+msgstr "Последнее обновление"
+
+msgctxt "#32021"
+msgid "Enable Service"
+msgstr "Разрешить"
+
+msgctxt "#32022"
+msgid "Monday"
+msgstr "Понедельник"
+
+msgctxt "#32023"
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgctxt "#32024"
+msgid "Wednesday"
+msgstr "Среда"
+
+msgctxt "#32025"
+msgid "Thursday"
+msgstr "Четверг"
+
+msgctxt "#32026"
+msgid "Friday"
+msgstr "Пятница"
+
+msgctxt "#32027"
+msgid "Saturday"
+msgstr "Суббота"
+
+msgctxt "#32028"
+msgid "Sunday"
+msgstr "Воскресенье"
+
+msgctxt "#32029"
+msgid "Run time"
+msgstr "Время запуска"
+
+msgctxt "#32030"
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgctxt "#32031"
+msgid "Full description"
+msgstr "Полное описание"
+
+msgctxt "#32032"
+msgid "Replace special symbols"
+msgstr "Заменять специальные символы"
+
+msgctxt "#32033"
+msgid "Debug"
+msgstr "Отладка"
+
+###########################################################
+
+msgctxt "#33000"
+msgid "Do you want to update EPG?"
+msgstr "Вы хотите обновить EPG?"
+
+msgctxt "#33001"
+msgid "Started EPG update ..."
+msgstr "Начато обновление EPG ..."
+
+msgctxt "#33002"
+msgid "Update EPG completed."
+msgstr "Обновление EPG закончено."
+
+msgctxt "#33003"
+msgid "Error updating EPG, see the log."
+msgstr "Ошибка при обновлении EPG, смотрите лог."
+
+msgctxt "#33004"
+msgid "Update EPG ..."
+msgstr "Обновление EPG ..."
