@@ -1,7 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
 
-import sys
-import os
 import re
 import datetime
 import common
@@ -111,8 +109,6 @@ class parser:
             ctimeb = '00:00'
             ctimee = '00:00'
             ctitle = ''
-            cdesc = ''
-            curlfdesc = ''
             vdirection = 'schedule_channel_%s_day_%s.html' % (vchanneldata.Index, vdate.strftime('%Y-%m-%d'))
             common.dbg_log('parser::get_content_day', common.host+vdirection)
             html = common.load_url(common.host+vdirection)
@@ -224,7 +220,10 @@ class parser:
                     else:
                         vprogrammedata.FullDesc = cdesc.decode('utf-8').strip().strip(' \t\n\r')
                     crat = self.parse_strings(showmain1,'<span class="name">','Проголосовало',1)
-                    crat = crat.decode('utf-8').split(':')[1].strip().strip(' \t\n\r')
+                    if len(crat.decode('utf-8').split(':'))>1:
+                        crat = crat.decode('utf-8').split(':')[1].strip().strip(' \t\n\r')
+                    else:
+                        crat = ''
                     if crat != '':
                         vprogrammedata.Starrating = crat
             common.dbg_log('parser::get_fulldesc', 'exit_function')

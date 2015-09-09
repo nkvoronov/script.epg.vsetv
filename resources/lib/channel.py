@@ -1,11 +1,8 @@
 ﻿# -*- coding: utf-8 -*-
 
-import sys
-import os
 import re
 import common
 import settings
-from xml.dom import minidom
 
 class channel:
     __slots__ = ('Index', 'OName', 'UName', 'Icon', 'Correction')

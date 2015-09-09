@@ -1,7 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
 
-import sys
-import os
 import common
 import shutil
 import xmlpp

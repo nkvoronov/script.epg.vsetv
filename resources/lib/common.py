@@ -6,7 +6,6 @@ import locale
 import urllib2
 import traceback
 import subprocess
-from xml.dom import minidom
 import xbmc
 import xbmcaddon
 import xbmcgui

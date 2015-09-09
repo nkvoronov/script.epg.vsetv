@@ -1,10 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 
-import sys
-import os
-import re
 import common
-from xml.dom import minidom
 
 class programme:
     __slots__ = ('ChannelIdx', 'Start', 'Stop', 'Title', 'Desc', 'UrlDesc', 'FullDesc', 'CategoryLang1', 'CategoryLang2', 'Directors', 'Actors', 'Date', 'Starrating')
