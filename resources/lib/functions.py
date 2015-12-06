@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import common
 import channel
@@ -40,6 +40,9 @@ def save_xmltv():
         pDialog.close()
         common.notify(common.__scriptname__, common.Lang(33002), 'IconInfo')
         xbmcaddon.Addon(common.__scriptid__).setSetting("last_update",datetime.datetime.now().strftime('%Y%m%d'))
+        if common.execute_script == 'true':
+    	    common.dbg_log('functions::save_xmltv', 'execute script - ' + common.script_patch)
+    	    common.execute(common.script_patch)
         common.dbg_log('functions::save_xmltv', 'exit_function')
     except Exception, e:
         common.notify(common.__scriptname__, common.Lang(33003), 'IconError')

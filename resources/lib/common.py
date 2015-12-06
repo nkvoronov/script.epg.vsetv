@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import os
 import sys
@@ -50,6 +50,9 @@ enable_friday = __addon__.getSetting("enable_friday")
 enable_saturday = __addon__.getSetting("enable_saturday")
 enable_sunday = __addon__.getSetting("enable_sunday")
 run_time = __addon__.getSetting("run_time")
+
+execute_script = __addon__.getSetting("execute_script")
+script_patch = __addon__.getSetting("script_patch")
 
 sys.path.append(__resources_lib__)
 

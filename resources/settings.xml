@@ -2580,6 +2580,9 @@
     <category label="32030">
         <setting default="true" id="full_desc" label="32031" type="bool"/>
         <setting default="true" id="replace_spec_sym" label="32032" type="bool"/>
+		<setting type="sep"/>
+        <setting default="false" id="execute_script" label="32033" type="bool"/>
+        <setting default="" id="script_patch" label="32034" type="file" visible="eq(-1,true)"/>
         <setting type="sep"/>
         <setting default="false" id="debug" label="32033" type="bool"/>
     </category>

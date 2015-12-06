@@ -125,6 +125,14 @@ msgid "Replace special symbols"
 msgstr "Заменять специальные символы"
 
 msgctxt "#32033"
+msgid "Run script after update"
+msgstr "Запустить скрипт после обновления"
+
+msgctxt "#32034"
+msgid "- Script"
+msgstr "- Скрипт"
+
+msgctxt "#32035"
 msgid "Debug"
 msgstr "Отладка"
 
