@@ -2,7 +2,6 @@
 
 import os
 import sys
-import locale
 import urllib2
 import traceback
 import subprocess
@@ -56,9 +55,8 @@ script_patch = __addon__.getSetting("script_patch")
 
 sys.path.append(__resources_lib__)
 
-encoding = locale.getpreferredencoding(do_setlocale=True)
 reload(sys)
-sys.setdefaultencoding(encoding)
+sys.setdefaultencoding('utf-8')
 
 def Lang(vcode):
     return __addon__.getLocalizedString(vcode)
