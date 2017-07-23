@@ -25,7 +25,7 @@ msgid "XMLTV"
 msgstr ""
 
 msgctxt "#32003"
-msgid "XMLTV file"
+msgid "Path to XMLTV file"
 msgstr ""
 
 msgctxt "#32004"

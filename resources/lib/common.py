@@ -31,7 +31,7 @@ useragent = 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'
 contenttype = 'application/x-www-form-urlencoded'
 
 debug = __addon__.getSetting("debug")
-xmltv_patch = __addon__.getSetting("xmltv_patch")
+xmltv_patch = xbmc.translatePath(os.path.join(__addon__.getSetting("xmltv_patch"),'xmltv.xml'))
 count_day = int(__addon__.getSetting("count_day"))+1
 full_desc = __addon__.getSetting("full_desc")
 lang = __addon__.getSetting("lang")

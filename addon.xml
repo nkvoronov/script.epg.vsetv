@@ -2,7 +2,7 @@
 <addon 
     id="script.epg.vsetv" 
     name="Vse TV" 
-    version="2.1.6" 
+    version="2.1.7" 
     provider-name="YLLOW_DRAGON">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
