@@ -2,7 +2,7 @@
 <settings>
     <category label="32001">
         <setting label="32002" type="lsep"/>
-        <setting default="special://userdata" id="xmltv_patch" label="32003" option="writeable" type="folder"/>
+        <setting default="" id="xmltv_patch" label="32003" option="writeable" type="folder"/>
         <setting default="2" id="count_day" label="32004" type="enum" values="1|2|3|4|5|6|7"/>
         <setting default="ru" id="lang" label="32005" type="select" values="ru|ua"/>
         <setting default="2" id="correct" label="32006" type="number"/>
