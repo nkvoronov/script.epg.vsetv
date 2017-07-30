@@ -25,13 +25,13 @@ class channel:
             edisplayname = vxmldoc.createElement("display-name")
             edisplayname.setAttribute("lang", 'ru')
             if self.UName == '':
-                edisplayname_text = vxmldoc.createTextNode(self.OName.decode('utf-8'))            
+                edisplayname_text = vxmldoc.createTextNode(self.OName.decode('utf-8'))
             else:
-                edisplayname_text = vxmldoc.createTextNode(self.UName.decode('utf-8')) 
+                edisplayname_text = vxmldoc.createTextNode(self.UName.decode('utf-8'))
             edisplayname.appendChild(edisplayname_text) 
             echannel.appendChild(edisplayname)
             if self.Icon != '':
-                eiconlink = vxmldoc.createElement("icon")       
+                eiconlink = vxmldoc.createElement("icon")
                 eiconlink.setAttribute("src", self.Icon)
                 echannel.appendChild(eiconlink)
             vnode.appendChild(echannel)
@@ -69,14 +69,14 @@ class channel_list:
             common.dbg_log('channel_list::load_channel_from_net', 'exit_function')
         except Exception, e:
             common.dbg_log('channel_list::load_channel_from_net', 'ERROR: (' + repr(e) + ')', common.logErorr)
-            
+
     def load_channels_from_settings(self):
         try:
             common.dbg_log('channel_list::load_channels_from_settings', 'enter_function')
             self.Data = []
             set = settings.settings()
             xmldoc = set.parse()
-            if xmldoc != None:               
+            if xmldoc != None:
                 category = xmldoc.getElementsByTagName('category')
                 for node_cat in category:
                     setting = node_cat.getElementsByTagName('setting')
@@ -85,7 +85,7 @@ class channel_list:
                             offset = len('channel_sep_')
                             index = node_set.getAttribute('id')[offset:]
                             enabled = common.__addon__.getSetting('channel_enable_'+index)
-                            if enabled == 'true':                            
+                            if enabled == 'true':
                                 oname = node_set.getAttribute('label')
                                 uname = common.__addon__.getSetting('channel_name_'+index)
                                 icon = common.__addon__.getSetting('channel_icon_'+index)

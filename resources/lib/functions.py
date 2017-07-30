@@ -27,7 +27,7 @@ def refresh_channels():
     except Exception, e:
         common.set_busy(0)
         common.dbg_log('functions::refresh_channels', 'ERROR: (' + repr(e) + ')', common.logErorr) 
-        
+
 def save_xmltv():
     try:
         common.dbg_log('functions::save_xmltv', 'enter_function')
@@ -41,16 +41,16 @@ def save_xmltv():
         common.notify(common.__scriptname__, common.Lang(33002), 'IconInfo')
         xbmcaddon.Addon(common.__scriptid__).setSetting("last_update",datetime.datetime.now().strftime('%Y%m%d'))
         if common.execute_script == 'true':
-    	    common.dbg_log('functions::save_xmltv', 'execute script - ' + common.script_patch)
-    	    common.execute(common.script_patch)
+            common.dbg_log('functions::save_xmltv', 'execute script - ' + common.script_patch)
+            common.execute(common.script_patch)
         common.dbg_log('functions::save_xmltv', 'exit_function')
     except Exception, e:
         common.notify(common.__scriptname__, common.Lang(33003), 'IconError')
         common.dbg_log('functions::save_xmltv', 'ERROR: (' + repr(e) + ')', common.logErorr)
-        
+
 def service_update_epg():
     try:
-        common.dbg_log('functions::service_update_epg', 'enter_function') 
+        common.dbg_log('functions::service_update_epg', 'enter_function')
         if common.enable_service == 'true':
             week_day = datetime.date.today().isoweekday()
             cur_time = datetime.datetime.now().strftime('%H:%M')
@@ -78,7 +78,7 @@ def service_update_epg():
         common.dbg_log('functions::service_update_epg', 'exit_function')
     except Exception, e:
         common.dbg_log('functions::service_update_epg', 'ERROR: (' + repr(e) + ')', common.logErorr)
-        
+
 def run_update_epg():
     try:
         common.dbg_log('functions::run_update_epg', 'enter_function')
@@ -88,4 +88,3 @@ def run_update_epg():
         common.dbg_log('functions::run_update_epg', 'exit_function')
     except Exception, e:
         common.dbg_log('functions::run_update_epg', 'ERROR: (' + repr(e) + ')', common.logErorr)
-

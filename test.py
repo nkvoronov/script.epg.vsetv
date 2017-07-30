@@ -15,13 +15,13 @@ def GetHTML(url):
     conn = urllib2.urlopen(request)
     html = conn.read()
     conn.close()
-    
+
     return html
 
 def remove_tags(vstr):
     rstr = re.sub('<([^!>]([^>]|\n)*)>', '', vstr).strip('&nbsp;').strip(' \t\n\r')
-    return rstr            
-            
+    return rstr
+
 def parse_strings(vstr, vbegin, vend, vrtags=0): 
     idx_beg = vstr.find(vbegin)
     idx_end = vstr.find(vend)
@@ -44,7 +44,7 @@ if type_test == 1:
     html = GetHTML(host+'channels.html')
     html = html.decode('windows-1251').encode('utf-8')
     data = re.compile('<option value=channel_(.+?)>(.+?)</option>').findall(html)
- 
+
     for index,oname in data:
         if lang == 'ru':
             flag = oname.find('(на укр.)') == -1
@@ -71,7 +71,7 @@ elif type_test == 2:
                 print time + ';' + prtitle.decode('utf-8') + ';' + url
             else:
                 print time + ';' + prtitle.decode('utf-8')
-        
+
     else:
         data = re.compile('<div class="(?:pasttime|onair|time)">(.+?)</div><div class="(?:pastprname2|prname2)">(.+?)(?:</div><div id=desc\d{16} class="(?:pastdesc|prdesc)"><div class="desc"><b>(.+?)</div></div>|</div>)').findall(html)
         for time, title, desc in data:
@@ -100,11 +100,11 @@ elif type_test == 3:
     ccountry = ''
     cdate = ''
 
-    if len(ctmp.split(','))==2:                     
+    if len(ctmp.split(','))==2:
         ccountry = ctmp.split(',')[0].strip()
         cdate = ctmp.split(',')[1].strip()
         if cdate[-1] == '-':
-            cdate = cdate[:-1]           
+            cdate = cdate[:-1]
         if cdate != '':
             ctmp = ccountry + ', ' + cdate
 
@@ -114,7 +114,7 @@ elif type_test == 3:
     cgenre = parse_strings(showname1,'<strong>','</strong>',1).replace(' / ', ',')
     if cgenre != '':
         print cgenre.decode('utf-8').strip(' \t\n\r').capitalize()
-    
+
     cdirectors = ''
     cactors = ''
     cdesc = ''
@@ -139,6 +139,3 @@ elif type_test == 3:
 
     cstarrating = parse_strings(showmain1,'<span class="name">','Проголосовало',1)
     print cstarrating.decode('utf-8').split(':')[1].strip().strip(' \t\n\r')
-
-
-

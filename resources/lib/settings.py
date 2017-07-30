@@ -13,7 +13,7 @@ class settings:
             self.SettingsFile = common.__settings_xml__
         except Exception, e:
             common.dbg_log('settings::__init__', 'ERROR: (' + repr(e) + ')', common.logErorr)
-            
+
     def backup(self):
         try:
             common.dbg_log('settings::backup', 'enter_function')
@@ -22,7 +22,7 @@ class settings:
         except IOError as e:
             common.dbg_log('settings::backup', 'ERROR: (' + repr(e) + ')', common.logErorr)
             shutil.copyfile(self.SettingsFile, self.SettingsFile + '_orig')
-            
+
     def restore(self):
         try:
             common.dbg_log('settings::restore', 'enter_function')
@@ -30,7 +30,7 @@ class settings:
             common.dbg_log('settings::restore', 'exit_function')
         except IOError as e:
             common.dbg_log('settings::restore', 'ERROR: (' + repr(e) + ')', common.logErorr)
-            
+
     def parse(self):
         try:
             common.dbg_log('settings::parse', 'enter_function')
@@ -41,7 +41,7 @@ class settings:
         except Exception, e:
             common.dbg_log('settings::parse', 'ERROR: (' + repr(e) + ')', common.logErorr)
             return None
-            
+
     def save(self, vxmldoc):
         try:
             common.dbg_log('settings::save', 'enter_function')

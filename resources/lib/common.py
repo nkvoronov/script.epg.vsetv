@@ -60,7 +60,7 @@ sys.setdefaultencoding('utf-8')
 
 def Lang(vcode):
     return __addon__.getLocalizedString(vcode)
-    
+
 def dbg_log(vsource, vtext, vlevel=xbmc.LOGNOTICE):
     if debug == 'false':
         return
@@ -76,7 +76,7 @@ def notify(vtitle, vmessage, vicon='icon', vtime=5000):
         dbg_log('common::notify', 'exit_function')
     except Exception, e:
         dbg_log('common::notify', 'ERROR: (' + repr(e) + ')', logErorr)
-        
+
 def execute(vcommand_line, vget_result=0):
     try:
         dbg_log('common::execute', 'enter_function')
@@ -94,7 +94,7 @@ def execute(vcommand_line, vget_result=0):
         dbg_log('common::execute', 'exit_function')
     except Exception, e:
         dbg_log('common::execute', 'ERROR: (' + repr(e) + ')', logErorr)
-        
+
 def load_file(vfilename):
     try:
         if os.path.isfile(vfilename):
@@ -106,7 +106,7 @@ def load_file(vfilename):
         return content.strip()
     except Exception, e:
         dbg_log('common::load_file(' + vfilename + ')', 'ERROR: (' + repr(e) + ')', logErorr)
-        
+
 def load_url(vurl):
     try:
         request = urllib2.Request(vurl)
@@ -117,7 +117,7 @@ def load_url(vurl):
         return content.strip()
     except Exception, e:
         dbg_log('common::load_url(' + vurl + ')', 'ERROR: (' + repr(e) + ')', logErorr)
-               
+
 def set_busy(vstate):
     global __busy__, __common__, input_request, is_service
     try:
@@ -134,7 +134,7 @@ def set_busy(vstate):
                 xbmc.executebuiltin('Dialog.Close(busydialog)')
     except Exception, e:
         dbg_log('common::set_busy', 'ERROR: (' + repr(e) + ')', logErorr)
-        
+
 def remove_specsym(vstr):
     try: 
         dbg_log('common::remove_specsym', 'enter_function')
@@ -144,7 +144,7 @@ def remove_specsym(vstr):
         rstr = rstr.replace('&lt;', '<')
         rstr = rstr.replace('&gt;', '>')
         dbg_log('common::remove_specsym', 'exit_function')
-        return rstr        
+        return rstr
     except Exception, e:
         dbg_log('common::remove_specsym', 'ERROR: (' + repr(e) + ')', logErorr)
         return vstr

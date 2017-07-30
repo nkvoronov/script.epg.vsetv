@@ -1,4 +1,4 @@
-﻿# Kodi Media Center language file
+# Kodi Media Center language file
 # Addon Name: Vse TV
 # Addon id: script.epg.vsetv
 # Addon Provider: YLLOW_DRAGON
