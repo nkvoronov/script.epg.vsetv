@@ -2,7 +2,7 @@
 
 import re
 import common
-import settings
+import addonsettings
 
 class channel:
     __slots__ = ('Index', 'OName', 'UName', 'Icon', 'Correction')
@@ -74,7 +74,7 @@ class channel_list:
         try:
             common.dbg_log('channel_list::load_channels_from_settings', 'enter_function')
             self.Data = []
-            set = settings.settings()
+            set = addonsettings.settingaddon()
             xmldoc = set.parse()
             if xmldoc != None:
                 category = xmldoc.getElementsByTagName('category')

@@ -3,8 +3,8 @@
 import re
 import datetime
 import common
-import channel
-import programme
+import channels
+import programmes
 from xml.dom import minidom
 import xbmcgui
 
@@ -14,8 +14,8 @@ class parser:
     def __init__(self, vProgress):
         try:
             self.Progress = vProgress
-            self.Channels = channel.channel_list()
-            self.Programmes = programme.programme_list()
+            self.Channels = channels.channel_list()
+            self.Programmes = programmes.programme_list()
             self.CountDay = common.count_day
             self.FullDesc = common.full_desc
             self.XMLOut = common.xmltv_patch
@@ -123,7 +123,7 @@ class parser:
                     ctimeb = self.get_datetime_fmt(vdate, ctimeb + ':00', common.correction)
                     ctimee = self.get_datetime_fmt(vdate, '23:59:59', common.correction)
                     ctitle = common.remove_specsym(self.remove_tags(prtitle))
-                    prog = programme.programme(vchanneldata.Index, ctimeb, ctitle.decode('utf-8'), ctimee)
+                    prog = programmes.programme(vchanneldata.Index, ctimeb, ctitle.decode('utf-8'), ctimee)
                     self.get_category_from_title(prog)
                     self.get_fulldesc(prog, oprtitle)
                     self.Programmes.Data.append(prog)
@@ -137,7 +137,7 @@ class parser:
                     ctimeb = self.get_datetime_fmt(vdate, ctimeb + ':00', common.correction)
                     ctimee = self.get_datetime_fmt(vdate, '23:59:59', common.correction)
                     ctitle = common.remove_specsym(self.remove_tags(prtitle))
-                    prog = programme.programme(vchanneldata.Index, ctimeb, ctitle.decode('utf-8'), ctimee)
+                    prog = programmes.programme(vchanneldata.Index, ctimeb, ctitle.decode('utf-8'), ctimee)
                     self.get_category_from_title(prog)
                     self.get_desc(prog, prdesc.decode('utf-8'))
                     self.Programmes.Data.append(prog)

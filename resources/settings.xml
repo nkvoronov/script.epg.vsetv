@@ -11,8 +11,8 @@
         <setting default="true" id="sort_by_index" label="32011" type="bool"/>
         <setting action="RunScript($CWD/actions.py, refresh_channels)" label="32012" type="action"/>
         <setting type="sep"/>
-        <setting id="channel_sep_1" label="Первый национальный (Украина)" type="lsep"/>
-        <setting default="Первый национальный (Украина)" id="channel_name_1" label="32013" type="text"/>
+        <setting id="channel_sep_1" label="UA:Перший" type="lsep"/>
+        <setting default="UA:Перший" id="channel_name_1" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1.gif" id="channel_icon_1" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1" label="32015" type="bool"/>
         <setting id="channel_sep_3" label="1+1" type="lsep"/>
@@ -107,36 +107,36 @@
         <setting default="Наше кино" id="channel_name_29" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/29.gif" id="channel_icon_29" label="32014" type="text"/>
         <setting default="false" id="channel_enable_29" label="32015" type="bool"/>
-        <setting id="channel_sep_30" label="НТВ+ Киноклуб" type="lsep"/>
-        <setting default="НТВ+ Киноклуб" id="channel_name_30" label="32013" type="text"/>
+        <setting id="channel_sep_30" label="Киносвидание" type="lsep"/>
+        <setting default="Киносвидание" id="channel_name_30" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/30.gif" id="channel_icon_30" label="32014" type="text"/>
         <setting default="false" id="channel_enable_30" label="32015" type="bool"/>
         <setting id="channel_sep_31" label="Детский мир" type="lsep"/>
         <setting default="Детский мир" id="channel_name_31" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/31.gif" id="channel_icon_31" label="32014" type="text"/>
         <setting default="false" id="channel_enable_31" label="32015" type="bool"/>
-        <setting id="channel_sep_32" label="НТВ+ Спорт" type="lsep"/>
-        <setting default="НТВ+ Спорт" id="channel_name_32" label="32013" type="text"/>
+        <setting id="channel_sep_32" label="Матч! Планета" type="lsep"/>
+        <setting default="Матч! Планета" id="channel_name_32" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/32.gif" id="channel_icon_32" label="32014" type="text"/>
         <setting default="false" id="channel_enable_32" label="32015" type="bool"/>
-        <setting id="channel_sep_33" label="НТВ+ Футбол 1" type="lsep"/>
-        <setting default="НТВ+ Футбол 1" id="channel_name_33" label="32013" type="text"/>
+        <setting id="channel_sep_33" label="Матч! Футбол 1" type="lsep"/>
+        <setting default="Матч! Футбол 1" id="channel_name_33" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/33.gif" id="channel_icon_33" label="32014" type="text"/>
         <setting default="false" id="channel_enable_33" label="32015" type="bool"/>
-        <setting id="channel_sep_34" label="НТВ+ Премьера" type="lsep"/>
-        <setting default="НТВ+ Премьера" id="channel_name_34" label="32013" type="text"/>
+        <setting id="channel_sep_34" label="Кинопремьера HD" type="lsep"/>
+        <setting default="Кинопремьера HD" id="channel_name_34" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/34.gif" id="channel_icon_34" label="32014" type="text"/>
         <setting default="false" id="channel_enable_34" label="32015" type="bool"/>
         <setting id="channel_sep_35" label="CBS Drama" type="lsep"/>
         <setting default="CBS Drama" id="channel_name_35" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/35.gif" id="channel_icon_35" label="32014" type="text"/>
         <setting default="false" id="channel_enable_35" label="32015" type="bool"/>
-        <setting id="channel_sep_36" label="Eurosport" type="lsep"/>
-        <setting default="Eurosport" id="channel_name_36" label="32013" type="text"/>
+        <setting id="channel_sep_36" label="Eurosport 1" type="lsep"/>
+        <setting default="Eurosport 1" id="channel_name_36" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/36.gif" id="channel_icon_36" label="32014" type="text"/>
         <setting default="false" id="channel_enable_36" label="32015" type="bool"/>
-        <setting id="channel_sep_37" label="Euronews" type="lsep"/>
-        <setting default="Euronews" id="channel_name_37" label="32013" type="text"/>
+        <setting id="channel_sep_37" label="Euronews (русский)" type="lsep"/>
+        <setting default="Euronews (русский)" id="channel_name_37" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/37.gif" id="channel_icon_37" label="32014" type="text"/>
         <setting default="false" id="channel_enable_37" label="32015" type="bool"/>
         <setting id="channel_sep_38" label="Discovery Россия" type="lsep"/>
@@ -179,8 +179,8 @@
         <setting default="Cartoon network" id="channel_name_54" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/54.gif" id="channel_icon_54" label="32014" type="text"/>
         <setting default="false" id="channel_enable_54" label="32015" type="bool"/>
-        <setting id="channel_sep_56" label="Перец" type="lsep"/>
-        <setting default="Перец" id="channel_name_56" label="32013" type="text"/>
+        <setting id="channel_sep_56" label="Че" type="lsep"/>
+        <setting default="Че" id="channel_name_56" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/56.gif" id="channel_icon_56" label="32014" type="text"/>
         <setting default="false" id="channel_enable_56" label="32015" type="bool"/>
         <setting id="channel_sep_63" label="ТВ-3 Россия" type="lsep"/>
@@ -319,10 +319,6 @@
         <setting default="CNL Европа" id="channel_name_125" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/125.gif" id="channel_icon_125" label="32014" type="text"/>
         <setting default="false" id="channel_enable_125" label="32015" type="bool"/>
-        <setting id="channel_sep_127" label="AB Moteurs" type="lsep"/>
-        <setting default="AB Moteurs" id="channel_name_127" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/127.gif" id="channel_icon_127" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_127" label="32015" type="bool"/>
         <setting id="channel_sep_128" label="Югра" type="lsep"/>
         <setting default="Югра" id="channel_name_128" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/128.gif" id="channel_icon_128" label="32014" type="text"/>
@@ -351,10 +347,6 @@
         <setting default="Brazzers TV Europe" id="channel_name_143" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/143.gif" id="channel_icon_143" label="32014" type="text"/>
         <setting default="false" id="channel_enable_143" label="32015" type="bool"/>
-        <setting id="channel_sep_144" label="Россия 2" type="lsep"/>
-        <setting default="Россия 2" id="channel_name_144" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/144.gif" id="channel_icon_144" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_144" label="32015" type="bool"/>
         <setting id="channel_sep_145" label="ТНВ-Татарстан" type="lsep"/>
         <setting default="ТНВ-Татарстан" id="channel_name_145" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/145.gif" id="channel_icon_145" label="32014" type="text"/>
@@ -395,16 +387,12 @@
         <setting default="Русский иллюзион" id="channel_name_177" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/177.gif" id="channel_icon_177" label="32014" type="text"/>
         <setting default="false" id="channel_enable_177" label="32015" type="bool"/>
-        <setting id="channel_sep_178" label="Style" type="lsep"/>
-        <setting default="Style" id="channel_name_178" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/178.gif" id="channel_icon_178" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_178" label="32015" type="bool"/>
         <setting id="channel_sep_212" label="НТН" type="lsep"/>
         <setting default="НТН" id="channel_name_212" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/212.gif" id="channel_icon_212" label="32014" type="text"/>
         <setting default="false" id="channel_enable_212" label="32015" type="bool"/>
-        <setting id="channel_sep_213" label="НТВ+ Кинохит" type="lsep"/>
-        <setting default="НТВ+ Кинохит" id="channel_name_213" label="32013" type="text"/>
+        <setting id="channel_sep_213" label="Кинохит" type="lsep"/>
+        <setting default="Кинохит" id="channel_name_213" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/213.gif" id="channel_icon_213" label="32014" type="text"/>
         <setting default="false" id="channel_enable_213" label="32015" type="bool"/>
         <setting id="channel_sep_214" label="AMC" type="lsep"/>
@@ -507,16 +495,12 @@
         <setting default="Наше новое кино" id="channel_name_260" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/260.gif" id="channel_icon_260" label="32014" type="text"/>
         <setting default="false" id="channel_enable_260" label="32015" type="bool"/>
-        <setting id="channel_sep_261" label="Киносоюз" type="lsep"/>
-        <setting default="Киносоюз" id="channel_name_261" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/261.gif" id="channel_icon_261" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_261" label="32015" type="bool"/>
-        <setting id="channel_sep_263" label="24Док" type="lsep"/>
-        <setting default="24Док" id="channel_name_263" label="32013" type="text"/>
+        <setting id="channel_sep_263" label="Доктор" type="lsep"/>
+        <setting default="Доктор" id="channel_name_263" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/263.gif" id="channel_icon_263" label="32014" type="text"/>
         <setting default="false" id="channel_enable_263" label="32015" type="bool"/>
-        <setting id="channel_sep_270" label="Спорт 1" type="lsep"/>
-        <setting default="Спорт 1" id="channel_name_270" label="32013" type="text"/>
+        <setting id="channel_sep_270" label="Sport 1" type="lsep"/>
+        <setting default="Sport 1" id="channel_name_270" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/270.gif" id="channel_icon_270" label="32014" type="text"/>
         <setting default="false" id="channel_enable_270" label="32015" type="bool"/>
         <setting id="channel_sep_272" label="БСТ" type="lsep"/>
@@ -527,16 +511,8 @@
         <setting default="Страна советов" id="channel_name_275" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/275.gif" id="channel_icon_275" label="32014" type="text"/>
         <setting default="false" id="channel_enable_275" label="32015" type="bool"/>
-        <setting id="channel_sep_276" label="НТВ+ Теннис" type="lsep"/>
-        <setting default="НТВ+ Теннис" id="channel_name_276" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/276.gif" id="channel_icon_276" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_276" label="32015" type="bool"/>
-        <setting id="channel_sep_277" label="НТВ+ Баскетбол" type="lsep"/>
-        <setting default="НТВ+ Баскетбол" id="channel_name_277" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/277.gif" id="channel_icon_277" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_277" label="32015" type="bool"/>
-        <setting id="channel_sep_278" label="Многосерийное ТВ" type="lsep"/>
-        <setting default="Многосерийное ТВ" id="channel_name_278" label="32013" type="text"/>
+        <setting id="channel_sep_278" label="Киносерия" type="lsep"/>
+        <setting default="Киносерия" id="channel_name_278" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/278.gif" id="channel_icon_278" label="32014" type="text"/>
         <setting default="false" id="channel_enable_278" label="32015" type="bool"/>
         <setting id="channel_sep_279" label="365 дней ТВ" type="lsep"/>
@@ -547,8 +523,8 @@
         <setting default="1+1 Международный" id="channel_name_282" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/282.gif" id="channel_icon_282" label="32014" type="text"/>
         <setting default="false" id="channel_enable_282" label="32015" type="bool"/>
-        <setting id="channel_sep_284" label="НТВ+ Наш футбол" type="lsep"/>
-        <setting default="НТВ+ Наш футбол" id="channel_name_284" label="32013" type="text"/>
+        <setting id="channel_sep_284" label="Наш футбол" type="lsep"/>
+        <setting default="Наш футбол" id="channel_name_284" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/284.gif" id="channel_icon_284" label="32014" type="text"/>
         <setting default="false" id="channel_enable_284" label="32015" type="bool"/>
         <setting id="channel_sep_285" label="Культура (Украина)" type="lsep"/>
@@ -563,12 +539,12 @@
         <setting default="Русский экстрим" id="channel_name_288" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/288.gif" id="channel_icon_288" label="32014" type="text"/>
         <setting default="false" id="channel_enable_288" label="32015" type="bool"/>
-        <setting id="channel_sep_292" label="Комедия ТВ" type="lsep"/>
-        <setting default="Комедия ТВ" id="channel_name_292" label="32013" type="text"/>
+        <setting id="channel_sep_292" label="Кинокомедия" type="lsep"/>
+        <setting default="Кинокомедия" id="channel_name_292" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/292.gif" id="channel_icon_292" label="32014" type="text"/>
         <setting default="false" id="channel_enable_292" label="32015" type="bool"/>
-        <setting id="channel_sep_293" label="Индия ТВ" type="lsep"/>
-        <setting default="Индия ТВ" id="channel_name_293" label="32013" type="text"/>
+        <setting id="channel_sep_293" label="Индийское кино" type="lsep"/>
+        <setting default="Индийское кино" id="channel_name_293" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/293.gif" id="channel_icon_293" label="32014" type="text"/>
         <setting default="false" id="channel_enable_293" label="32015" type="bool"/>
         <setting id="channel_sep_294" label="Глас" type="lsep"/>
@@ -619,20 +595,20 @@
         <setting default="5 канал (Россия)" id="channel_name_308" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/308.gif" id="channel_icon_308" label="32014" type="text"/>
         <setting default="false" id="channel_enable_308" label="32015" type="bool"/>
-        <setting id="channel_sep_309" label="Спорт 2" type="lsep"/>
-        <setting default="Спорт 2" id="channel_name_309" label="32013" type="text"/>
+        <setting id="channel_sep_309" label="Sport 2" type="lsep"/>
+        <setting default="Sport 2" id="channel_name_309" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/309.gif" id="channel_icon_309" label="32014" type="text"/>
         <setting default="false" id="channel_enable_309" label="32015" type="bool"/>
-        <setting id="channel_sep_310" label="Боец" type="lsep"/>
-        <setting default="Боец" id="channel_name_310" label="32013" type="text"/>
+        <setting id="channel_sep_310" label="Матч! Боец" type="lsep"/>
+        <setting default="Матч! Боец" id="channel_name_310" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/310.gif" id="channel_icon_310" label="32014" type="text"/>
         <setting default="false" id="channel_enable_310" label="32015" type="bool"/>
         <setting id="channel_sep_311" label="Авто Плюс" type="lsep"/>
         <setting default="Авто Плюс" id="channel_name_311" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/311.gif" id="channel_icon_311" label="32014" type="text"/>
         <setting default="false" id="channel_enable_311" label="32015" type="bool"/>
-        <setting id="channel_sep_312" label="Наше кино (НТВ+)" type="lsep"/>
-        <setting default="Наше кино (НТВ+)" id="channel_name_312" label="32013" type="text"/>
+        <setting id="channel_sep_312" label="Родное кино" type="lsep"/>
+        <setting default="Родное кино" id="channel_name_312" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/312.gif" id="channel_icon_312" label="32014" type="text"/>
         <setting default="false" id="channel_enable_312" label="32015" type="bool"/>
         <setting id="channel_sep_313" label="World Fashion Channel Россия" type="lsep"/>
@@ -647,8 +623,8 @@
         <setting default="Тиса-1" id="channel_name_315" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/315.gif" id="channel_icon_315" label="32014" type="text"/>
         <setting default="false" id="channel_enable_315" label="32015" type="bool"/>
-        <setting id="channel_sep_316" label="A-one" type="lsep"/>
-        <setting default="A-one" id="channel_name_316" label="32013" type="text"/>
+        <setting id="channel_sep_316" label="ТНТ-Music" type="lsep"/>
+        <setting default="ТНТ-Music" id="channel_name_316" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/316.gif" id="channel_icon_316" label="32014" type="text"/>
         <setting default="false" id="channel_enable_316" label="32015" type="bool"/>
         <setting id="channel_sep_317" label="Центральный канал" type="lsep"/>
@@ -691,20 +667,12 @@
         <setting default="Fashion TV Europe" id="channel_name_342" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/342.gif" id="channel_icon_342" label="32014" type="text"/>
         <setting default="false" id="channel_enable_342" label="32015" type="bool"/>
-        <setting id="channel_sep_344" label="Nat Geo Wild Europe" type="lsep"/>
-        <setting default="Nat Geo Wild Europe" id="channel_name_344" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/344.gif" id="channel_icon_344" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_344" label="32015" type="bool"/>
-        <setting id="channel_sep_347" label="Amazing life" type="lsep"/>
-        <setting default="Amazing life" id="channel_name_347" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/347.gif" id="channel_icon_347" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_347" label="32015" type="bool"/>
         <setting id="channel_sep_350" label="Совершенно секретно" type="lsep"/>
         <setting default="Совершенно секретно" id="channel_name_350" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/350.gif" id="channel_icon_350" label="32014" type="text"/>
         <setting default="false" id="channel_enable_350" label="32015" type="bool"/>
-        <setting id="channel_sep_351" label="Парк развлечений" type="lsep"/>
-        <setting default="Парк развлечений" id="channel_name_351" label="32013" type="text"/>
+        <setting id="channel_sep_351" label="Cinema" type="lsep"/>
+        <setting default="Cinema" id="channel_name_351" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/351.gif" id="channel_icon_351" label="32014" type="text"/>
         <setting default="false" id="channel_enable_351" label="32015" type="bool"/>
         <setting id="channel_sep_353" label="Zoom" type="lsep"/>
@@ -727,28 +695,20 @@
         <setting default="Техно 24" id="channel_name_381" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/381.gif" id="channel_icon_381" label="32014" type="text"/>
         <setting default="false" id="channel_enable_381" label="32015" type="bool"/>
-        <setting id="channel_sep_382" label="100ТВ" type="lsep"/>
-        <setting default="100ТВ" id="channel_name_382" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/382.gif" id="channel_icon_382" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_382" label="32015" type="bool"/>
         <setting id="channel_sep_383" label="Кухня ТВ" type="lsep"/>
         <setting default="Кухня ТВ" id="channel_name_383" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/383.gif" id="channel_icon_383" label="32014" type="text"/>
         <setting default="false" id="channel_enable_383" label="32015" type="bool"/>
-        <setting id="channel_sep_384" label="STV" type="lsep"/>
-        <setting default="STV" id="channel_name_384" label="32013" type="text"/>
+        <setting id="channel_sep_384" label="Жара" type="lsep"/>
+        <setting default="Жара" id="channel_name_384" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/384.gif" id="channel_icon_384" label="32014" type="text"/>
         <setting default="false" id="channel_enable_384" label="32015" type="bool"/>
-        <setting id="channel_sep_385" label="Интересное ТВ" type="lsep"/>
-        <setting default="Интересное ТВ" id="channel_name_385" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/385.gif" id="channel_icon_385" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_385" label="32015" type="bool"/>
         <setting id="channel_sep_386" label="Business" type="lsep"/>
         <setting default="Business" id="channel_name_386" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/386.gif" id="channel_icon_386" label="32014" type="text"/>
         <setting default="false" id="channel_enable_386" label="32015" type="bool"/>
-        <setting id="channel_sep_388" label="Ru.Music" type="lsep"/>
-        <setting default="Ru.Music" id="channel_name_388" label="32013" type="text"/>
+        <setting id="channel_sep_388" label="EU.Music" type="lsep"/>
+        <setting default="EU.Music" id="channel_name_388" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/388.gif" id="channel_icon_388" label="32014" type="text"/>
         <setting default="false" id="channel_enable_388" label="32015" type="bool"/>
         <setting id="channel_sep_390" label="Феникс+Кино" type="lsep"/>
@@ -763,8 +723,8 @@
         <setting default="Мама" id="channel_name_394" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/394.gif" id="channel_icon_394" label="32014" type="text"/>
         <setting default="false" id="channel_enable_394" label="32015" type="bool"/>
-        <setting id="channel_sep_396" label="Перец (+2)" type="lsep"/>
-        <setting default="Перец (+2)" id="channel_name_396" label="32013" type="text"/>
+        <setting id="channel_sep_396" label="Че (+2)" type="lsep"/>
+        <setting default="Че (+2)" id="channel_name_396" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/396.gif" id="channel_icon_396" label="32014" type="text"/>
         <setting default="false" id="channel_enable_396" label="32015" type="bool"/>
         <setting id="channel_sep_397" label="Discovery Восточная Европа" type="lsep"/>
@@ -843,10 +803,6 @@
         <setting default="Сарафан" id="channel_name_433" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/433.gif" id="channel_icon_433" label="32014" type="text"/>
         <setting default="false" id="channel_enable_433" label="32015" type="bool"/>
-        <setting id="channel_sep_434" label="TV5 Латвия" type="lsep"/>
-        <setting default="TV5 Латвия" id="channel_name_434" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/434.gif" id="channel_icon_434" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_434" label="32015" type="bool"/>
         <setting id="channel_sep_435" label="Первый автомобильный" type="lsep"/>
         <setting default="Первый автомобильный" id="channel_name_435" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/435.gif" id="channel_icon_435" label="32014" type="text"/>
@@ -863,6 +819,10 @@
         <setting default="ZeeTV Россия" id="channel_name_442" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/442.gif" id="channel_icon_442" label="32014" type="text"/>
         <setting default="false" id="channel_enable_442" label="32015" type="bool"/>
+        <setting id="channel_sep_443" label="Sport 1 (Baltic)" type="lsep"/>
+        <setting default="Sport 1 (Baltic)" id="channel_name_443" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/443.gif" id="channel_icon_443" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_443" label="32015" type="bool"/>
         <setting id="channel_sep_445" label="М2" type="lsep"/>
         <setting default="М2" id="channel_name_445" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/445.gif" id="channel_icon_445" label="32014" type="text"/>
@@ -907,14 +867,10 @@
         <setting default="Luxe.TV" id="channel_name_475" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/475.gif" id="channel_icon_475" label="32014" type="text"/>
         <setting default="false" id="channel_enable_475" label="32015" type="bool"/>
-        <setting id="channel_sep_476" label="ТНТ-Comedy" type="lsep"/>
-        <setting default="ТНТ-Comedy" id="channel_name_476" label="32013" type="text"/>
+        <setting id="channel_sep_476" label="ТНТ4" type="lsep"/>
+        <setting default="ТНТ4" id="channel_name_476" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/476.gif" id="channel_icon_476" label="32014" type="text"/>
         <setting default="false" id="channel_enable_476" label="32015" type="bool"/>
-        <setting id="channel_sep_479" label="Гамма" type="lsep"/>
-        <setting default="Гамма" id="channel_name_479" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/479.gif" id="channel_icon_479" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_479" label="32015" type="bool"/>
         <setting id="channel_sep_481" label="Бигуди" type="lsep"/>
         <setting default="Бигуди" id="channel_name_481" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/481.gif" id="channel_icon_481" label="32014" type="text"/>
@@ -955,10 +911,6 @@
         <setting default="Viasat Sport Baltics" id="channel_name_504" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/504.gif" id="channel_icon_504" label="32014" type="text"/>
         <setting default="false" id="channel_enable_504" label="32015" type="bool"/>
-        <setting id="channel_sep_505" label="Гумор ТБ" type="lsep"/>
-        <setting default="Гумор ТБ" id="channel_name_505" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/505.gif" id="channel_icon_505" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_505" label="32015" type="bool"/>
         <setting id="channel_sep_507" label="Футбол 1" type="lsep"/>
         <setting default="Футбол 1" id="channel_name_507" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/507.gif" id="channel_icon_507" label="32014" type="text"/>
@@ -979,12 +931,8 @@
         <setting default="Живи" id="channel_name_511" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/511.gif" id="channel_icon_511" label="32014" type="text"/>
         <setting default="false" id="channel_enable_511" label="32015" type="bool"/>
-        <setting id="channel_sep_515" label="Peopleair.tv / BizTV" type="lsep"/>
-        <setting default="Peopleair.tv / BizTV" id="channel_name_515" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/515.gif" id="channel_icon_515" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_515" label="32015" type="bool"/>
-        <setting id="channel_sep_525" label="SET Россия" type="lsep"/>
-        <setting default="SET Россия" id="channel_name_525" label="32013" type="text"/>
+        <setting id="channel_sep_525" label="Sony Channel Россия" type="lsep"/>
+        <setting default="Sony Channel Россия" id="channel_name_525" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/525.gif" id="channel_icon_525" label="32014" type="text"/>
         <setting default="false" id="channel_enable_525" label="32015" type="bool"/>
         <setting id="channel_sep_526" label="Любимое кино" type="lsep"/>
@@ -999,10 +947,6 @@
         <setting default="BabyTV" id="channel_name_528" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/528.gif" id="channel_icon_528" label="32014" type="text"/>
         <setting default="false" id="channel_enable_528" label="32015" type="bool"/>
-        <setting id="channel_sep_529" label="Мир (+3)" type="lsep"/>
-        <setting default="Мир (+3)" id="channel_name_529" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/529.gif" id="channel_icon_529" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_529" label="32015" type="bool"/>
         <setting id="channel_sep_531" label="Улыбка ребенка" type="lsep"/>
         <setting default="Улыбка ребенка" id="channel_name_531" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/531.gif" id="channel_icon_531" label="32014" type="text"/>
@@ -1011,16 +955,16 @@
         <setting default="myZen.tv" id="channel_name_534" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/534.gif" id="channel_icon_534" label="32014" type="text"/>
         <setting default="false" id="channel_enable_534" label="32015" type="bool"/>
-        <setting id="channel_sep_535" label="Eurosport HD" type="lsep"/>
-        <setting default="Eurosport HD" id="channel_name_535" label="32013" type="text"/>
+        <setting id="channel_sep_535" label="Eurosport 1 HD" type="lsep"/>
+        <setting default="Eurosport 1 HD" id="channel_name_535" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/535.gif" id="channel_icon_535" label="32014" type="text"/>
         <setting default="false" id="channel_enable_535" label="32015" type="bool"/>
         <setting id="channel_sep_536" label="Luxe.TV HD" type="lsep"/>
         <setting default="Luxe.TV HD" id="channel_name_536" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/536.gif" id="channel_icon_536" label="32014" type="text"/>
         <setting default="false" id="channel_enable_536" label="32015" type="bool"/>
-        <setting id="channel_sep_537" label="Перец (+7)" type="lsep"/>
-        <setting default="Перец (+7)" id="channel_name_537" label="32013" type="text"/>
+        <setting id="channel_sep_537" label="Че (+7)" type="lsep"/>
+        <setting default="Че (+7)" id="channel_name_537" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/537.gif" id="channel_icon_537" label="32014" type="text"/>
         <setting default="false" id="channel_enable_537" label="32015" type="bool"/>
         <setting id="channel_sep_538" label="СТС (+2)" type="lsep"/>
@@ -1031,8 +975,8 @@
         <setting default="СТС (+4)" id="channel_name_539" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/539.gif" id="channel_icon_539" label="32014" type="text"/>
         <setting default="false" id="channel_enable_539" label="32015" type="bool"/>
-        <setting id="channel_sep_540" label="Первый национальный / ТРК &quot;Эра&quot;" type="lsep"/>
-        <setting default="Первый национальный / ТРК &quot;Эра&quot;" id="channel_name_540" label="32013" type="text"/>
+        <setting id="channel_sep_540" label="UA:Перший / ТРК &quot;Эра&quot;" type="lsep"/>
+        <setting default="UA:Перший / ТРК &quot;Эра&quot;" id="channel_name_540" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/540.gif" id="channel_icon_540" label="32014" type="text"/>
         <setting default="false" id="channel_enable_540" label="32015" type="bool"/>
         <setting id="channel_sep_541" label="Первый канал (+2)" type="lsep"/>
@@ -1135,8 +1079,8 @@
         <setting default="Звезда (+2)" id="channel_name_566" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/566.gif" id="channel_icon_566" label="32014" type="text"/>
         <setting default="false" id="channel_enable_566" label="32015" type="bool"/>
-        <setting id="channel_sep_567" label="Звезда (+3)" type="lsep"/>
-        <setting default="Звезда (+3)" id="channel_name_567" label="32013" type="text"/>
+        <setting id="channel_sep_567" label="Звезда (+4)" type="lsep"/>
+        <setting default="Звезда (+4)" id="channel_name_567" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/567.gif" id="channel_icon_567" label="32014" type="text"/>
         <setting default="false" id="channel_enable_567" label="32015" type="bool"/>
         <setting id="channel_sep_568" label="Звезда (+7)" type="lsep"/>
@@ -1191,32 +1135,32 @@
         <setting default="Galaxy-TV" id="channel_name_583" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/583.gif" id="channel_icon_583" label="32014" type="text"/>
         <setting default="false" id="channel_enable_583" label="32015" type="bool"/>
-        <setting id="channel_sep_590" label="HD Кино" type="lsep"/>
-        <setting default="HD Кино" id="channel_name_590" label="32013" type="text"/>
+        <setting id="channel_sep_590" label="Киносемья" type="lsep"/>
+        <setting default="Киносемья" id="channel_name_590" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/590.gif" id="channel_icon_590" label="32014" type="text"/>
         <setting default="false" id="channel_enable_590" label="32015" type="bool"/>
-        <setting id="channel_sep_591" label="HD Спорт" type="lsep"/>
-        <setting default="HD Спорт" id="channel_name_591" label="32013" type="text"/>
+        <setting id="channel_sep_591" label="Матч! Игра HD" type="lsep"/>
+        <setting default="Матч! Игра HD" id="channel_name_591" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/591.gif" id="channel_icon_591" label="32014" type="text"/>
         <setting default="false" id="channel_enable_591" label="32015" type="bool"/>
         <setting id="channel_sep_594" label="National Geographic HD" type="lsep"/>
         <setting default="National Geographic HD" id="channel_name_594" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/594.gif" id="channel_icon_594" label="32014" type="text"/>
         <setting default="false" id="channel_enable_594" label="32015" type="bool"/>
-        <setting id="channel_sep_595" label="Спорт Плюс" type="lsep"/>
-        <setting default="Спорт Плюс" id="channel_name_595" label="32013" type="text"/>
+        <setting id="channel_sep_595" label="Матч! Наш спорт" type="lsep"/>
+        <setting default="Матч! Наш спорт" id="channel_name_595" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/595.gif" id="channel_icon_595" label="32014" type="text"/>
         <setting default="false" id="channel_enable_595" label="32015" type="bool"/>
-        <setting id="channel_sep_596" label="Gulli Россия" type="lsep"/>
-        <setting default="Gulli Россия" id="channel_name_596" label="32013" type="text"/>
+        <setting id="channel_sep_596" label="Gulli Girl" type="lsep"/>
+        <setting default="Gulli Girl" id="channel_name_596" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/596.gif" id="channel_icon_596" label="32014" type="text"/>
         <setting default="false" id="channel_enable_596" label="32015" type="bool"/>
         <setting id="channel_sep_597" label="TiJi Россия" type="lsep"/>
         <setting default="TiJi Россия" id="channel_name_597" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/597.gif" id="channel_icon_597" label="32014" type="text"/>
         <setting default="false" id="channel_enable_597" label="32015" type="bool"/>
-        <setting id="channel_sep_598" label="CCTV Русский" type="lsep"/>
-        <setting default="CCTV Русский" id="channel_name_598" label="32013" type="text"/>
+        <setting id="channel_sep_598" label="CGTN Русский" type="lsep"/>
+        <setting default="CGTN Русский" id="channel_name_598" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/598.gif" id="channel_icon_598" label="32014" type="text"/>
         <setting default="false" id="channel_enable_598" label="32015" type="bool"/>
         <setting id="channel_sep_599" label="Discovery HD Showcase" type="lsep"/>
@@ -1251,22 +1195,10 @@
         <setting default="ТВ Клуб" id="channel_name_607" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/607.gif" id="channel_icon_607" label="32014" type="text"/>
         <setting default="false" id="channel_enable_607" label="32015" type="bool"/>
-        <setting id="channel_sep_608" label="Кино Плюс" type="lsep"/>
-        <setting default="Кино Плюс" id="channel_name_608" label="32013" type="text"/>
+        <setting id="channel_sep_608" label="Киномикс" type="lsep"/>
+        <setting default="Киномикс" id="channel_name_608" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/608.gif" id="channel_icon_608" label="32014" type="text"/>
         <setting default="false" id="channel_enable_608" label="32015" type="bool"/>
-        <setting id="channel_sep_609" label="УБР" type="lsep"/>
-        <setting default="УБР" id="channel_name_609" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/609.gif" id="channel_icon_609" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_609" label="32015" type="bool"/>
-        <setting id="channel_sep_611" label="Бабай ТБ" type="lsep"/>
-        <setting default="Бабай ТБ" id="channel_name_611" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/611.gif" id="channel_icon_611" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_611" label="32015" type="bool"/>
-        <setting id="channel_sep_613" label="Гумор ТБ / Бабай ТБ" type="lsep"/>
-        <setting default="Гумор ТБ / Бабай ТБ" id="channel_name_613" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/613.gif" id="channel_icon_613" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_613" label="32015" type="bool"/>
         <setting id="channel_sep_617" label="Донбасс" type="lsep"/>
         <setting default="Донбасс" id="channel_name_617" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/617.gif" id="channel_icon_617" label="32014" type="text"/>
@@ -1363,8 +1295,8 @@
         <setting default="Viasat Nature CEE" id="channel_name_652" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/652.gif" id="channel_icon_652" label="32014" type="text"/>
         <setting default="false" id="channel_enable_652" label="32015" type="bool"/>
-        <setting id="channel_sep_653" label="360° Подмосковье" type="lsep"/>
-        <setting default="360° Подмосковье" id="channel_name_653" label="32013" type="text"/>
+        <setting id="channel_sep_653" label="360°" type="lsep"/>
+        <setting default="360°" id="channel_name_653" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/653.gif" id="channel_icon_653" label="32014" type="text"/>
         <setting default="false" id="channel_enable_653" label="32015" type="bool"/>
         <setting id="channel_sep_655" label="ОТВ (Екатеринбург)" type="lsep"/>
@@ -1387,30 +1319,14 @@
         <setting default="Playboy TV UK (для Украины)" id="channel_name_663" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/663.gif" id="channel_icon_663" label="32014" type="text"/>
         <setting default="false" id="channel_enable_663" label="32015" type="bool"/>
-        <setting id="channel_sep_664" label="XXL (для Украины)" type="lsep"/>
-        <setting default="XXL (для Украины)" id="channel_name_664" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/664.gif" id="channel_icon_664" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_664" label="32015" type="bool"/>
-        <setting id="channel_sep_665" label="Blue Hustler (для Украины)" type="lsep"/>
-        <setting default="Blue Hustler (для Украины)" id="channel_name_665" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/665.gif" id="channel_icon_665" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_665" label="32015" type="bool"/>
-        <setting id="channel_sep_666" label="Hustler TV Europe (для Украины)" type="lsep"/>
-        <setting default="Hustler TV Europe (для Украины)" id="channel_name_666" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/666.gif" id="channel_icon_666" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_666" label="32015" type="bool"/>
-        <setting id="channel_sep_667" label="Спорт 1 (Россия)" type="lsep"/>
-        <setting default="Спорт 1 (Россия)" id="channel_name_667" label="32013" type="text"/>
+        <setting id="channel_sep_667" label="Матч! Арена" type="lsep"/>
+        <setting default="Матч! Арена" id="channel_name_667" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/667.gif" id="channel_icon_667" label="32014" type="text"/>
         <setting default="false" id="channel_enable_667" label="32015" type="bool"/>
         <setting id="channel_sep_668" label="Rusong TV" type="lsep"/>
         <setting default="Rusong TV" id="channel_name_668" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/668.gif" id="channel_icon_668" label="32014" type="text"/>
         <setting default="false" id="channel_enable_668" label="32015" type="bool"/>
-        <setting id="channel_sep_671" label="Nat Geo Wild HD" type="lsep"/>
-        <setting default="Nat Geo Wild HD" id="channel_name_671" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/671.gif" id="channel_icon_671" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_671" label="32015" type="bool"/>
         <setting id="channel_sep_672" label="Mezzo Live HD" type="lsep"/>
         <setting default="Mezzo Live HD" id="channel_name_672" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/672.gif" id="channel_icon_672" label="32014" type="text"/>
@@ -1419,10 +1335,6 @@
         <setting default="Дождь. Optimistic channel" id="channel_name_675" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/675.gif" id="channel_icon_675" label="32014" type="text"/>
         <setting default="false" id="channel_enable_675" label="32015" type="bool"/>
-        <setting id="channel_sep_678" label="Discovery Украина" type="lsep"/>
-        <setting default="Discovery Украина" id="channel_name_678" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/678.gif" id="channel_icon_678" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_678" label="32015" type="bool"/>
         <setting id="channel_sep_679" label="Fashion One" type="lsep"/>
         <setting default="Fashion One" id="channel_name_679" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/679.gif" id="channel_icon_679" label="32014" type="text"/>
@@ -1431,8 +1343,8 @@
         <setting default="Fashion One HD" id="channel_name_680" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/680.gif" id="channel_icon_680" label="32014" type="text"/>
         <setting default="false" id="channel_enable_680" label="32015" type="bool"/>
-        <setting id="channel_sep_681" label="8 канал" type="lsep"/>
-        <setting default="8 канал" id="channel_name_681" label="32013" type="text"/>
+        <setting id="channel_sep_681" label="8 канал (Триколор)" type="lsep"/>
+        <setting default="8 канал (Триколор)" id="channel_name_681" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/681.gif" id="channel_icon_681" label="32014" type="text"/>
         <setting default="false" id="channel_enable_681" label="32015" type="bool"/>
         <setting id="channel_sep_682" label="Europa Plus TV" type="lsep"/>
@@ -1451,8 +1363,8 @@
         <setting default="Карусель International" id="channel_name_688" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/688.gif" id="channel_icon_688" label="32014" type="text"/>
         <setting default="false" id="channel_enable_688" label="32015" type="bool"/>
-        <setting id="channel_sep_689" label="УТР" type="lsep"/>
-        <setting default="УТР" id="channel_name_689" label="32013" type="text"/>
+        <setting id="channel_sep_689" label="UATV" type="lsep"/>
+        <setting default="UATV" id="channel_name_689" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/689.gif" id="channel_icon_689" label="32014" type="text"/>
         <setting default="false" id="channel_enable_689" label="32015" type="bool"/>
         <setting id="channel_sep_690" label="Travel channel HD" type="lsep"/>
@@ -1463,6 +1375,10 @@
         <setting default="TLC Россия" id="channel_name_691" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/691.gif" id="channel_icon_691" label="32014" type="text"/>
         <setting default="false" id="channel_enable_691" label="32015" type="bool"/>
+        <setting id="channel_sep_692" label="Открытый мир" type="lsep"/>
+        <setting default="Открытый мир" id="channel_name_692" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/692.gif" id="channel_icon_692" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_692" label="32015" type="bool"/>
         <setting id="channel_sep_693" label="Радость моя" type="lsep"/>
         <setting default="Радость моя" id="channel_name_693" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/693.gif" id="channel_icon_693" label="32014" type="text"/>
@@ -1495,10 +1411,10 @@
         <setting default="РТР-Беларусь" id="channel_name_700" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/700.gif" id="channel_icon_700" label="32014" type="text"/>
         <setting default="false" id="channel_enable_700" label="32015" type="bool"/>
-        <setting id="channel_sep_702" label="НТВ+ 3D by Panasonic" type="lsep"/>
-        <setting default="НТВ+ 3D by Panasonic" id="channel_name_702" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/702.gif" id="channel_icon_702" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_702" label="32015" type="bool"/>
+        <setting id="channel_sep_701" label="+ТВ" type="lsep"/>
+        <setting default="+ТВ" id="channel_name_701" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/701.gif" id="channel_icon_701" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_701" label="32015" type="bool"/>
         <setting id="channel_sep_703" label="Футбол 2" type="lsep"/>
         <setting default="Футбол 2" id="channel_name_703" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/703.gif" id="channel_icon_703" label="32014" type="text"/>
@@ -1507,8 +1423,8 @@
         <setting default="БелМузТВ" id="channel_name_706" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/706.gif" id="channel_icon_706" label="32014" type="text"/>
         <setting default="false" id="channel_enable_706" label="32015" type="bool"/>
-        <setting id="channel_sep_707" label="НТВ+ Футбол 2" type="lsep"/>
-        <setting default="НТВ+ Футбол 2" id="channel_name_707" label="32013" type="text"/>
+        <setting id="channel_sep_707" label="Матч! Футбол 2" type="lsep"/>
+        <setting default="Матч! Футбол 2" id="channel_name_707" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/707.gif" id="channel_icon_707" label="32014" type="text"/>
         <setting default="false" id="channel_enable_707" label="32015" type="bool"/>
         <setting id="channel_sep_708" label="Оружие" type="lsep"/>
@@ -1523,8 +1439,8 @@
         <setting default="МТВ" id="channel_name_710" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/710.gif" id="channel_icon_710" label="32014" type="text"/>
         <setting default="false" id="channel_enable_710" label="32015" type="bool"/>
-        <setting id="channel_sep_711" label="Спорт" type="lsep"/>
-        <setting default="Спорт" id="channel_name_711" label="32013" type="text"/>
+        <setting id="channel_sep_711" label="Матч! Игра" type="lsep"/>
+        <setting default="Матч! Игра" id="channel_name_711" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/711.gif" id="channel_icon_711" label="32014" type="text"/>
         <setting default="false" id="channel_enable_711" label="32015" type="bool"/>
         <setting id="channel_sep_712" label="Наука 2.0" type="lsep"/>
@@ -1551,8 +1467,8 @@
         <setting default="ТТС" id="channel_name_717" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/717.gif" id="channel_icon_717" label="32014" type="text"/>
         <setting default="false" id="channel_enable_717" label="32015" type="bool"/>
-        <setting id="channel_sep_719" label="Шансон ТВ" type="lsep"/>
-        <setting default="Шансон ТВ" id="channel_name_719" label="32013" type="text"/>
+        <setting id="channel_sep_719" label="Шансон ТВ (Ямал)" type="lsep"/>
+        <setting default="Шансон ТВ (Ямал)" id="channel_name_719" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/719.gif" id="channel_icon_719" label="32014" type="text"/>
         <setting default="false" id="channel_enable_719" label="32015" type="bool"/>
         <setting id="channel_sep_721" label="Агро-ТВ" type="lsep"/>
@@ -1567,12 +1483,12 @@
         <setting default="Ю (+7)" id="channel_name_723" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/723.gif" id="channel_icon_723" label="32014" type="text"/>
         <setting default="false" id="channel_enable_723" label="32015" type="bool"/>
-        <setting id="channel_sep_724" label="Спорт 1 HD" type="lsep"/>
-        <setting default="Спорт 1 HD" id="channel_name_724" label="32013" type="text"/>
+        <setting id="channel_sep_724" label="Матч! Арена HD" type="lsep"/>
+        <setting default="Матч! Арена HD" id="channel_name_724" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/724.gif" id="channel_icon_724" label="32014" type="text"/>
         <setting default="false" id="channel_enable_724" label="32015" type="bool"/>
-        <setting id="channel_sep_727" label="Amedia 2" type="lsep"/>
-        <setting default="Amedia 2" id="channel_name_727" label="32013" type="text"/>
+        <setting id="channel_sep_727" label="A2" type="lsep"/>
+        <setting default="A2" id="channel_name_727" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/727.gif" id="channel_icon_727" label="32014" type="text"/>
         <setting default="false" id="channel_enable_727" label="32015" type="bool"/>
         <setting id="channel_sep_728" label="Nick Jr" type="lsep"/>
@@ -1595,14 +1511,10 @@
         <setting default="Доверие" id="channel_name_733" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/733.gif" id="channel_icon_733" label="32014" type="text"/>
         <setting default="false" id="channel_enable_733" label="32015" type="bool"/>
-        <setting id="channel_sep_734" label="2х2 (+5)" type="lsep"/>
-        <setting default="2х2 (+5)" id="channel_name_734" label="32013" type="text"/>
+        <setting id="channel_sep_734" label="2х2 (+4)" type="lsep"/>
+        <setting default="2х2 (+4)" id="channel_name_734" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/734.gif" id="channel_icon_734" label="32014" type="text"/>
         <setting default="false" id="channel_enable_734" label="32015" type="bool"/>
-        <setting id="channel_sep_736" label="Второй канал" type="lsep"/>
-        <setting default="Второй канал" id="channel_name_736" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/736.gif" id="channel_icon_736" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_736" label="32015" type="bool"/>
         <setting id="channel_sep_737" label="ТНТ Bravo" type="lsep"/>
         <setting default="ТНТ Bravo" id="channel_name_737" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/737.gif" id="channel_icon_737" label="32014" type="text"/>
@@ -1615,40 +1527,44 @@
         <setting default="УНИАН ТВ" id="channel_name_740" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/740.gif" id="channel_icon_740" label="32014" type="text"/>
         <setting default="false" id="channel_enable_740" label="32015" type="bool"/>
-        <setting id="channel_sep_741" label="NANO TV" type="lsep"/>
-        <setting default="NANO TV" id="channel_name_741" label="32013" type="text"/>
+        <setting id="channel_sep_741" label="NANO" type="lsep"/>
+        <setting default="NANO" id="channel_name_741" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/741.gif" id="channel_icon_741" label="32014" type="text"/>
         <setting default="false" id="channel_enable_741" label="32015" type="bool"/>
         <setting id="channel_sep_743" label="Жест (Космос ТВ)" type="lsep"/>
         <setting default="Жест (Космос ТВ)" id="channel_name_743" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/743.gif" id="channel_icon_743" label="32014" type="text"/>
         <setting default="false" id="channel_enable_743" label="32015" type="bool"/>
-        <setting id="channel_sep_744" label="Бойцовский клуб" type="lsep"/>
-        <setting default="Бойцовский клуб" id="channel_name_744" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/744.gif" id="channel_icon_744" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_744" label="32015" type="bool"/>
-        <setting id="channel_sep_747" label="НТВ+ Футбол 1 HD" type="lsep"/>
-        <setting default="НТВ+ Футбол 1 HD" id="channel_name_747" label="32013" type="text"/>
+        <setting id="channel_sep_747" label="Матч! Футбол 1 HD" type="lsep"/>
+        <setting default="Матч! Футбол 1 HD" id="channel_name_747" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/747.gif" id="channel_icon_747" label="32014" type="text"/>
         <setting default="false" id="channel_enable_747" label="32015" type="bool"/>
-        <setting id="channel_sep_750" label="Fox Life HD" type="lsep"/>
-        <setting default="Fox Life HD" id="channel_name_750" label="32013" type="text"/>
+        <setting id="channel_sep_748" label="Xsport" type="lsep"/>
+        <setting default="Xsport" id="channel_name_748" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/748.gif" id="channel_icon_748" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_748" label="32015" type="bool"/>
+        <setting id="channel_sep_750" label="Fox Life Россия HD" type="lsep"/>
+        <setting default="Fox Life Россия HD" id="channel_name_750" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/750.gif" id="channel_icon_750" label="32014" type="text"/>
         <setting default="false" id="channel_enable_750" label="32015" type="bool"/>
+        <setting id="channel_sep_751" label="Черноморская ТРК" type="lsep"/>
+        <setting default="Черноморская ТРК" id="channel_name_751" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/751.gif" id="channel_icon_751" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_751" label="32015" type="bool"/>
         <setting id="channel_sep_752" label="Shopping Live" type="lsep"/>
         <setting default="Shopping Live" id="channel_name_752" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/752.gif" id="channel_icon_752" label="32014" type="text"/>
         <setting default="false" id="channel_enable_752" label="32015" type="bool"/>
-        <setting id="channel_sep_753" label="НТВ+ Футбол 2 HD" type="lsep"/>
-        <setting default="НТВ+ Футбол 2 HD" id="channel_name_753" label="32013" type="text"/>
+        <setting id="channel_sep_753" label="Матч! Футбол 2 HD" type="lsep"/>
+        <setting default="Матч! Футбол 2 HD" id="channel_name_753" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/753.gif" id="channel_icon_753" label="32014" type="text"/>
         <setting default="false" id="channel_enable_753" label="32015" type="bool"/>
         <setting id="channel_sep_754" label="Искушение" type="lsep"/>
         <setting default="Искушение" id="channel_name_754" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/754.gif" id="channel_icon_754" label="32014" type="text"/>
         <setting default="false" id="channel_enable_754" label="32015" type="bool"/>
-        <setting id="channel_sep_755" label="8 канал (Регион)" type="lsep"/>
-        <setting default="8 канал (Регион)" id="channel_name_755" label="32013" type="text"/>
+        <setting id="channel_sep_755" label="8 канал (Ямал)" type="lsep"/>
+        <setting default="8 канал (Ямал)" id="channel_name_755" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/755.gif" id="channel_icon_755" label="32014" type="text"/>
         <setting default="false" id="channel_enable_755" label="32015" type="bool"/>
         <setting id="channel_sep_757" label="Русский роман" type="lsep"/>
@@ -1663,10 +1579,6 @@
         <setting default="ATR" id="channel_name_763" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/763.gif" id="channel_icon_763" label="32014" type="text"/>
         <setting default="false" id="channel_enable_763" label="32015" type="bool"/>
-        <setting id="channel_sep_764" label="Dobro-tv" type="lsep"/>
-        <setting default="Dobro-tv" id="channel_name_764" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/764.gif" id="channel_icon_764" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_764" label="32015" type="bool"/>
         <setting id="channel_sep_766" label="Nat Geo Wild Россия" type="lsep"/>
         <setting default="Nat Geo Wild Россия" id="channel_name_766" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/766.gif" id="channel_icon_766" label="32014" type="text"/>
@@ -1683,8 +1595,8 @@
         <setting default="Paramount Comedy Россия" id="channel_name_770" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/770.gif" id="channel_icon_770" label="32014" type="text"/>
         <setting default="false" id="channel_enable_770" label="32015" type="bool"/>
-        <setting id="channel_sep_771" label="Setanta Sports" type="lsep"/>
-        <setting default="Setanta Sports" id="channel_name_771" label="32013" type="text"/>
+        <setting id="channel_sep_771" label="Setanta Sports Eurasia" type="lsep"/>
+        <setting default="Setanta Sports Eurasia" id="channel_name_771" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/771.gif" id="channel_icon_771" label="32014" type="text"/>
         <setting default="false" id="channel_enable_771" label="32015" type="bool"/>
         <setting id="channel_sep_772" label="A-One Украина" type="lsep"/>
@@ -1699,10 +1611,6 @@
         <setting default="FOX Россия HD" id="channel_name_775" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/775.gif" id="channel_icon_775" label="32014" type="text"/>
         <setting default="false" id="channel_enable_775" label="32015" type="bool"/>
-        <setting id="channel_sep_776" label="HD Кино 2" type="lsep"/>
-        <setting default="HD Кино 2" id="channel_name_776" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/776.gif" id="channel_icon_776" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_776" label="32015" type="bool"/>
         <setting id="channel_sep_777" label="TLC Pan Regional" type="lsep"/>
         <setting default="TLC Pan Regional" id="channel_name_777" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/777.gif" id="channel_icon_777" label="32014" type="text"/>
@@ -1719,12 +1627,12 @@
         <setting default="ТНВ-Планета" id="channel_name_781" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/781.gif" id="channel_icon_781" label="32014" type="text"/>
         <setting default="false" id="channel_enable_781" label="32015" type="bool"/>
-        <setting id="channel_sep_782" label="Кубань 24 Орбита" type="lsep"/>
-        <setting default="Кубань 24 Орбита" id="channel_name_782" label="32013" type="text"/>
+        <setting id="channel_sep_782" label="Кубань 24 ОРБИТА" type="lsep"/>
+        <setting default="Кубань 24 ОРБИТА" id="channel_name_782" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/782.gif" id="channel_icon_782" label="32014" type="text"/>
         <setting default="false" id="channel_enable_782" label="32015" type="bool"/>
-        <setting id="channel_sep_783" label="SET Россия HD" type="lsep"/>
-        <setting default="SET Россия HD" id="channel_name_783" label="32013" type="text"/>
+        <setting id="channel_sep_783" label="Sony Channel Россия HD" type="lsep"/>
+        <setting default="Sony Channel Россия HD" id="channel_name_783" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/783.gif" id="channel_icon_783" label="32014" type="text"/>
         <setting default="false" id="channel_enable_783" label="32015" type="bool"/>
         <setting id="channel_sep_788" label="RT Д (English)" type="lsep"/>
@@ -1743,8 +1651,8 @@
         <setting default="Еда HD" id="channel_name_795" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/795.gif" id="channel_icon_795" label="32014" type="text"/>
         <setting default="false" id="channel_enable_795" label="32015" type="bool"/>
-        <setting id="channel_sep_797" label="iConcerts" type="lsep"/>
-        <setting default="iConcerts" id="channel_name_797" label="32013" type="text"/>
+        <setting id="channel_sep_797" label="Stingray iConcerts" type="lsep"/>
+        <setting default="Stingray iConcerts" id="channel_name_797" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/797.gif" id="channel_icon_797" label="32014" type="text"/>
         <setting default="false" id="channel_enable_797" label="32015" type="bool"/>
         <setting id="channel_sep_798" label="Trace Sport Stars HD" type="lsep"/>
@@ -1835,8 +1743,8 @@
         <setting default="Eurosport 2 North-East HD" id="channel_name_825" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/825.gif" id="channel_icon_825" label="32014" type="text"/>
         <setting default="false" id="channel_enable_825" label="32015" type="bool"/>
-        <setting id="channel_sep_827" label="Первый Ukraine" type="lsep"/>
-        <setting default="Первый Ukraine" id="channel_name_827" label="32013" type="text"/>
+        <setting id="channel_sep_827" label="UA:Крим" type="lsep"/>
+        <setting default="UA:Крим" id="channel_name_827" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/827.gif" id="channel_icon_827" label="32014" type="text"/>
         <setting default="false" id="channel_enable_827" label="32015" type="bool"/>
         <setting id="channel_sep_829" label="Театр" type="lsep"/>
@@ -1863,8 +1771,8 @@
         <setting default="Первый канал HD" id="channel_name_839" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/839.gif" id="channel_icon_839" label="32014" type="text"/>
         <setting default="false" id="channel_enable_839" label="32015" type="bool"/>
-        <setting id="channel_sep_841" label="Россия HD" type="lsep"/>
-        <setting default="Россия HD" id="channel_name_841" label="32013" type="text"/>
+        <setting id="channel_sep_841" label="Россия 1 HD" type="lsep"/>
+        <setting default="Россия 1 HD" id="channel_name_841" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/841.gif" id="channel_icon_841" label="32014" type="text"/>
         <setting default="false" id="channel_enable_841" label="32015" type="bool"/>
         <setting id="channel_sep_842" label="Охотник и рыболов HD" type="lsep"/>
@@ -1891,8 +1799,8 @@
         <setting default="Russia Today HD" id="channel_name_851" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/851.gif" id="channel_icon_851" label="32014" type="text"/>
         <setting default="false" id="channel_enable_851" label="32015" type="bool"/>
-        <setting id="channel_sep_852" label="КиноТВ" type="lsep"/>
-        <setting default="КиноТВ" id="channel_name_852" label="32013" type="text"/>
+        <setting id="channel_sep_852" label="Кино ТВ" type="lsep"/>
+        <setting default="Кино ТВ" id="channel_name_852" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/852.gif" id="channel_icon_852" label="32014" type="text"/>
         <setting default="false" id="channel_enable_852" label="32015" type="bool"/>
         <setting id="channel_sep_853" label="Теледом" type="lsep"/>
@@ -1907,24 +1815,20 @@
         <setting default="Дождь. Optimistic channel HD" id="channel_name_856" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/856.gif" id="channel_icon_856" label="32014" type="text"/>
         <setting default="false" id="channel_enable_856" label="32015" type="bool"/>
-        <setting id="channel_sep_857" label="Перец (+4)" type="lsep"/>
-        <setting default="Перец (+4)" id="channel_name_857" label="32013" type="text"/>
+        <setting id="channel_sep_857" label="Че (+4)" type="lsep"/>
+        <setting default="Че (+4)" id="channel_name_857" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/857.gif" id="channel_icon_857" label="32014" type="text"/>
         <setting default="false" id="channel_enable_857" label="32015" type="bool"/>
         <setting id="channel_sep_858" label="РГВК Дагестан" type="lsep"/>
         <setting default="РГВК Дагестан" id="channel_name_858" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/858.gif" id="channel_icon_858" label="32014" type="text"/>
         <setting default="false" id="channel_enable_858" label="32015" type="bool"/>
-        <setting id="channel_sep_859" label="Русский Север" type="lsep"/>
-        <setting default="Русский Север" id="channel_name_859" label="32013" type="text"/>
+        <setting id="channel_sep_859" label="ТВ-7 (Вологда)" type="lsep"/>
+        <setting default="ТВ-7 (Вологда)" id="channel_name_859" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/859.gif" id="channel_icon_859" label="32014" type="text"/>
         <setting default="false" id="channel_enable_859" label="32015" type="bool"/>
-        <setting id="channel_sep_861" label="Право TV" type="lsep"/>
-        <setting default="Право TV" id="channel_name_861" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/861.gif" id="channel_icon_861" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_861" label="32015" type="bool"/>
-        <setting id="channel_sep_862" label="Dange TV" type="lsep"/>
-        <setting default="Dange TV" id="channel_name_862" label="32013" type="text"/>
+        <setting id="channel_sep_862" label="Bridge TV Dance" type="lsep"/>
+        <setting default="Bridge TV Dance" id="channel_name_862" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/862.gif" id="channel_icon_862" label="32014" type="text"/>
         <setting default="false" id="channel_enable_862" label="32015" type="bool"/>
         <setting id="channel_sep_863" label="Shop24" type="lsep"/>
@@ -1943,18 +1847,10 @@
         <setting default="ОТВ Челябинск" id="channel_name_866" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/866.gif" id="channel_icon_866" label="32014" type="text"/>
         <setting default="false" id="channel_enable_866" label="32015" type="bool"/>
-        <setting id="channel_sep_867" label="Южный Регион Дон" type="lsep"/>
-        <setting default="Южный Регион Дон" id="channel_name_867" label="32013" type="text"/>
+        <setting id="channel_sep_867" label="Дон 24" type="lsep"/>
+        <setting default="Дон 24" id="channel_name_867" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/867.gif" id="channel_icon_867" label="32014" type="text"/>
         <setting default="false" id="channel_enable_867" label="32015" type="bool"/>
-        <setting id="channel_sep_868" label="Диван ТВ" type="lsep"/>
-        <setting default="Диван ТВ" id="channel_name_868" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/868.gif" id="channel_icon_868" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_868" label="32015" type="bool"/>
-        <setting id="channel_sep_870" label="БИ Плюс" type="lsep"/>
-        <setting default="БИ Плюс" id="channel_name_870" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/870.gif" id="channel_icon_870" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_870" label="32015" type="bool"/>
         <setting id="channel_sep_871" label="Надия" type="lsep"/>
         <setting default="Надия" id="channel_name_871" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/871.gif" id="channel_icon_871" label="32014" type="text"/>
@@ -1967,10 +1863,6 @@
         <setting default="Первый Севастопольский" id="channel_name_876" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/876.gif" id="channel_icon_876" label="32014" type="text"/>
         <setting default="false" id="channel_enable_876" label="32015" type="bool"/>
-        <setting id="channel_sep_877" label="БТБ" type="lsep"/>
-        <setting default="БТБ" id="channel_name_877" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/877.gif" id="channel_icon_877" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_877" label="32015" type="bool"/>
         <setting id="channel_sep_879" label="История" type="lsep"/>
         <setting default="История" id="channel_name_879" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/879.gif" id="channel_icon_879" label="32014" type="text"/>
@@ -2003,12 +1895,12 @@
         <setting default="Телеканал 100" id="channel_name_887" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/887.gif" id="channel_icon_887" label="32014" type="text"/>
         <setting default="false" id="channel_enable_887" label="32015" type="bool"/>
-        <setting id="channel_sep_889" label="НТВ+ Наш футбол HD" type="lsep"/>
-        <setting default="НТВ+ Наш футбол HD" id="channel_name_889" label="32013" type="text"/>
+        <setting id="channel_sep_889" label="Наш футбол HD" type="lsep"/>
+        <setting default="Наш футбол HD" id="channel_name_889" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/889.gif" id="channel_icon_889" label="32014" type="text"/>
         <setting default="false" id="channel_enable_889" label="32015" type="bool"/>
-        <setting id="channel_sep_890" label="Первый национальный (Т2)" type="lsep"/>
-        <setting default="Первый национальный (Т2)" id="channel_name_890" label="32013" type="text"/>
+        <setting id="channel_sep_890" label="UA:Перший Digital" type="lsep"/>
+        <setting default="UA:Перший Digital" id="channel_name_890" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/890.gif" id="channel_icon_890" label="32014" type="text"/>
         <setting default="false" id="channel_enable_890" label="32015" type="bool"/>
         <setting id="channel_sep_892" label="твFM" type="lsep"/>
@@ -2023,8 +1915,8 @@
         <setting default="Hustler HD" id="channel_name_894" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/894.gif" id="channel_icon_894" label="32014" type="text"/>
         <setting default="false" id="channel_enable_894" label="32015" type="bool"/>
-        <setting id="channel_sep_895" label="Amedia 1" type="lsep"/>
-        <setting default="Amedia 1" id="channel_name_895" label="32013" type="text"/>
+        <setting id="channel_sep_895" label="A1" type="lsep"/>
+        <setting default="A1" id="channel_name_895" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/895.gif" id="channel_icon_895" label="32014" type="text"/>
         <setting default="false" id="channel_enable_895" label="32015" type="bool"/>
         <setting id="channel_sep_896" label="Amedia Premium HD" type="lsep"/>
@@ -2035,10 +1927,6 @@
         <setting default="TMTV" id="channel_name_897" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/897.gif" id="channel_icon_897" label="32014" type="text"/>
         <setting default="false" id="channel_enable_897" label="32015" type="bool"/>
-        <setting id="channel_sep_898" label="TLC Украина" type="lsep"/>
-        <setting default="TLC Украина" id="channel_name_898" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/898.gif" id="channel_icon_898" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_898" label="32015" type="bool"/>
         <setting id="channel_sep_899" label="ОТС" type="lsep"/>
         <setting default="ОТС" id="channel_name_899" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/899.gif" id="channel_icon_899" label="32014" type="text"/>
@@ -2083,8 +1971,8 @@
         <setting default="9 волна" id="channel_name_909" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/909.gif" id="channel_icon_909" label="32014" type="text"/>
         <setting default="false" id="channel_enable_909" label="32015" type="bool"/>
-        <setting id="channel_sep_910" label="НТВ+ Футбол 3" type="lsep"/>
-        <setting default="НТВ+ Футбол 3" id="channel_name_910" label="32013" type="text"/>
+        <setting id="channel_sep_910" label="Матч! Футбол 3" type="lsep"/>
+        <setting default="Матч! Футбол 3" id="channel_name_910" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/910.gif" id="channel_icon_910" label="32014" type="text"/>
         <setting default="false" id="channel_enable_910" label="32015" type="bool"/>
         <setting id="channel_sep_911" label="Lale" type="lsep"/>
@@ -2107,8 +1995,8 @@
         <setting default="Viasat Golf HD" id="channel_name_916" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/916.gif" id="channel_icon_916" label="32014" type="text"/>
         <setting default="false" id="channel_enable_916" label="32015" type="bool"/>
-        <setting id="channel_sep_917" label="НТВ+ Футбол 3 HD" type="lsep"/>
-        <setting default="НТВ+ Футбол 3 HD" id="channel_name_917" label="32013" type="text"/>
+        <setting id="channel_sep_917" label="Матч! Футбол 3 HD" type="lsep"/>
+        <setting default="Матч! Футбол 3 HD" id="channel_name_917" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/917.gif" id="channel_icon_917" label="32014" type="text"/>
         <setting default="false" id="channel_enable_917" label="32015" type="bool"/>
         <setting id="channel_sep_919" label="ТРК &quot;Регион&quot;" type="lsep"/>
@@ -2127,18 +2015,10 @@
         <setting default="Авто24" id="channel_name_924" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/924.gif" id="channel_icon_924" label="32014" type="text"/>
         <setting default="false" id="channel_enable_924" label="32015" type="bool"/>
-        <setting id="channel_sep_925" label="Диван ТВ HD" type="lsep"/>
-        <setting default="Диван ТВ HD" id="channel_name_925" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/925.gif" id="channel_icon_925" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_925" label="32015" type="bool"/>
         <setting id="channel_sep_926" label="Первый канал HD (+4)" type="lsep"/>
         <setting default="Первый канал HD (+4)" id="channel_name_926" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/926.gif" id="channel_icon_926" label="32014" type="text"/>
         <setting default="false" id="channel_enable_926" label="32015" type="bool"/>
-        <setting id="channel_sep_928" label="Марс ТВ" type="lsep"/>
-        <setting default="Марс ТВ" id="channel_name_928" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/928.gif" id="channel_icon_928" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_928" label="32015" type="bool"/>
         <setting id="channel_sep_929" label="English Club TV HD" type="lsep"/>
         <setting default="English Club TV HD" id="channel_name_929" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/929.gif" id="channel_icon_929" label="32014" type="text"/>
@@ -2151,8 +2031,8 @@
         <setting default="7 канал (Одесса)" id="channel_name_933" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/933.gif" id="channel_icon_933" label="32014" type="text"/>
         <setting default="false" id="channel_enable_933" label="32015" type="bool"/>
-        <setting id="channel_sep_934" label="Nautical Channel Россия" type="lsep"/>
-        <setting default="Nautical Channel Россия" id="channel_name_934" label="32013" type="text"/>
+        <setting id="channel_sep_934" label="Морской" type="lsep"/>
+        <setting default="Морской" id="channel_name_934" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/934.gif" id="channel_icon_934" label="32014" type="text"/>
         <setting default="false" id="channel_enable_934" label="32015" type="bool"/>
         <setting id="channel_sep_935" label="Paramount channel Россия" type="lsep"/>
@@ -2187,30 +2067,22 @@
         <setting default="ID Xtra (Россия)" id="channel_name_943" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/943.gif" id="channel_icon_943" label="32014" type="text"/>
         <setting default="false" id="channel_enable_943" label="32015" type="bool"/>
-        <setting id="channel_sep_944" label="IQ HD" type="lsep"/>
-        <setting default="IQ HD" id="channel_name_944" label="32013" type="text"/>
+        <setting id="channel_sep_944" label="Планета HD" type="lsep"/>
+        <setting default="Планета HD" id="channel_name_944" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/944.gif" id="channel_icon_944" label="32014" type="text"/>
         <setting default="false" id="channel_enable_944" label="32015" type="bool"/>
         <setting id="channel_sep_945" label="Трофей" type="lsep"/>
         <setting default="Трофей" id="channel_name_945" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/945.gif" id="channel_icon_945" label="32014" type="text"/>
         <setting default="false" id="channel_enable_945" label="32015" type="bool"/>
-        <setting id="channel_sep_946" label="Luxury World" type="lsep"/>
-        <setting default="Luxury World" id="channel_name_946" label="32013" type="text"/>
+        <setting id="channel_sep_946" label="Luxury" type="lsep"/>
+        <setting default="Luxury" id="channel_name_946" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/946.gif" id="channel_icon_946" label="32014" type="text"/>
         <setting default="false" id="channel_enable_946" label="32015" type="bool"/>
         <setting id="channel_sep_947" label="КиноПремиум HD" type="lsep"/>
         <setting default="КиноПремиум HD" id="channel_name_947" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/947.gif" id="channel_icon_947" label="32014" type="text"/>
         <setting default="false" id="channel_enable_947" label="32015" type="bool"/>
-        <setting id="channel_sep_948" label="Наше HD" type="lsep"/>
-        <setting default="Наше HD" id="channel_name_948" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/948.gif" id="channel_icon_948" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_948" label="32015" type="bool"/>
-        <setting id="channel_sep_949" label="Семейное HD" type="lsep"/>
-        <setting default="Семейное HD" id="channel_name_949" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/949.gif" id="channel_icon_949" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_949" label="32015" type="bool"/>
         <setting id="channel_sep_951" label="Остросюжетное HD" type="lsep"/>
         <setting default="Остросюжетное HD" id="channel_name_951" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/951.gif" id="channel_icon_951" label="32014" type="text"/>
@@ -2223,14 +2095,6 @@
         <setting default="112 Украина HD" id="channel_name_953" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/953.gif" id="channel_icon_953" label="32014" type="text"/>
         <setting default="false" id="channel_enable_953" label="32015" type="bool"/>
-        <setting id="channel_sep_955" label="Mix TV" type="lsep"/>
-        <setting default="Mix TV" id="channel_name_955" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/955.gif" id="channel_icon_955" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_955" label="32015" type="bool"/>
-        <setting id="channel_sep_956" label="СТВ Башкортостан" type="lsep"/>
-        <setting default="СТВ Башкортостан" id="channel_name_956" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/956.gif" id="channel_icon_956" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_956" label="32015" type="bool"/>
         <setting id="channel_sep_957" label="Вся Уфа" type="lsep"/>
         <setting default="Вся Уфа" id="channel_name_957" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/957.gif" id="channel_icon_957" label="32014" type="text"/>
@@ -2299,10 +2163,6 @@
         <setting default="ТНТ-International (СНГ)" id="channel_name_981" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/981.gif" id="channel_icon_981" label="32014" type="text"/>
         <setting default="false" id="channel_enable_981" label="32015" type="bool"/>
-        <setting id="channel_sep_982" label="OE" type="lsep"/>
-        <setting default="OE" id="channel_name_982" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/982.gif" id="channel_icon_982" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_982" label="32015" type="bool"/>
         <setting id="channel_sep_983" label="ОРТ-Планета (Оренбург)" type="lsep"/>
         <setting default="ОРТ-Планета (Оренбург)" id="channel_name_983" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/983.gif" id="channel_icon_983" label="32014" type="text"/>
@@ -2331,8 +2191,8 @@
         <setting default="ТНТ-International (Европа)" id="channel_name_991" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/991.gif" id="channel_icon_991" label="32014" type="text"/>
         <setting default="false" id="channel_enable_991" label="32015" type="bool"/>
-        <setting id="channel_sep_992" label="M television" type="lsep"/>
-        <setting default="M television" id="channel_name_992" label="32013" type="text"/>
+        <setting id="channel_sep_992" label="MTVmix" type="lsep"/>
+        <setting default="MTVmix" id="channel_name_992" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/992.gif" id="channel_icon_992" label="32014" type="text"/>
         <setting default="false" id="channel_enable_992" label="32015" type="bool"/>
         <setting id="channel_sep_993" label="DocuBox HD" type="lsep"/>
@@ -2367,22 +2227,14 @@
         <setting default="ID Xtra (Европа)" id="channel_name_1000" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1000.gif" id="channel_icon_1000" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1000" label="32015" type="bool"/>
-        <setting id="channel_sep_1001" label="К Муз" type="lsep"/>
-        <setting default="К Муз" id="channel_name_1001" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1001.gif" id="channel_icon_1001" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1001" label="32015" type="bool"/>
         <setting id="channel_sep_1002" label="Индиго" type="lsep"/>
         <setting default="Индиго" id="channel_name_1002" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1002.gif" id="channel_icon_1002" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1002" label="32015" type="bool"/>
-        <setting id="channel_sep_1003" label="Topsong TV" type="lsep"/>
-        <setting default="Topsong TV" id="channel_name_1003" label="32013" type="text"/>
+        <setting id="channel_sep_1003" label="Bridge TV Classic" type="lsep"/>
+        <setting default="Bridge TV Classic" id="channel_name_1003" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1003.gif" id="channel_icon_1003" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1003" label="32015" type="bool"/>
-        <setting id="channel_sep_1004" label="Chasse et peche" type="lsep"/>
-        <setting default="Chasse et peche" id="channel_name_1004" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1004.gif" id="channel_icon_1004" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1004" label="32015" type="bool"/>
         <setting id="channel_sep_1005" label="Food Network Россия" type="lsep"/>
         <setting default="Food Network Россия" id="channel_name_1005" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1005.gif" id="channel_icon_1005" label="32014" type="text"/>
@@ -2395,8 +2247,8 @@
         <setting default="Точка ТВ" id="channel_name_1011" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1011.gif" id="channel_icon_1011" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1011" label="32015" type="bool"/>
-        <setting id="channel_sep_1012" label="6 ТВ" type="lsep"/>
-        <setting default="6 ТВ" id="channel_name_1012" label="32013" type="text"/>
+        <setting id="channel_sep_1012" label="Губерния" type="lsep"/>
+        <setting default="Губерния" id="channel_name_1012" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1012.gif" id="channel_icon_1012" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1012" label="32015" type="bool"/>
         <setting id="channel_sep_1013" label="Olala" type="lsep"/>
@@ -2407,10 +2259,6 @@
         <setting default="1HD" id="channel_name_1014" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1014.gif" id="channel_icon_1014" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1014" label="32015" type="bool"/>
-        <setting id="channel_sep_1015" label="Ukraine Today" type="lsep"/>
-        <setting default="Ukraine Today" id="channel_name_1015" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1015.gif" id="channel_icon_1015" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1015" label="32015" type="bool"/>
         <setting id="channel_sep_1016" label="Amedia Hit" type="lsep"/>
         <setting default="Amedia Hit" id="channel_name_1016" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1016.gif" id="channel_icon_1016" label="32014" type="text"/>
@@ -2423,8 +2271,8 @@
         <setting default="СТС Love (+7)" id="channel_name_1019" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1019.gif" id="channel_icon_1019" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1019" label="32015" type="bool"/>
-        <setting id="channel_sep_1020" label="TV1000 Русское кино (Международный)" type="lsep"/>
-        <setting default="TV1000 Русское кино (Международный)" id="channel_name_1020" label="32013" type="text"/>
+        <setting id="channel_sep_1020" label="TV1000 World Kino" type="lsep"/>
+        <setting default="TV1000 World Kino" id="channel_name_1020" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1020.gif" id="channel_icon_1020" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1020" label="32015" type="bool"/>
         <setting id="channel_sep_1021" label="9 канал (Израиль)" type="lsep"/>
@@ -2435,34 +2283,22 @@
         <setting default="Мир увлечений" id="channel_name_1022" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1022.gif" id="channel_icon_1022" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1022" label="32015" type="bool"/>
-        <setting id="channel_sep_1023" label="KZN (Казань)" type="lsep"/>
-        <setting default="KZN (Казань)" id="channel_name_1023" label="32013" type="text"/>
+        <setting id="channel_sep_1023" label="Татарстан-24" type="lsep"/>
+        <setting default="Татарстан-24" id="channel_name_1023" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1023.gif" id="channel_icon_1023" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1023" label="32015" type="bool"/>
-        <setting id="channel_sep_1024" label="Первый Интернет Канал (#ПИКТВ)" type="lsep"/>
-        <setting default="Первый Интернет Канал (#ПИКТВ)" id="channel_name_1024" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1024.gif" id="channel_icon_1024" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1024" label="32015" type="bool"/>
-        <setting id="channel_sep_1025" label="Минск24ДОК" type="lsep"/>
-        <setting default="Минск24ДОК" id="channel_name_1025" label="32013" type="text"/>
+        <setting id="channel_sep_1025" label="МінскТВ" type="lsep"/>
+        <setting default="МінскТВ" id="channel_name_1025" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1025.gif" id="channel_icon_1025" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1025" label="32015" type="bool"/>
         <setting id="channel_sep_1026" label="Живая планета" type="lsep"/>
         <setting default="Живая планета" id="channel_name_1026" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1026.gif" id="channel_icon_1026" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1026" label="32015" type="bool"/>
-        <setting id="channel_sep_1027" label="ТВОЙ" type="lsep"/>
-        <setting default="ТВОЙ" id="channel_name_1027" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1027.gif" id="channel_icon_1027" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1027" label="32015" type="bool"/>
         <setting id="channel_sep_1028" label="TVM Channel" type="lsep"/>
         <setting default="TVM Channel" id="channel_name_1028" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1028.gif" id="channel_icon_1028" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1028" label="32015" type="bool"/>
-        <setting id="channel_sep_1029" label="Vintage TV Россия" type="lsep"/>
-        <setting default="Vintage TV Россия" id="channel_name_1029" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1029.gif" id="channel_icon_1029" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1029" label="32015" type="bool"/>
         <setting id="channel_sep_1030" label="Bollywood HD" type="lsep"/>
         <setting default="Bollywood HD" id="channel_name_1030" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1030.gif" id="channel_icon_1030" label="32014" type="text"/>
@@ -2479,18 +2315,14 @@
         <setting default="Shant TV" id="channel_name_1033" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1033.gif" id="channel_icon_1033" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1033" label="32015" type="bool"/>
-        <setting id="channel_sep_1034" label="Ru.Music HD" type="lsep"/>
-        <setting default="Ru.Music HD" id="channel_name_1034" label="32013" type="text"/>
+        <setting id="channel_sep_1034" label="EU.Music HD" type="lsep"/>
+        <setting default="EU.Music HD" id="channel_name_1034" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1034.gif" id="channel_icon_1034" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1034" label="32015" type="bool"/>
         <setting id="channel_sep_1036" label="RTi" type="lsep"/>
         <setting default="RTi" id="channel_name_1036" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1036.gif" id="channel_icon_1036" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1036" label="32015" type="bool"/>
-        <setting id="channel_sep_1038" label="Дом кино International" type="lsep"/>
-        <setting default="Дом кино International" id="channel_name_1038" label="32013" type="text"/>
-        <setting default="http://www.vsetv.com/pic/channel_logos/1038.gif" id="channel_icon_1038" label="32014" type="text"/>
-        <setting default="false" id="channel_enable_1038" label="32015" type="bool"/>
         <setting id="channel_sep_1039" label="ЛДПР ТВ" type="lsep"/>
         <setting default="ЛДПР ТВ" id="channel_name_1039" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1039.gif" id="channel_icon_1039" label="32014" type="text"/>
@@ -2563,6 +2395,642 @@
         <setting default="Мужское кино" id="channel_name_1060" label="32013" type="text"/>
         <setting default="http://www.vsetv.com/pic/channel_logos/1060.gif" id="channel_icon_1060" label="32014" type="text"/>
         <setting default="false" id="channel_enable_1060" label="32015" type="bool"/>
+        <setting id="channel_sep_1061" label="DTX" type="lsep"/>
+        <setting default="DTX" id="channel_name_1061" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1061.gif" id="channel_icon_1061" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1061" label="32015" type="bool"/>
+        <setting id="channel_sep_1062" label="Бокс ТВ" type="lsep"/>
+        <setting default="Бокс ТВ" id="channel_name_1062" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1062.gif" id="channel_icon_1062" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1062" label="32015" type="bool"/>
+        <setting id="channel_sep_1063" label="Deutsche Welle (Deutsch)" type="lsep"/>
+        <setting default="Deutsche Welle (Deutsch)" id="channel_name_1063" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1063.gif" id="channel_icon_1063" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1063" label="32015" type="bool"/>
+        <setting id="channel_sep_1065" label="Candy" type="lsep"/>
+        <setting default="Candy" id="channel_name_1065" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1065.gif" id="channel_icon_1065" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1065" label="32015" type="bool"/>
+        <setting id="channel_sep_1066" label="CandyMan" type="lsep"/>
+        <setting default="CandyMan" id="channel_name_1066" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1066.gif" id="channel_icon_1066" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1066" label="32015" type="bool"/>
+        <setting id="channel_sep_1067" label="Odessa Int" type="lsep"/>
+        <setting default="Odessa Int" id="channel_name_1067" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1067.gif" id="channel_icon_1067" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1067" label="32015" type="bool"/>
+        <setting id="channel_sep_1068" label="8 канал (Европа)" type="lsep"/>
+        <setting default="8 канал (Европа)" id="channel_name_1068" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1068.gif" id="channel_icon_1068" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1068" label="32015" type="bool"/>
+        <setting id="channel_sep_1069" label="8 канал (Экспресс АТ)" type="lsep"/>
+        <setting default="8 канал (Экспресс АТ)" id="channel_name_1069" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1069.gif" id="channel_icon_1069" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1069" label="32015" type="bool"/>
+        <setting id="channel_sep_1070" label="8 канал (Экспресс АТ) (+7)" type="lsep"/>
+        <setting default="8 канал (Экспресс АТ) (+7)" id="channel_name_1070" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1070.gif" id="channel_icon_1070" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1070" label="32015" type="bool"/>
+        <setting id="channel_sep_1071" label="Brazzers TV Europe (для России)" type="lsep"/>
+        <setting default="Brazzers TV Europe (для России)" id="channel_name_1071" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1071.gif" id="channel_icon_1071" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1071" label="32015" type="bool"/>
+        <setting id="channel_sep_1072" label="Надежда" type="lsep"/>
+        <setting default="Надежда" id="channel_name_1072" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1072.gif" id="channel_icon_1072" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1072" label="32015" type="bool"/>
+        <setting id="channel_sep_1073" label="Film.Ua Drama" type="lsep"/>
+        <setting default="Film.Ua Drama" id="channel_name_1073" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1073.gif" id="channel_icon_1073" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1073" label="32015" type="bool"/>
+        <setting id="channel_sep_1075" label="Trace Urban HD" type="lsep"/>
+        <setting default="Trace Urban HD" id="channel_name_1075" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1075.gif" id="channel_icon_1075" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1075" label="32015" type="bool"/>
+        <setting id="channel_sep_1076" label="Trace Sport Stars" type="lsep"/>
+        <setting default="Trace Sport Stars" id="channel_name_1076" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1076.gif" id="channel_icon_1076" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1076" label="32015" type="bool"/>
+        <setting id="channel_sep_1077" label="Матч ТВ" type="lsep"/>
+        <setting default="Матч ТВ" id="channel_name_1077" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1077.gif" id="channel_icon_1077" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1077" label="32015" type="bool"/>
+        <setting id="channel_sep_1079" label="#НАШ канал" type="lsep"/>
+        <setting default="#НАШ канал" id="channel_name_1079" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1079.gif" id="channel_icon_1079" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1079" label="32015" type="bool"/>
+        <setting id="channel_sep_1080" label="Дача" type="lsep"/>
+        <setting default="Дача" id="channel_name_1080" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1080.gif" id="channel_icon_1080" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1080" label="32015" type="bool"/>
+        <setting id="channel_sep_1081" label="Комедия (ВГТРК)" type="lsep"/>
+        <setting default="Комедия (ВГТРК)" id="channel_name_1081" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1081.gif" id="channel_icon_1081" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1081" label="32015" type="bool"/>
+        <setting id="channel_sep_1082" label="Eurosport 2 HD" type="lsep"/>
+        <setting default="Eurosport 2 HD" id="channel_name_1082" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1082.gif" id="channel_icon_1082" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1082" label="32015" type="bool"/>
+        <setting id="channel_sep_1083" label="NEXT-TV" type="lsep"/>
+        <setting default="NEXT-TV" id="channel_name_1083" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1083.gif" id="channel_icon_1083" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1083" label="32015" type="bool"/>
+        <setting id="channel_sep_1084" label="Шансон ТВ (Hotbird)" type="lsep"/>
+        <setting default="Шансон ТВ (Hotbird)" id="channel_name_1084" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1084.gif" id="channel_icon_1084" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1084" label="32015" type="bool"/>
+        <setting id="channel_sep_1086" label="ID Fashion" type="lsep"/>
+        <setting default="ID Fashion" id="channel_name_1086" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1086.gif" id="channel_icon_1086" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1086" label="32015" type="bool"/>
+        <setting id="channel_sep_1087" label="ПравдаТУТ" type="lsep"/>
+        <setting default="ПравдаТУТ" id="channel_name_1087" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1087.gif" id="channel_icon_1087" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1087" label="32015" type="bool"/>
+        <setting id="channel_sep_1089" label="Волга" type="lsep"/>
+        <setting default="Волга" id="channel_name_1089" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1089.gif" id="channel_icon_1089" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1089" label="32015" type="bool"/>
+        <setting id="channel_sep_1090" label="Матч ТВ HD" type="lsep"/>
+        <setting default="Матч ТВ HD" id="channel_name_1090" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1090.gif" id="channel_icon_1090" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1090" label="32015" type="bool"/>
+        <setting id="channel_sep_1091" label="11 канал Днепропетровск (T2)" type="lsep"/>
+        <setting default="11 канал Днепропетровск (T2)" id="channel_name_1091" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1091.gif" id="channel_icon_1091" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1091" label="32015" type="bool"/>
+        <setting id="channel_sep_1092" label="Первый городской (Нижний Новгород)" type="lsep"/>
+        <setting default="Первый городской (Нижний Новгород)" id="channel_name_1092" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1092.gif" id="channel_icon_1092" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1092" label="32015" type="bool"/>
+        <setting id="channel_sep_1093" label="СТС-Орск" type="lsep"/>
+        <setting default="СТС-Орск" id="channel_name_1093" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1093.gif" id="channel_icon_1093" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1093" label="32015" type="bool"/>
+        <setting id="channel_sep_1095" label="Food Network Россия HD" type="lsep"/>
+        <setting default="Food Network Россия HD" id="channel_name_1095" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1095.gif" id="channel_icon_1095" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1095" label="32015" type="bool"/>
+        <setting id="channel_sep_1096" label="MusicBox UA HD" type="lsep"/>
+        <setting default="MusicBox UA HD" id="channel_name_1096" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1096.gif" id="channel_icon_1096" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1096" label="32015" type="bool"/>
+        <setting id="channel_sep_1098" label="Трофей HD" type="lsep"/>
+        <setting default="Трофей HD" id="channel_name_1098" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1098.gif" id="channel_icon_1098" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1098" label="32015" type="bool"/>
+        <setting id="channel_sep_1099" label="Discovery Science HD" type="lsep"/>
+        <setting default="Discovery Science HD" id="channel_name_1099" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1099.gif" id="channel_icon_1099" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1099" label="32015" type="bool"/>
+        <setting id="channel_sep_1101" label="Museum HD" type="lsep"/>
+        <setting default="Museum HD" id="channel_name_1101" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1101.gif" id="channel_icon_1101" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1101" label="32015" type="bool"/>
+        <setting id="channel_sep_1102" label="Живая природа HD" type="lsep"/>
+        <setting default="Живая природа HD" id="channel_name_1102" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1102.gif" id="channel_icon_1102" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1102" label="32015" type="bool"/>
+        <setting id="channel_sep_1103" label="Домашний International" type="lsep"/>
+        <setting default="Домашний International" id="channel_name_1103" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1103.gif" id="channel_icon_1103" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1103" label="32015" type="bool"/>
+        <setting id="channel_sep_1106" label="ТНТ4 (+2)" type="lsep"/>
+        <setting default="ТНТ4 (+2)" id="channel_name_1106" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1106.gif" id="channel_icon_1106" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1106" label="32015" type="bool"/>
+        <setting id="channel_sep_1109" label="MostVideo" type="lsep"/>
+        <setting default="MostVideo" id="channel_name_1109" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1109.gif" id="channel_icon_1109" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1109" label="32015" type="bool"/>
+        <setting id="channel_sep_1110" label="Cine+ Kids" type="lsep"/>
+        <setting default="Cine+ Kids" id="channel_name_1110" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1110.gif" id="channel_icon_1110" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1110" label="32015" type="bool"/>
+        <setting id="channel_sep_1112" label="Cine+ Kids HD" type="lsep"/>
+        <setting default="Cine+ Kids HD" id="channel_name_1112" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1112.gif" id="channel_icon_1112" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1112" label="32015" type="bool"/>
+        <setting id="channel_sep_1114" label="Калейдоскоп ТВ" type="lsep"/>
+        <setting default="Калейдоскоп ТВ" id="channel_name_1114" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1114.gif" id="channel_icon_1114" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1114" label="32015" type="bool"/>
+        <setting id="channel_sep_1116" label="ТНТ-Орск" type="lsep"/>
+        <setting default="ТНТ-Орск" id="channel_name_1116" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1116.gif" id="channel_icon_1116" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1116" label="32015" type="bool"/>
+        <setting id="channel_sep_1117" label="Кино ТВ HD" type="lsep"/>
+        <setting default="Кино ТВ HD" id="channel_name_1117" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1117.gif" id="channel_icon_1117" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1117" label="32015" type="bool"/>
+        <setting id="channel_sep_1118" label="AzTV" type="lsep"/>
+        <setting default="AzTV" id="channel_name_1118" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1118.gif" id="channel_icon_1118" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1118" label="32015" type="bool"/>
+        <setting id="channel_sep_1119" label="Game Show" type="lsep"/>
+        <setting default="Game Show" id="channel_name_1119" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1119.gif" id="channel_icon_1119" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1119" label="32015" type="bool"/>
+        <setting id="channel_sep_1120" label="ББЧ" type="lsep"/>
+        <setting default="ББЧ" id="channel_name_1120" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1120.gif" id="channel_icon_1120" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1120" label="32015" type="bool"/>
+        <setting id="channel_sep_1121" label="Алекс ТВ" type="lsep"/>
+        <setting default="Алекс ТВ" id="channel_name_1121" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1121.gif" id="channel_icon_1121" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1121" label="32015" type="bool"/>
+        <setting id="channel_sep_1122" label="Курай" type="lsep"/>
+        <setting default="Курай" id="channel_name_1122" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1122.gif" id="channel_icon_1122" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1122" label="32015" type="bool"/>
+        <setting id="channel_sep_1123" label="НТВ-Америка" type="lsep"/>
+        <setting default="НТВ-Америка" id="channel_name_1123" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1123.gif" id="channel_icon_1123" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1123" label="32015" type="bool"/>
+        <setting id="channel_sep_1125" label="9 канал (Днепропетровск)" type="lsep"/>
+        <setting default="9 канал (Днепропетровск)" id="channel_name_1125" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1125.gif" id="channel_icon_1125" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1125" label="32015" type="bool"/>
+        <setting id="channel_sep_1126" label="ТНТ4 (+7)" type="lsep"/>
+        <setting default="ТНТ4 (+7)" id="channel_name_1126" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1126.gif" id="channel_icon_1126" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1126" label="32015" type="bool"/>
+        <setting id="channel_sep_1127" label="ТНТ4 (+4)" type="lsep"/>
+        <setting default="ТНТ4 (+4)" id="channel_name_1127" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1127.gif" id="channel_icon_1127" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1127" label="32015" type="bool"/>
+        <setting id="channel_sep_1128" label="Milady Television" type="lsep"/>
+        <setting default="Milady Television" id="channel_name_1128" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1128.gif" id="channel_icon_1128" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1128" label="32015" type="bool"/>
+        <setting id="channel_sep_1130" label="Глазами туриста" type="lsep"/>
+        <setting default="Глазами туриста" id="channel_name_1130" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1130.gif" id="channel_icon_1130" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1130" label="32015" type="bool"/>
+        <setting id="channel_sep_1131" label="ILand" type="lsep"/>
+        <setting default="ILand" id="channel_name_1131" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1131.gif" id="channel_icon_1131" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1131" label="32015" type="bool"/>
+        <setting id="channel_sep_1132" label="Erox" type="lsep"/>
+        <setting default="Erox" id="channel_name_1132" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1132.gif" id="channel_icon_1132" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1132" label="32015" type="bool"/>
+        <setting id="channel_sep_1133" label="СТС International (+7)" type="lsep"/>
+        <setting default="СТС International (+7)" id="channel_name_1133" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1133.gif" id="channel_icon_1133" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1133" label="32015" type="bool"/>
+        <setting id="channel_sep_1134" label="Пятница (+3)" type="lsep"/>
+        <setting default="Пятница (+3)" id="channel_name_1134" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1134.gif" id="channel_icon_1134" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1134" label="32015" type="bool"/>
+        <setting id="channel_sep_1135" label="Erox (для Украины)" type="lsep"/>
+        <setting default="Erox (для Украины)" id="channel_name_1135" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1135.gif" id="channel_icon_1135" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1135" label="32015" type="bool"/>
+        <setting id="channel_sep_1136" label="Erotica TV" type="lsep"/>
+        <setting default="Erotica TV" id="channel_name_1136" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1136.gif" id="channel_icon_1136" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1136" label="32015" type="bool"/>
+        <setting id="channel_sep_1137" label="Смайлик ТВ" type="lsep"/>
+        <setting default="Смайлик ТВ" id="channel_name_1137" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1137.gif" id="channel_icon_1137" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1137" label="32015" type="bool"/>
+        <setting id="channel_sep_1138" label="КВН ТВ" type="lsep"/>
+        <setting default="КВН ТВ" id="channel_name_1138" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1138.gif" id="channel_icon_1138" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1138" label="32015" type="bool"/>
+        <setting id="channel_sep_1139" label="Epoque" type="lsep"/>
+        <setting default="Epoque" id="channel_name_1139" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1139.gif" id="channel_icon_1139" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1139" label="32015" type="bool"/>
+        <setting id="channel_sep_1141" label="Украина HD" type="lsep"/>
+        <setting default="Украина HD" id="channel_name_1141" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1141.gif" id="channel_icon_1141" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1141" label="32015" type="bool"/>
+        <setting id="channel_sep_1143" label="Top Shop TV" type="lsep"/>
+        <setting default="Top Shop TV" id="channel_name_1143" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1143.gif" id="channel_icon_1143" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1143" label="32015" type="bool"/>
+        <setting id="channel_sep_1144" label="Первый канал США" type="lsep"/>
+        <setting default="Первый канал США" id="channel_name_1144" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1144.gif" id="channel_icon_1144" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1144" label="32015" type="bool"/>
+        <setting id="channel_sep_1145" label="ТЛУМ HD" type="lsep"/>
+        <setting default="ТЛУМ HD" id="channel_name_1145" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1145.gif" id="channel_icon_1145" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1145" label="32015" type="bool"/>
+        <setting id="channel_sep_1146" label="ТВ-3 Россия (+4)" type="lsep"/>
+        <setting default="ТВ-3 Россия (+4)" id="channel_name_1146" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1146.gif" id="channel_icon_1146" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1146" label="32015" type="bool"/>
+        <setting id="channel_sep_1147" label="Смена" type="lsep"/>
+        <setting default="Смена" id="channel_name_1147" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1147.gif" id="channel_icon_1147" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1147" label="32015" type="bool"/>
+        <setting id="channel_sep_1148" label="Южная волна" type="lsep"/>
+        <setting default="Южная волна" id="channel_name_1148" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1148.gif" id="channel_icon_1148" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1148" label="32015" type="bool"/>
+        <setting id="channel_sep_1149" label="Терра" type="lsep"/>
+        <setting default="Терра" id="channel_name_1149" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1149.gif" id="channel_icon_1149" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1149" label="32015" type="bool"/>
+        <setting id="channel_sep_1150" label="Eurosport 2 Россия" type="lsep"/>
+        <setting default="Eurosport 2 Россия" id="channel_name_1150" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1150.gif" id="channel_icon_1150" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1150" label="32015" type="bool"/>
+        <setting id="channel_sep_1151" label="Eurosport 1 Россия" type="lsep"/>
+        <setting default="Eurosport 1 Россия" id="channel_name_1151" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1151.gif" id="channel_icon_1151" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1151" label="32015" type="bool"/>
+        <setting id="channel_sep_1152" label="Дача HD" type="lsep"/>
+        <setting default="Дача HD" id="channel_name_1152" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1152.gif" id="channel_icon_1152" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1152" label="32015" type="bool"/>
+        <setting id="channel_sep_1153" label="Еспресо TV HD" type="lsep"/>
+        <setting default="Еспресо TV HD" id="channel_name_1153" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1153.gif" id="channel_icon_1153" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1153" label="32015" type="bool"/>
+        <setting id="channel_sep_1155" label="Центральное телевидение" type="lsep"/>
+        <setting default="Центральное телевидение" id="channel_name_1155" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1155.gif" id="channel_icon_1155" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1155" label="32015" type="bool"/>
+        <setting id="channel_sep_1156" label="Томское время" type="lsep"/>
+        <setting default="Томское время" id="channel_name_1156" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1156.gif" id="channel_icon_1156" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1156" label="32015" type="bool"/>
+        <setting id="channel_sep_1157" label="Белсат" type="lsep"/>
+        <setting default="Белсат" id="channel_name_1157" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1157.gif" id="channel_icon_1157" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1157" label="32015" type="bool"/>
+        <setting id="channel_sep_1158" label="Новый мир" type="lsep"/>
+        <setting default="Новый мир" id="channel_name_1158" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1158.gif" id="channel_icon_1158" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1158" label="32015" type="bool"/>
+        <setting id="channel_sep_1159" label="Riga TV24" type="lsep"/>
+        <setting default="Riga TV24" id="channel_name_1159" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1159.gif" id="channel_icon_1159" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1159" label="32015" type="bool"/>
+        <setting id="channel_sep_1160" label="Крик-ТВ" type="lsep"/>
+        <setting default="Крик-ТВ" id="channel_name_1160" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1160.gif" id="channel_icon_1160" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1160" label="32015" type="bool"/>
+        <setting id="channel_sep_1162" label="TV5 (Запорожье)" type="lsep"/>
+        <setting default="TV5 (Запорожье)" id="channel_name_1162" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1162.gif" id="channel_icon_1162" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1162" label="32015" type="bool"/>
+        <setting id="channel_sep_1163" label="Мир (+4)" type="lsep"/>
+        <setting default="Мир (+4)" id="channel_name_1163" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1163.gif" id="channel_icon_1163" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1163" label="32015" type="bool"/>
+        <setting id="channel_sep_1165" label="Телевсесвит" type="lsep"/>
+        <setting default="Телевсесвит" id="channel_name_1165" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1165.gif" id="channel_icon_1165" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1165" label="32015" type="bool"/>
+        <setting id="channel_sep_1167" label="Рыбалка и охота" type="lsep"/>
+        <setting default="Рыбалка и охота" id="channel_name_1167" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1167.gif" id="channel_icon_1167" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1167" label="32015" type="bool"/>
+        <setting id="channel_sep_1169" label="RU.TV Беларусь" type="lsep"/>
+        <setting default="RU.TV Беларусь" id="channel_name_1169" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1169.gif" id="channel_icon_1169" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1169" label="32015" type="bool"/>
+        <setting id="channel_sep_1170" label="Setanta Sports Georgia" type="lsep"/>
+        <setting default="Setanta Sports Georgia" id="channel_name_1170" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1170.gif" id="channel_icon_1170" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1170" label="32015" type="bool"/>
+        <setting id="channel_sep_1172" label="Херсон Плюс" type="lsep"/>
+        <setting default="Херсон Плюс" id="channel_name_1172" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1172.gif" id="channel_icon_1172" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1172" label="32015" type="bool"/>
+        <setting id="channel_sep_1173" label="Fine Living HD" type="lsep"/>
+        <setting default="Fine Living HD" id="channel_name_1173" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1173.gif" id="channel_icon_1173" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1173" label="32015" type="bool"/>
+        <setting id="channel_sep_1174" label="Квартал ТВ" type="lsep"/>
+        <setting default="Квартал ТВ" id="channel_name_1174" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1174.gif" id="channel_icon_1174" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1174" label="32015" type="bool"/>
+        <setting id="channel_sep_1176" label="ReTV" type="lsep"/>
+        <setting default="ReTV" id="channel_name_1176" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1176.gif" id="channel_icon_1176" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1176" label="32015" type="bool"/>
+        <setting id="channel_sep_1177" label="Наука" type="lsep"/>
+        <setting default="Наука" id="channel_name_1177" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1177.gif" id="channel_icon_1177" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1177" label="32015" type="bool"/>
+        <setting id="channel_sep_1178" label="Фауна" type="lsep"/>
+        <setting default="Фауна" id="channel_name_1178" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1178.gif" id="channel_icon_1178" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1178" label="32015" type="bool"/>
+        <setting id="channel_sep_1179" label="Твой дом" type="lsep"/>
+        <setting default="Твой дом" id="channel_name_1179" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1179.gif" id="channel_icon_1179" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1179" label="32015" type="bool"/>
+        <setting id="channel_sep_1180" label="Наше ТВ" type="lsep"/>
+        <setting default="Наше ТВ" id="channel_name_1180" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1180.gif" id="channel_icon_1180" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1180" label="32015" type="bool"/>
+        <setting id="channel_sep_1181" label="GlobalStar TV" type="lsep"/>
+        <setting default="GlobalStar TV" id="channel_name_1181" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1181.gif" id="channel_icon_1181" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1181" label="32015" type="bool"/>
+        <setting id="channel_sep_1182" label="Nat Geo Wild HD Россия" type="lsep"/>
+        <setting default="Nat Geo Wild HD Россия" id="channel_name_1182" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1182.gif" id="channel_icon_1182" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1182" label="32015" type="bool"/>
+        <setting id="channel_sep_1183" label="Наш Кинороман" type="lsep"/>
+        <setting default="Наш Кинороман" id="channel_name_1183" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1183.gif" id="channel_icon_1183" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1183" label="32015" type="bool"/>
+        <setting id="channel_sep_1184" label="Наш Детектив" type="lsep"/>
+        <setting default="Наш Детектив" id="channel_name_1184" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1184.gif" id="channel_icon_1184" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1184" label="32015" type="bool"/>
+        <setting id="channel_sep_1185" label="Настоящее время" type="lsep"/>
+        <setting default="Настоящее время" id="channel_name_1185" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1185.gif" id="channel_icon_1185" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1185" label="32015" type="bool"/>
+        <setting id="channel_sep_1187" label="Fashion One Россия" type="lsep"/>
+        <setting default="Fashion One Россия" id="channel_name_1187" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1187.gif" id="channel_icon_1187" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1187" label="32015" type="bool"/>
+        <setting id="channel_sep_1191" label="Vintage TV (UK)" type="lsep"/>
+        <setting default="Vintage TV (UK)" id="channel_name_1191" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1191.gif" id="channel_icon_1191" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1191" label="32015" type="bool"/>
+        <setting id="channel_sep_1192" label="Penthouse HD" type="lsep"/>
+        <setting default="Penthouse HD" id="channel_name_1192" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1192.gif" id="channel_icon_1192" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1192" label="32015" type="bool"/>
+        <setting id="channel_sep_1193" label="Erotica TV (для Украины)" type="lsep"/>
+        <setting default="Erotica TV (для Украины)" id="channel_name_1193" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1193.gif" id="channel_icon_1193" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1193" label="32015" type="bool"/>
+        <setting id="channel_sep_1194" label="Penthouse HD (для Украины)" type="lsep"/>
+        <setting default="Penthouse HD (для Украины)" id="channel_name_1194" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1194.gif" id="channel_icon_1194" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1194" label="32015" type="bool"/>
+        <setting id="channel_sep_1195" label="Наше любимое" type="lsep"/>
+        <setting default="Наше любимое" id="channel_name_1195" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1195.gif" id="channel_icon_1195" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1195" label="32015" type="bool"/>
+        <setting id="channel_sep_1196" label="Plus" type="lsep"/>
+        <setting default="Plus" id="channel_name_1196" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1196.gif" id="channel_icon_1196" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1196" label="32015" type="bool"/>
+        <setting id="channel_sep_1197" label="Setanta Казахстан" type="lsep"/>
+        <setting default="Setanta Казахстан" id="channel_name_1197" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1197.gif" id="channel_icon_1197" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1197" label="32015" type="bool"/>
+        <setting id="channel_sep_1198" label="Bridge HD" type="lsep"/>
+        <setting default="Bridge HD" id="channel_name_1198" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1198.gif" id="channel_icon_1198" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1198" label="32015" type="bool"/>
+        <setting id="channel_sep_1199" label="Третий Цифровой" type="lsep"/>
+        <setting default="Третий Цифровой" id="channel_name_1199" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1199.gif" id="channel_icon_1199" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1199" label="32015" type="bool"/>
+        <setting id="channel_sep_1200" label="Репортер" type="lsep"/>
+        <setting default="Репортер" id="channel_name_1200" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1200.gif" id="channel_icon_1200" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1200" label="32015" type="bool"/>
+        <setting id="channel_sep_1201" label="Мужской (Дальний Восток)" type="lsep"/>
+        <setting default="Мужской (Дальний Восток)" id="channel_name_1201" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1201.gif" id="channel_icon_1201" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1201" label="32015" type="bool"/>
+        <setting id="channel_sep_1202" label="LTV1" type="lsep"/>
+        <setting default="LTV1" id="channel_name_1202" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1202.gif" id="channel_icon_1202" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1202" label="32015" type="bool"/>
+        <setting id="channel_sep_1203" label="LTV7" type="lsep"/>
+        <setting default="LTV7" id="channel_name_1203" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1203.gif" id="channel_icon_1203" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1203" label="32015" type="bool"/>
+        <setting id="channel_sep_1204" label="Maks24" type="lsep"/>
+        <setting default="Maks24" id="channel_name_1204" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1204.gif" id="channel_icon_1204" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1204" label="32015" type="bool"/>
+        <setting id="channel_sep_1205" label="REN TV Baltic" type="lsep"/>
+        <setting default="REN TV Baltic" id="channel_name_1205" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1205.gif" id="channel_icon_1205" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1205" label="32015" type="bool"/>
+        <setting id="channel_sep_1206" label="РЕН ТВ Литва" type="lsep"/>
+        <setting default="РЕН ТВ Литва" id="channel_name_1206" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1206.gif" id="channel_icon_1206" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1206" label="32015" type="bool"/>
+        <setting id="channel_sep_1207" label="РЕН ТВ Эстония" type="lsep"/>
+        <setting default="РЕН ТВ Эстония" id="channel_name_1207" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1207.gif" id="channel_icon_1207" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1207" label="32015" type="bool"/>
+        <setting id="channel_sep_1208" label="CBN Еммануил" type="lsep"/>
+        <setting default="CBN Еммануил" id="channel_name_1208" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1208.gif" id="channel_icon_1208" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1208" label="32015" type="bool"/>
+        <setting id="channel_sep_1209" label="В гостях у сказки" type="lsep"/>
+        <setting default="В гостях у сказки" id="channel_name_1209" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1209.gif" id="channel_icon_1209" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1209" label="32015" type="bool"/>
+        <setting id="channel_sep_1210" label="Kino Polska International" type="lsep"/>
+        <setting default="Kino Polska International" id="channel_name_1210" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1210.gif" id="channel_icon_1210" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1210" label="32015" type="bool"/>
+        <setting id="channel_sep_1211" label="TRiCK" type="lsep"/>
+        <setting default="TRiCK" id="channel_name_1211" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1211.gif" id="channel_icon_1211" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1211" label="32015" type="bool"/>
+        <setting id="channel_sep_1212" label="НТВ-Мир Балтия" type="lsep"/>
+        <setting default="НТВ-Мир Балтия" id="channel_name_1212" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1212.gif" id="channel_icon_1212" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1212" label="32015" type="bool"/>
+        <setting id="channel_sep_1213" label="Kino Polska Muzyka International" type="lsep"/>
+        <setting default="Kino Polska Muzyka International" id="channel_name_1213" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1213.gif" id="channel_icon_1213" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1213" label="32015" type="bool"/>
+        <setting id="channel_sep_1214" label="НТВ Сериал" type="lsep"/>
+        <setting default="НТВ Сериал" id="channel_name_1214" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1214.gif" id="channel_icon_1214" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1214" label="32015" type="bool"/>
+        <setting id="channel_sep_1215" label="НТВ Право" type="lsep"/>
+        <setting default="НТВ Право" id="channel_name_1215" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1215.gif" id="channel_icon_1215" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1215" label="32015" type="bool"/>
+        <setting id="channel_sep_1216" label="НТВ Стиль" type="lsep"/>
+        <setting default="НТВ Стиль" id="channel_name_1216" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1216.gif" id="channel_icon_1216" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1216" label="32015" type="bool"/>
+        <setting id="channel_sep_1217" label="KBS World" type="lsep"/>
+        <setting default="KBS World" id="channel_name_1217" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1217.gif" id="channel_icon_1217" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1217" label="32015" type="bool"/>
+        <setting id="channel_sep_1218" label="7ТВ" type="lsep"/>
+        <setting default="7ТВ" id="channel_name_1218" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1218.gif" id="channel_icon_1218" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1218" label="32015" type="bool"/>
+        <setting id="channel_sep_1219" label="Bolt" type="lsep"/>
+        <setting default="Bolt" id="channel_name_1219" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1219.gif" id="channel_icon_1219" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1219" label="32015" type="bool"/>
+        <setting id="channel_sep_1221" label="Эфир-24 Релакс" type="lsep"/>
+        <setting default="Эфир-24 Релакс" id="channel_name_1221" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1221.gif" id="channel_icon_1221" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1221" label="32015" type="bool"/>
+        <setting id="channel_sep_1222" label="Univer TV" type="lsep"/>
+        <setting default="Univer TV" id="channel_name_1222" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1222.gif" id="channel_icon_1222" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1222" label="32015" type="bool"/>
+        <setting id="channel_sep_1223" label="О!" type="lsep"/>
+        <setting default="О!" id="channel_name_1223" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1223.gif" id="channel_icon_1223" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1223" label="32015" type="bool"/>
+        <setting id="channel_sep_1224" label="Шалун" type="lsep"/>
+        <setting default="Шалун" id="channel_name_1224" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1224.gif" id="channel_icon_1224" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1224" label="32015" type="bool"/>
+        <setting id="channel_sep_1225" label="Анекдот ТВ" type="lsep"/>
+        <setting default="Анекдот ТВ" id="channel_name_1225" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1225.gif" id="channel_icon_1225" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1225" label="32015" type="bool"/>
+        <setting id="channel_sep_1227" label="Продвижение" type="lsep"/>
+        <setting default="Продвижение" id="channel_name_1227" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1227.gif" id="channel_icon_1227" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1227" label="32015" type="bool"/>
+        <setting id="channel_sep_1228" label="Продвижение (+4)" type="lsep"/>
+        <setting default="Продвижение (+4)" id="channel_name_1228" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1228.gif" id="channel_icon_1228" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1228" label="32015" type="bool"/>
+        <setting id="channel_sep_1229" label="Продвижение (+7)" type="lsep"/>
+        <setting default="Продвижение (+7)" id="channel_name_1229" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1229.gif" id="channel_icon_1229" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1229" label="32015" type="bool"/>
+        <setting id="channel_sep_1230" label="Star Cinema" type="lsep"/>
+        <setting default="Star Cinema" id="channel_name_1230" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1230.gif" id="channel_icon_1230" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1230" label="32015" type="bool"/>
+        <setting id="channel_sep_1232" label="Русский бестселлер (для Германии)" type="lsep"/>
+        <setting default="Русский бестселлер (для Германии)" id="channel_name_1232" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1232.gif" id="channel_icon_1232" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1232" label="32015" type="bool"/>
+        <setting id="channel_sep_1233" label="MostVideo 2" type="lsep"/>
+        <setting default="MostVideo 2" id="channel_name_1233" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1233.gif" id="channel_icon_1233" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1233" label="32015" type="bool"/>
+        <setting id="channel_sep_1238" label="Z (Запорожье)" type="lsep"/>
+        <setting default="Z (Запорожье)" id="channel_name_1238" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1238.gif" id="channel_icon_1238" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1238" label="32015" type="bool"/>
+        <setting id="channel_sep_1239" label="Телеканал Трейлеров" type="lsep"/>
+        <setting default="Телеканал Трейлеров" id="channel_name_1239" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1239.gif" id="channel_icon_1239" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1239" label="32015" type="bool"/>
+        <setting id="channel_sep_1240" label="Euronews (английский)" type="lsep"/>
+        <setting default="Euronews (английский)" id="channel_name_1240" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1240.gif" id="channel_icon_1240" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1240" label="32015" type="bool"/>
+        <setting id="channel_sep_1241" label="ТНТ4 International " type="lsep"/>
+        <setting default="ТНТ4 International " id="channel_name_1241" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1241.gif" id="channel_icon_1241" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1241" label="32015" type="bool"/>
+        <setting id="channel_sep_1242" label="TVP Polonia" type="lsep"/>
+        <setting default="TVP Polonia" id="channel_name_1242" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1242.gif" id="channel_icon_1242" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1242" label="32015" type="bool"/>
+        <setting id="channel_sep_1243" label="TVP Info" type="lsep"/>
+        <setting default="TVP Info" id="channel_name_1243" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1243.gif" id="channel_icon_1243" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1243" label="32015" type="bool"/>
+        <setting id="channel_sep_1244" label="TVP Kultura" type="lsep"/>
+        <setting default="TVP Kultura" id="channel_name_1244" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1244.gif" id="channel_icon_1244" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1244" label="32015" type="bool"/>
+        <setting id="channel_sep_1245" label="2х2 (+7)" type="lsep"/>
+        <setting default="2х2 (+7)" id="channel_name_1245" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1245.gif" id="channel_icon_1245" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1245" label="32015" type="bool"/>
+        <setting id="channel_sep_1249" label="UA:Перший (спутник)" type="lsep"/>
+        <setting default="UA:Перший (спутник)" id="channel_name_1249" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1249.gif" id="channel_icon_1249" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1249" label="32015" type="bool"/>
+        <setting id="channel_sep_1251" label="Spike" type="lsep"/>
+        <setting default="Spike" id="channel_name_1251" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1251.gif" id="channel_icon_1251" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1251" label="32015" type="bool"/>
+        <setting id="channel_sep_1252" label="H2" type="lsep"/>
+        <setting default="H2" id="channel_name_1252" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1252.gif" id="channel_icon_1252" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1252" label="32015" type="bool"/>
+        <setting id="channel_sep_1253" label="Санкт-Петербург" type="lsep"/>
+        <setting default="Санкт-Петербург" id="channel_name_1253" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1253.gif" id="channel_icon_1253" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1253" label="32015" type="bool"/>
+        <setting id="channel_sep_1254" label="Кубань 24" type="lsep"/>
+        <setting default="Кубань 24" id="channel_name_1254" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1254.gif" id="channel_icon_1254" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1254" label="32015" type="bool"/>
+        <setting id="channel_sep_1255" label="Караван ТВ" type="lsep"/>
+        <setting default="Караван ТВ" id="channel_name_1255" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1255.gif" id="channel_icon_1255" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1255" label="32015" type="bool"/>
+        <setting id="channel_sep_1257" label="Продвижение (+3)" type="lsep"/>
+        <setting default="Продвижение (+3)" id="channel_name_1257" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1257.gif" id="channel_icon_1257" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1257" label="32015" type="bool"/>
+        <setting id="channel_sep_1258" label="Setanta Sports + HD" type="lsep"/>
+        <setting default="Setanta Sports + HD" id="channel_name_1258" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1258.gif" id="channel_icon_1258" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1258" label="32015" type="bool"/>
+        <setting id="channel_sep_1259" label="Setanta Sports Eurasia HD" type="lsep"/>
+        <setting default="Setanta Sports Eurasia HD" id="channel_name_1259" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1259.gif" id="channel_icon_1259" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1259" label="32015" type="bool"/>
+        <setting id="channel_sep_1260" label="Курай HD" type="lsep"/>
+        <setting default="Курай HD" id="channel_name_1260" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1260.gif" id="channel_icon_1260" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1260" label="32015" type="bool"/>
+        <setting id="channel_sep_1261" label="СТС International (-7)" type="lsep"/>
+        <setting default="СТС International (-7)" id="channel_name_1261" label="32013" type="text"/>
+        <setting default="http://www.vsetv.com/pic/channel_logos/1261.gif" id="channel_icon_1261" label="32014" type="text"/>
+        <setting default="false" id="channel_enable_1261" label="32015" type="bool"/>
     </category>
     <category label="32020">
         <setting default="" id="last_update" label="32041" type="text" visible="false"/>

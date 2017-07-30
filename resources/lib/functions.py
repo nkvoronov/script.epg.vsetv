@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import common
-import channel
-import settings
+import channels
+import addonsettings
 import parservsetv
 from xml.dom import minidom
 import xbmcgui
@@ -13,12 +13,12 @@ def refresh_channels():
     try:
         common.dbg_log('functions::refresh_channels', 'enter_function')
         common.set_busy(1)
-        set = settings.settings()
+        set = addonsettings.settingaddon()
         set.backup()
         xmldoc = set.parse()
         if xmldoc != None:
             set.remove_old_channels(xmldoc)
-            chnlst = channel.channel_list()
+            chnlst = channels.channel_list()
             chnlst.load_channels_from_net()
             chnlst.save_channels_to_settings(xmldoc)
             set.save(xmldoc)
