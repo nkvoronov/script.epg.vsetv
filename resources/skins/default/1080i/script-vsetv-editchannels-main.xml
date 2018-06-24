@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<animation effect="fade" time="400">WindowOpen</animation>
+	<animation effect="fade" time="400">WindowClose</animation>
+	<controls>
+		<control type="group">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>1470</width>
+			<height>780</height>
+			<!-- include DialogBackgroundCommons -->
+			<control type="image">
+				<description>Image background</description>
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<animation effect="fade" time="300">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<texture colordiffuse="C2FFFFFF">vsetv-black.png</texture>
+			</control>
+			<control type="button">
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<texturefocus />
+				<texturenofocus />
+				<onclick>Action(close)</onclick>
+			</control>
+			<control type="group">
+				<width>1470</width>
+				<height>780</height>
+				<control type="image">
+					<description>Image area</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="FF1A2123">vsetv-white.png</texture>
+				</control>
+				<control type="image">
+					<description>Image header</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<height>70</height>
+					<texture colordiffuse="FF12A0C7" border="2">vsetv-white70.png</texture>
+				</control>
+				<control type="label" id="1">
+					<description>Header label</description>
+					<left>40</left>
+					<top>0</top>
+					<right>100</right>
+					<height>70</height>
+					<font>font32_title</font>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="button" id="22002">
+					<description>Button overlay to avoid closing in dialog area</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texturefocus />
+					<texturenofocus />
+					<onclick>noop</onclick>
+				</control>
+				<control type="radiobutton">
+					<right>32</right>
+					<top>11</top>
+					<width>48</width>
+					<height>48</height>
+					<radiowidth>48</radiowidth>
+					<radioheight>48</radioheight>
+					<texturefocus />
+					<texturenofocus />
+					<label></label>
+					<textureradioofffocus colordiffuse="EEFFFFFF">vsetv-close.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="EEFFFFFF">vsetv-logo.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="EEFFFFFF">vsetv-close.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="EEFFFFFF">vsetv-logo.png</textureradioonnofocus>
+					<onclick>Action(close)</onclick>
+				</control>
+			</control>
+			<!-- -->
+			 <control type="group" id="9000">
+				<description>Channel lists</description>
+				<left>20</left>
+				<top>76</top>
+				<width>1140</width>
+				<height>600</height>
+				<control type="group" id="8000">
+					<left>0</left>
+					<width>570</width>
+					<description>Available channels lists</description>
+					<control type="grouplist" id="7000">
+						<description>Available channels header</description>
+						<onleft>9001</onleft>
+						<onright>7001</onright>
+						<ondown>22</ondown>
+						<itemgap>-20</itemgap>
+						<left>-20</left>
+						<control type="button" id="20">
+							<description>Button update available channels</description>
+							<width>580</width>
+							<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+							<height>100</height>
+							<aligny>center</aligny>
+							<textoffsetx>40</textoffsetx>
+							<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+							<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+						</control>
+						<control type="button" id="21">
+							<description>Button sort by</description>
+							<width>580</width>
+							<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+							<height>100</height>
+							<aligny>center</aligny>
+							<textoffsetx>40</textoffsetx>
+							<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+							<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+						</control>
+					</control>
+					<control type="image">
+						<description>Available channels lists background image</description>
+						<left>-20</left>
+						<top>160</top>
+						<width>580</width>
+						<height>540</height>
+						<texture border="40">vsetv-dialogbutton-nofo.png</texture>
+					</control>
+					<control type="list" id="22">
+						<description>Available channels lists control</description>
+						<left>0</left>
+						<top>180</top>
+						<width>540</width>
+						<height>500</height>
+						<onup>22</onup>
+						<ondown>22</ondown>
+						<onleft>7000</onleft>
+						<onright>23</onright>
+						<pagecontrol>23</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="125" width="540">
+							<control type="image">
+								<left>12</left>
+								<top>7</top>
+								<width>110</width>
+								<height>110</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>135</left>
+								<top>0</top>
+								<right>20</right>
+								<height>60</height>
+								<font>font14</font>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>135</left>
+								<top>52</top>
+								<right>20</right>
+								<height>65</height>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="125" width="540">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<bottom>0</bottom>
+								<texture colordiffuse="FF12A0C7">vsetv-focus.png</texture>
+								<visible>Control.HasFocus(22)</visible>
+							</control>
+							<control type="image">
+								<left>12</left>
+								<top>7</top>
+								<width>110</width>
+								<height>110</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>135</left>
+								<top>0</top>
+								<right>20</right>
+								<height>60</height>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font14</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>135</left>
+								<top>52</top>
+								<right>20</right>
+								<height>65</height>
+								<font>font12</font>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="scrollbar" id="23">
+						<left>540</left>
+						<top>180</top>
+						<width>12</width>
+						<height>500</height>
+						<onleft>22</onleft>
+						<onright>26</onright>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+				<control type="group" id="8001">
+					<left>570</left>
+					<width>570</width>
+					<description>Selected channels lists</description>
+					<control type="grouplist" id="7001">
+						<description>Selected channels header</description>
+						<onleft>7000</onleft>
+						<onright>9001</onright>
+						<ondown>26</ondown>
+						<itemgap>-20</itemgap>
+						<left>-20</left>
+						<control type="button" id="24">
+							<description>Button clear selected channels</description>
+							<width>580</width>
+							<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+							<height>100</height>
+							<aligny>center</aligny>
+							<textoffsetx>40</textoffsetx>
+							<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+							<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+						</control>
+						<control type="button" id="25">
+							<description>Button change all correction</description>
+							<width>580</width>
+							<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+							<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+							<height>100</height>
+							<aligny>center</aligny>
+							<textoffsetx>40</textoffsetx>
+							<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+							<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+						</control>
+					</control>
+					<control type="image">
+						<description>Selected channels lists background image</description>
+						<left>-20</left>
+						<top>160</top>
+						<width>580</width>
+						<height>540</height>
+						<texture border="40">vsetv-dialogbutton-nofo.png</texture>
+					</control>
+					<control type="list" id="26">
+						<description>Selected channels lists control</description>
+						<left>0</left>
+						<top>180</top>
+						<width>540</width>
+						<height>500</height>
+						<onup>26</onup>
+						<ondown>26</ondown>
+						<onleft>23</onleft>
+						<onright>27</onright>
+						<pagecontrol>27</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="125" width="540">
+							<control type="image">
+								<left>12</left>
+								<top>7</top>
+								<width>110</width>
+								<height>110</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>135</left>
+								<top>0</top>
+								<right>20</right>
+								<height>60</height>
+								<font>font14</font>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>135</left>
+								<top>52</top>
+								<right>20</right>
+								<height>65</height>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="125" width="540">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<bottom>0</bottom>
+								<texture colordiffuse="FF12A0C7">vsetv-focus.png</texture>
+								<visible>Control.HasFocus(26)</visible>
+							</control>
+							<control type="image">
+								<left>12</left>
+								<top>7</top>
+								<width>110</width>
+								<height>110</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="label">
+								<left>135</left>
+								<top>0</top>
+								<right>20</right>
+								<height>60</height>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<font>font14</font>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="textbox">
+								<left>135</left>
+								<top>52</top>
+								<right>20</right>
+								<height>65</height>
+								<font>font12</font>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="scrollbar" id="27">
+						<left>540</left>
+						<top>180</top>
+						<width>12</width>
+						<height>500</height>
+						<onleft>26</onleft>
+						<onright>9001</onright>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+			</control>
+			<!-- include Buttons (Save, Cancel, other) -->
+			<control type="grouplist" id="9001">
+				<description>Button grouplist</description>
+				<left>1150</left>
+				<top>76</top>
+				<onleft>7001</onleft>
+				<onright>7000</onright>
+				<itemgap>-20</itemgap>
+				<control type="button" id="28">
+					<description>Button Save</description>
+					<width>300</width>
+					<height>100</height>
+					<font>font25_title</font>
+					<textoffsetx>20</textoffsetx>
+					<wrapmultiline>false</wrapmultiline>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+				</control>
+				<control type="button" id="29">
+					<description>Button Cancel</description>
+					<width>300</width>
+					<height>100</height>
+					<font>font25_title</font>
+					<textoffsetx>20</textoffsetx>
+					<wrapmultiline>false</wrapmultiline>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

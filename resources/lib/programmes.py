@@ -1,158 +1,159 @@
 # -*- coding: utf-8 -*-
 
-import common
+from common import Base, logErorr
+from xml.dom import minidom
 
-class programme:
-    __slots__ = ('ChannelIdx', 'Start', 'Stop', 'Title', 'Desc', 'UrlDesc', 'FullDesc', 'CategoryLang1', 'CategoryLang2', 'Directors', 'Actors', 'Date', 'Starrating')
+class Programme(Base):
 
-    def __init__(self, vChannelIdx, vStart, vTitle, vStop='', vDesc='', vFullDesc='', vCategoryLang1='', vCategoryLang2='', vDirectors='', vActors='', vDate='', vStarrating=''):
+    def __init__(self, channelIdx, start, title, stop='', desc='', fullDesc='', categoryLang1='', categoryLang2='', directors='', actors='', date='', starrating=''):
         try:
-            self.ChannelIdx = vChannelIdx
-            self.Start = vStart
-            self.Stop = vStop
-            self.Title = vTitle
-            self.Desc = vDesc
-            self.UrlDesc = ''
-            self.FullDesc = vFullDesc
-            self.CategoryLang1 = vCategoryLang1
-            self.CategoryLang2 = vCategoryLang2
-            self.Directors = vDirectors
-            self.Actors = vActors
-            self.Date = vDate
-            self.Starrating = vStarrating
+            Base.__init__(self)
+            self._channelIdx = channelIdx
+            self._start = start
+            self._stop = stop
+            self._title = title
+            self._desc = desc
+            self._urlDesc = ''
+            self._fullDesc = fullDesc
+            self._categoryLang1 = categoryLang1
+            self._categoryLang2 = categoryLang2
+            self._directors = directors
+            self._actors = actors
+            self._date = date
+            self._starrating = starrating
         except Exception, e:
-            common.dbg_log('programme::__init__', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('Programme::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
-    def copy_fulldesc(self, vprg):
+    def copyFullDesc(self, prg):
         try:
-            common.dbg_log('programme_list::copy_fulldesc', 'enter_function')
-            self.UrlDesc = vprg.UrlDesc
-            self.FullDesc = vprg.FullDesc
-            self.CategoryLang1 = vprg.CategoryLang1
-            self.CategoryLang2 = vprg.CategoryLang2
-            self.Directors = vprg.Directors
-            self.Actors = vprg.Actors
-            self.Date = vprg.Date
-            self.Starrating = vprg.Starrating
-            common.dbg_log('programme_list::copy_fulldesc', 'exit_function')
+            self.addLog('Programme::copyFullDesc', 'enter_function')
+            self._urlDesc = prg._urlDesc
+            self._fullDesc = prg._fullDesc
+            self._categoryLang1 = prg._categoryLang1
+            self._categoryLang2 = prg._categoryLang2
+            self._directors = prg._directors
+            self._actors = prg._actors
+            self._date = prg._date
+            self._starrating = prg._starrating
+            self.addLog('Programme::copyFullDesc', 'exit_function')
         except Exception, e:
-            common.dbg_log('programme_list::copy_fulldesc', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('Programme::copyFullDesc', 'ERROR: (' + repr(e) + ')', logErorr)
 
-    def get_xml(self, vxmldoc, vnode):
+    def getXml(self, xmldoc, node):
         try:
-            common.dbg_log('programme::get_xml', 'enter_function')
+            self.addLog('Programme::getXml', 'enter_function')
             astr = ''
-            eprogramme = vxmldoc.createElement("programme")
-            eprogramme.setAttribute("start", self.Start)
-            eprogramme.setAttribute("stop", self.Stop)
-            eprogramme.setAttribute("channel", self.ChannelIdx)
-            etittle = vxmldoc.createElement("title")
-            etittle.setAttribute("lang", 'ru')
-            etittle_text = vxmldoc.createTextNode(self.Title)
+            eprogramme = xmldoc.createElement('programme')
+            eprogramme.setAttribute('start', self._start)
+            eprogramme.setAttribute('stop', self._stop)
+            eprogramme.setAttribute('channel', str(self._channelIdx))
+            etittle = xmldoc.createElement('title')
+            etittle.setAttribute('lang', 'ru')
+            etittle_text = xmldoc.createTextNode(self._title)
             etittle.appendChild(etittle_text)
             eprogramme.appendChild(etittle)
-            if self.Desc != '':
-                edesc = vxmldoc.createElement("desc")
-                edesc.setAttribute("lang", 'ru')
-                edesc_text = vxmldoc.createTextNode(self.Desc)
+            if self._desc != '':
+                edesc = xmldoc.createElement('desc')
+                edesc.setAttribute('lang', 'ru')
+                edesc_text = xmldoc.createTextNode(self._desc)
                 edesc.appendChild(edesc_text)
                 eprogramme.appendChild(edesc)
-            if self.FullDesc != '':
-                edesc = vxmldoc.createElement("desc")
-                edesc.setAttribute("lang", 'ru')
-                edesc_text = vxmldoc.createTextNode(self.FullDesc)
+            if self._fullDesc != '':
+                edesc = xmldoc.createElement('desc')
+                edesc.setAttribute('lang', 'ru')
+                edesc_text = xmldoc.createTextNode(self._fullDesc)
                 edesc.appendChild(edesc_text)
                 eprogramme.appendChild(edesc)
-            if (self.Directors != '') or (self.Actors != ''):
-                ecredits = vxmldoc.createElement("credits")
-                if self.Directors != '':
-                    strlist = self.Directors.split(',')
+            if (self._directors != '') or (self._actors != ''):
+                ecredits = xmldoc.createElement('credits')
+                if self._directors != '':
+                    strlist = self._directors.split(',')
                     for astr in strlist:
-                        edirector = vxmldoc.createElement("director")
-                        edirector_text = vxmldoc.createTextNode(astr.strip())
+                        edirector = xmldoc.createElement('director')
+                        edirector_text = xmldoc.createTextNode(astr.strip())
                         edirector.appendChild(edirector_text)
                         ecredits.appendChild(edirector)
-                if self.Actors != '':
-                    strlist = self.Actors.split(',')
+                if self._actors != '':
+                    strlist = self._actors.split(',')
                     for astr in strlist:
-                        eactor = vxmldoc.createElement("actor")
-                        eactor_text = vxmldoc.createTextNode(astr.strip())
+                        eactor = xmldoc.createElement('actor')
+                        eactor_text = xmldoc.createTextNode(astr.strip())
                         eactor.appendChild(eactor_text)
                         ecredits.appendChild(eactor)
                 eprogramme.appendChild(ecredits)
-            if self.Date != '':
-                edate = vxmldoc.createElement("date")
-                edate_text = vxmldoc.createTextNode(self.Date)
+            if self._date != '':
+                edate = xmldoc.createElement('date')
+                edate_text = xmldoc.createTextNode(self._date)
                 edate.appendChild(edate_text)
                 eprogramme.appendChild(edate)
-            if self.CategoryLang2 != '':
-                ecategory2 = vxmldoc.createElement("category")
-                ecategory2.setAttribute("lang", 'en')
-                ecategory2_text = vxmldoc.createTextNode(self.CategoryLang2)
+            if self._categoryLang2 != '':
+                ecategory2 = xmldoc.createElement('category')
+                ecategory2.setAttribute('lang', 'en')
+                ecategory2_text = xmldoc.createTextNode(self._categoryLang2)
                 ecategory2.appendChild(ecategory2_text)
                 eprogramme.appendChild(ecategory2)
-            if self.CategoryLang1 != '':
-                strlist = self.CategoryLang1.split(',')
+            if self._categoryLang1 != '':
+                strlist = self._categoryLang1.split(',')
                 for astr in strlist:
-                    ecategory1 = vxmldoc.createElement("category")
-                    ecategory1.setAttribute("lang", 'ru')
-                    ecategory1_text = vxmldoc.createTextNode(astr.strip().capitalize())
+                    ecategory1 = xmldoc.createElement('category')
+                    ecategory1.setAttribute('lang', 'ru')
+                    ecategory1_text = xmldoc.createTextNode(astr.strip().capitalize())
                     ecategory1.appendChild(ecategory1_text)
                     eprogramme.appendChild(ecategory1)
-            if self.Starrating != '':
-                erating = vxmldoc.createElement("star-rating")
-                evalue = vxmldoc.createElement("value")
-                evalue_text = vxmldoc.createTextNode(self.Starrating)
+            if self._starrating != '':
+                erating = xmldoc.createElement('star-rating')
+                evalue = xmldoc.createElement('value')
+                evalue_text = xmldoc.createTextNode(self._starrating)
                 evalue.appendChild(evalue_text)
                 erating.appendChild(evalue)
                 eprogramme.appendChild(erating)
-            vnode.appendChild(eprogramme)
-            common.dbg_log('programme::get_xml', 'exit_function')
+            node.appendChild(eprogramme)
+            self.addLog('Programme::getXml', 'exit_function')
         except Exception, e:
-            common.dbg_log('programme::get_xml', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('Programme::getXml', 'ERROR: (' + repr(e) + ')', logErorr)
 
-class programme_list:
-    __slots__ = ('Data')
+class ProgrammeList(Base):
 
     def __init__(self):
         try:
-            self.Data = []
+            Base.__init__(self)
+            self._data = []
         except Exception, e:
-            common.dbg_log('programme_list::__init__', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('ProgrammeList::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
-    def set_programme_stop(self):
+    def setProgrammeStop(self):
         try:
-            common.dbg_log('programme_list::set_programme_stop', 'enter_function')
+            self.addLog('ProgrammeList::setProgrammeStop', 'enter_function')
             i = 0
-            while i != len(self.Data):
-                dp1 = self.Data[i]
-                if i + 1 != len(self.Data):
-                    dp2 = self.Data[i + 1]
-                    if dp1.ChannelIdx == dp2.ChannelIdx:
-                        dp1.Stop = dp2.Start
+            while i != len(self._data):
+                dp1 = self._data[i]
+                if i + 1 != len(self._data):
+                    dp2 = self._data[i + 1]
+                    if dp1._channelIdx == dp2._channelIdx:
+                        dp1._stop = dp2._start
                 i += 1
-            common.dbg_log('programme_list::set_programme_stop', 'exit_function')
+            self.addLog('ProgrammeList::setProgrammeStop', 'exit_function')
         except:
-            common.dbg_log('programme_list::set_programme_stop', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('ProgrammeList::setProgrammeStop', 'ERROR: (' + repr(e) + ')', logErorr)
 
-    def get_xml(self, vxmldoc, vnode):
+    def getXml(self, xmldoc, node):
         try:
-            common.dbg_log('programme_list::get_xml', 'enter_function')
-            for prg in self.Data:
-                prg.get_xml(vxmldoc, vnode)
-            common.dbg_log('programme_list::get_xml', 'exit_function')
+            self.addLog('ProgrammeList::getXml', 'enter_function')
+            for prg in self._data:
+                prg.getXml(xmldoc, node)
+            self.addLog('ProgrammeList::getXml', 'exit_function')
         except Exception, e:
-            common.dbg_log('programme_list::get_xml', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('ProgrammeList::getXml', 'ERROR: (' + repr(e) + ')', logErorr)
 
-    def get_programme_for_url(self, vurl):
+    def getProgrammeForUrl(self, url):
         try:
-            common.dbg_log('programme_list::get_programme_for_url', 'enter_function')
-            for prg in self.Data:
-                if prg.UrlDesc == vurl:
-                    common.dbg_log('programme_list::get_programme_for_url', '*FOUND* exit_function')
+            self.addLog('ProgrammeList::getProgrammeForUrl', 'enter_function')
+            for prg in self._data:
+                if prg._urlDesc == url:
+                    self.addLog('ProgrammeList::getProgrammeForUrl', '*FOUND* exit_function')
                     return prg
-            common.dbg_log('programme_list::get_programme_for_url', '*NO FOUND* exit_function')
+            self.addLog('ProgrammeList::getProgrammeForUrl', '*NO FOUND* exit_function')
             return None
         except Exception, e:
-            common.dbg_log('programme_list::get_programme_for_url', 'ERROR: (' + repr(e) + ')', common.logErorr)
+            self.addLog('ProgrammeList::getProgrammeForUrl', 'ERROR: (' + repr(e) + ')', logErorr)
             return None

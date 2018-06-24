@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<animation effect="fade" time="400">WindowOpen</animation>
+	<animation effect="fade" time="400">WindowClose</animation>
+	<controls>
+		<control type="group">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>1080</width>
+			<height>420</height>
+			<!-- include DialogBackgroundCommons -->
+			<control type="image">
+				<description>Image background</description>
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<animation effect="fade" time="300">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<texture colordiffuse="C2FFFFFF">vsetv-black.png</texture>
+			</control>
+			<control type="button">
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<texturefocus />
+				<texturenofocus />
+				<onclick>Action(close)</onclick>
+			</control>
+			<control type="group">
+				<width>1080</width>
+				<height>420</height>
+				<control type="image">
+					<description>Image area</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="FF1A2123">vsetv-white.png</texture>
+				</control>
+				<control type="image">
+					<description>Image header</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<height>70</height>
+					<texture colordiffuse="FF12A0C7" border="2">vsetv-white70.png</texture>
+				</control>
+				<control type="label" id="1">
+					<description>Header label</description>
+					<left>40</left>
+					<top>0</top>
+					<right>100</right>
+					<height>70</height>
+					<font>font32_title</font>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="button" id="22002">
+					<description>Button overlay to avoid closing in dialog area</description>
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texturefocus />
+					<texturenofocus />
+					<onclick>noop</onclick>
+				</control>
+				<control type="radiobutton">
+					<right>32</right>
+					<top>11</top>
+					<width>48</width>
+					<height>48</height>
+					<radiowidth>48</radiowidth>
+					<radioheight>48</radioheight>
+					<texturefocus />
+					<texturenofocus />
+					<label></label>
+					<textureradioofffocus colordiffuse="EEFFFFFF">vsetv-close.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="EEFFFFFF">vsetv-logo.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="EEFFFFFF">vsetv-close.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="EEFFFFFF">vsetv-logo.png</textureradioonnofocus>
+					<onclick>Action(close)</onclick>
+				</control>
+			</control>
+			<!-- -->
+			<control type="grouplist" id="9000">
+				<description>Edit channel controls</description>
+				<top>76</top>
+				<onleft>9001</onleft>
+				<onright>9001</onright>
+				<itemgap>-20</itemgap>
+				<control type="button" id="30">
+					<description>Org channel name</description>
+					<width>800</width>
+					<!-- <include>SettingsItemCommon</include> -->
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<height>100</height>
+					<aligny>center</aligny>
+					<textoffsetx>40</textoffsetx>
+					<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+					<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+					<enable>false</enable>
+				</control>
+				<control type="button" id="31">
+					<description>User channel name</description>
+					<width>800</width>
+					<!-- <include>SettingsItemCommon</include> -->
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<height>100</height>
+					<aligny>center</aligny>
+					<textoffsetx>40</textoffsetx>
+					<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+					<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+				</control>
+				<control type="button" id="32">
+					<description>Channel icon</description>
+					<width>800</width>
+					<!-- <include>SettingsItemCommon</include> -->
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<height>100</height>
+					<aligny>center</aligny>
+					<textoffsetx>40</textoffsetx>
+					<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+					<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+				</control>
+				<control type="button" id="33">
+					<description>Channel correction</description>
+					<width>800</width>
+					<!-- <include>SettingsItemCommon</include> -->
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<height>100</height>
+					<aligny>center</aligny>
+					<textoffsetx>40</textoffsetx>
+					<alttexturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</alttexturefocus>
+					<alttexturenofocus border="40">vsetv-dialogbutton-nofo.png</alttexturenofocus>
+				</control>
+			</control>
+			<!-- include Buttons (Save, Cancel, other) -->
+			<control type="grouplist" id="9001">
+				<description>Button grouplist</description>
+				<left>780</left>
+				<top>76</top>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<itemgap>-20</itemgap>
+				<control type="button" id="34">
+					<description>Button Delete</description>
+					<width>300</width>
+					<height>100</height>
+					<font>font25_title</font>
+					<textoffsetx>20</textoffsetx>
+					<wrapmultiline>false</wrapmultiline>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+				</control>
+				<control type="button" id="35">
+					<description>Button OK</description>
+					<width>300</width>
+					<height>100</height>
+					<font>font25_title</font>
+					<textoffsetx>20</textoffsetx>
+					<wrapmultiline>false</wrapmultiline>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+				</control>
+				<control type="button" id="36">
+					<description>Button Cancel</description>
+					<width>300</width>
+					<height>100</height>
+					<font>font25_title</font>
+					<textoffsetx>20</textoffsetx>
+					<wrapmultiline>false</wrapmultiline>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="FF12A0C7">vsetv-dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">vsetv-dialogbutton-nofo.png</texturenofocus>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
