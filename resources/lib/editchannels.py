@@ -138,20 +138,20 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 if chn._status != 1:
                     if chn._enable:
                         Item = xbmcgui.ListItem(chn._userName)
-                        Item.setLabel2('[COLOR FF11E7B1]' + str(chn._index) + '[/COLOR] - ' + chn._orgName + '[COLOR FF12A0C7] (' + self.getIntToTime(chn._correction) + ')[/COLOR]')
+                        Item.setLabel2('[COLOR selected]' + str(chn._index) + '[/COLOR] - ' + chn._orgName + '[COLOR button_focus] (' + self.getIntToTime(chn._correction) + ')[/COLOR]')
                         Item.setIconImage(chn._icon)
                         Item.setProperty('index', str(chn._index))
                         self._schannels_list.addItem(Item)
                         s += 1
                     else:
                         Item = xbmcgui.ListItem(chn._userName)
-                        Item.setLabel2('[COLOR FF11E7B1]' + str(chn._index) + '[/COLOR] - ' + chn._orgName)
+                        Item.setLabel2('[COLOR selected]' + str(chn._index) + '[/COLOR] - ' + chn._orgName)
                         Item.setIconImage(chn._icon)
                         Item.setProperty('index', str(chn._index))
                         self._achannels_list.addItem(Item)
                         a += 1
-            self._achannels_update_button.setLabel(label2='[COLOR FF11E7B1]' + self.getLang(32042) + str(a) + '[/COLOR]')
-            self._schannels_clear_button.setLabel(label2='[COLOR FF11E7B1]' + self.getLang(32047) + str(s) + '[/COLOR]')
+            self._achannels_update_button.setLabel(label2='[COLOR selected]' + self.getLang(32042) + str(a) + '[/COLOR]')
+            self._schannels_clear_button.setLabel(label2='[COLOR selected]' + self.getLang(32047) + str(s) + '[/COLOR]')
             self.addLog('EditChannels::updateChannelsList', 'exit_function')
         except Exception, e:
             self.addLog('EditChannels::updateChannelsList', 'ERROR: (' + repr(e) + ')', logErorr)
