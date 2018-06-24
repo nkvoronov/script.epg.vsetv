@@ -7,7 +7,7 @@ import xbmcaddon
 from common import Base, logErorr, host
 from xml.dom import minidom
 
-channels_file = 'list_channels'
+channels_file = 'channels-list'
 
 class Channel(Base):
 
@@ -61,7 +61,12 @@ class ChannelList(Base):
     def __init__(self):
         try:
             Base.__init__(self)
-            self._fileChannels = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels' + os.path.sep + channels_file
+            #channels dir
+            channelsDir = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels'
+            if not os.path.exists(channelsDir):
+                os.makedirs(channelsDir)
+            #channel list
+            self._fileChannels = channelsDir + os.path.sep + channels_file
             self._data = []
         except Exception, e:
             self.addLog('ChannelList::__init__', 'ERROR: (' + repr(e) + ')', logErorr)

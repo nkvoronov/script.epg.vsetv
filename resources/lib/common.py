@@ -13,7 +13,7 @@ from xml.dom import minidom
 
 host = 'http://www.vsetv.com/'
 addonid = 'script.epg.vsetv'
-settings_file = 'settings_channels'
+settings_file = 'channels-settings'
 
 is_service = False
 __busy__ = 0
