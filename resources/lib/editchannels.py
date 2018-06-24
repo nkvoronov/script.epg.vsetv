@@ -176,11 +176,15 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
         try:
             self.addLog('EditChannels::selectAvailableListItem', 'enter_function')
             selItem = self._achannels_list.getSelectedItem()
+            selPos = self._achannels_list.getSelectedPosition()
             index = int(selItem.getProperty('index'))
             chn = self._channellist.findChannel(index)
             if chn:
+                if selPos != 0:
+                    selPos = selPos -1
                 chn._enable = 1
                 self.updateChannelsList(1)
+                self._achannels_list.selectItem(selPos)
             self.addLog('EditChannels::selectAvailableListItem', 'exit_function')
         except Exception, e:
             self.addLog('EditChannels::selectAvailableListItem', 'ERROR: (' + repr(e) + ')', logErorr)
