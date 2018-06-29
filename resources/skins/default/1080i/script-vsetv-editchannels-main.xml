@@ -162,7 +162,7 @@
 								<height>60</height>
 								<font>font14</font>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
 								<left>135</left>
@@ -199,7 +199,7 @@
 								<aligny>center</aligny>
 								<scroll>true</scroll>
 								<font>font14</font>
-								<label>$INFO[ListItem.Label]</label>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
 								<left>135</left>
@@ -291,7 +291,7 @@
 								<height>60</height>
 								<font>font14</font>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
 								<left>135</left>
@@ -328,7 +328,7 @@
 								<aligny>center</aligny>
 								<scroll>true</scroll>
 								<font>font14</font>
-								<label>$INFO[ListItem.Label]</label>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
 								<left>135</left>

@@ -138,7 +138,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 if chn._status != 1:
                     if chn._enable:
                         Item = xbmcgui.ListItem(chn._userName)
-                        Item.setLabel2('[COLOR selected]' + str(chn._index) + '[/COLOR] - ' + chn._orgName + '[COLOR button_focus] (' + self.getIntToTime(chn._correction) + ')[/COLOR]')
+                        Item.setLabel2('[COLOR selected]' + str(chn._index) + '[/COLOR] - ' + chn._orgName + '[COLOR blue] (' + self.getIntToTime(chn._correction) + ')[/COLOR]')
                         Item.setIconImage(chn._icon)
                         Item.setProperty('index', str(chn._index))
                         self._schannels_list.addItem(Item)
