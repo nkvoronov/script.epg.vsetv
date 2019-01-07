@@ -60,9 +60,9 @@ class Base:
                 self.addLog('Base::setBusy', '__busy__ = ' + unicode(__busy__))
                 if __busy__ > 0:
                     if not input_request:
-                        xbmc.executebuiltin('ActivateWindow(busydialog)')
+                        xbmc.executebuiltin('ActivateWindow(busydialognocancel)')
                 else:
-                    xbmc.executebuiltin('Dialog.Close(busydialog)')
+                    xbmc.executebuiltin('Dialog.Close(busydialognocancel)')
         except Exception, e:
             self.addLog('Base::setBusy', 'ERROR: (' + repr(e) + ')', logErorr)
 
