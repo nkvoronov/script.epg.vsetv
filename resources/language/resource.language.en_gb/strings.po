@@ -9,24 +9,24 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/ru/)\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#32000"
 msgid "General"
-msgstr "Общие"
+msgstr ""
 
 msgctxt "#32001"
 msgid "Channels"
-msgstr "Каналы"
+msgstr ""
 
 msgctxt "#32002"
 msgid "Edit channels"
-msgstr "Редактировать каналы"
+msgstr ""
 
 msgctxt "#32003"
 msgid "XMLTV"
@@ -34,141 +34,141 @@ msgstr ""
 
 msgctxt "#32004"
 msgid "Path to XMLTV file"
-msgstr "Путь к XMLTV файлу"
+msgstr ""
 
 msgctxt "#32005"
 msgid "Count days"
-msgstr "Количество дней"
+msgstr ""
 
 msgctxt "#32010"
 msgid "Service"
-msgstr "Сервис"
+msgstr ""
 
 msgctxt "#32011"
 msgid "Last update"
-msgstr "Последнее обновление"
+msgstr ""
 
 msgctxt "#32012"
 msgid "Enable Service"
-msgstr "Разрешить"
+msgstr ""
 
 msgctxt "#32013"
 msgid "Params run"
-msgstr "Параметры запуска"
+msgstr ""
 
 msgctxt "#32014"
 msgid "Monday"
-msgstr "Понедельник"
+msgstr ""
 
 msgctxt "#32015"
 msgid "Tuesday"
-msgstr "Вторник"
+msgstr ""
 
 msgctxt "#32016"
 msgid "Wednesday"
-msgstr "Среда"
+msgstr ""
 
 msgctxt "#32017"
 msgid "Thursday"
-msgstr "Четверг"
+msgstr ""
 
 msgctxt "#32018"
 msgid "Friday"
-msgstr "Пятница"
+msgstr ""
 
 msgctxt "#32019"
 msgid "Saturday"
-msgstr "Суббота"
+msgstr ""
 
 msgctxt "#32020"
 msgid "Sunday"
-msgstr "Воскресенье"
+msgstr ""
 
 msgctxt "#32021"
 msgid "Run time"
-msgstr "Время запуска"
+msgstr ""
 
 msgctxt "#32030"
 msgid "Advanced"
-msgstr "Расширенные"
+msgstr ""
 
 msgctxt "#32031"
 msgid "Full description"
-msgstr "Полное описание"
+msgstr ""
 
 msgctxt "#32032"
 msgid "Replace special symbols"
-msgstr "Заменять специальные символы"
+msgstr ""
 
 msgctxt "#32033"
 msgid "Run script after update"
-msgstr "Запустить скрипт после обновления"
+msgstr ""
 
 msgctxt "#32034"
 msgid "- Script"
-msgstr "- Скрипт"
+msgstr ""
 
 msgctxt "#32035"
 msgid "Debug"
-msgstr "Отладка"
+msgstr ""
 
 ###########################################################
 
 msgctxt "#32040"
 msgid "Editor Channels"
-msgstr "Редактор каналов"
+msgstr ""
 
 msgctxt "#32041"
 msgid "Update"
-msgstr "Обновить"
+msgstr ""
 
 msgctxt "#32042"
 msgid "Available channels : "
-msgstr "Доступные каналы : "
+msgstr ""
 
 msgctxt "#32043"
 msgid "Sort by"
-msgstr "Сортировать по"
+msgstr ""
 
 msgctxt "#32044"
 msgid "Index"
-msgstr "Индексу"
+msgstr ""
 
 msgctxt "#32045"
 msgid "Name"
-msgstr "Названию"
+msgstr ""
 
 msgctxt "#32046"
 msgid "Clear"
-msgstr "Очистить"
+msgstr ""
 
 msgctxt "#32047"
 msgid "Selected channels : "
-msgstr "Выбранные каналы : "
+msgstr ""
 
 msgctxt "#32048"
 msgid "Correction"
-msgstr "Коррекция"
+msgstr ""
 
 msgctxt "#32049"
 msgid "Save"
-msgstr "Сохранить"
+msgstr ""
 
 msgctxt "#32050"
 msgid "Cancel"
-msgstr "Отмена"
+msgstr ""
 
 msgctxt "#32051"
 msgid "Original Name"
-msgstr "Название"
+msgstr ""
 
 msgctxt "#32052"
 msgid "User Name"
-msgstr "Полз. название"
+msgstr ""
 
 msgctxt "#32053"
 msgid "Icon"
-msgstr "Иконка"
+msgstr ""
 
 msgctxt "#32054"
 msgid "OK"
@@ -176,30 +176,30 @@ msgstr ""
 
 msgctxt "#32055"
 msgid "Delete"
-msgstr "Удалить"
+msgstr ""
 
 msgctxt "#32056"
 msgid "Edit"
-msgstr "Редактировать"
+msgstr ""
 
 ###########################################################
 
 msgctxt "#33000"
 msgid "Do you want to update EPG?"
-msgstr "Вы хотите обновить EPG?"
+msgstr ""
 
 msgctxt "#33001"
 msgid "Started EPG update ..."
-msgstr "Начато обновление EPG ..."
+msgstr ""
 
 msgctxt "#33002"
 msgid "Update EPG completed."
-msgstr "Обновление EPG закончено."
+msgstr ""
 
 msgctxt "#33003"
 msgid "Error updating EPG, see the log."
-msgstr "Ошибка при обновлении EPG, смотрите лог."
+msgstr ""
 
 msgctxt "#33004"
 msgid "Update EPG ..."
-msgstr "Обновление EPG ..."
+msgstr ""

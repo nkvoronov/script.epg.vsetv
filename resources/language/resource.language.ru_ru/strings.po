@@ -1,0 +1,205 @@
+# Kodi Media Center language file
+# Addon Name: Vse TV
+# Addon id: script.epg.vsetv
+# Addon Provider: YLLOW_DRAGON
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/ru_RU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32000"
+msgid "General"
+msgstr "Общие"
+
+msgctxt "#32001"
+msgid "Channels"
+msgstr "Каналы"
+
+msgctxt "#32002"
+msgid "Edit channels"
+msgstr "Редактировать каналы"
+
+msgctxt "#32003"
+msgid "XMLTV"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Path to XMLTV file"
+msgstr "Путь к XMLTV файлу"
+
+msgctxt "#32005"
+msgid "Count days"
+msgstr "Количество дней"
+
+msgctxt "#32010"
+msgid "Service"
+msgstr "Сервис"
+
+msgctxt "#32011"
+msgid "Last update"
+msgstr "Последнее обновление"
+
+msgctxt "#32012"
+msgid "Enable Service"
+msgstr "Разрешить"
+
+msgctxt "#32013"
+msgid "Params run"
+msgstr "Параметры запуска"
+
+msgctxt "#32014"
+msgid "Monday"
+msgstr "Понедельник"
+
+msgctxt "#32015"
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgctxt "#32016"
+msgid "Wednesday"
+msgstr "Среда"
+
+msgctxt "#32017"
+msgid "Thursday"
+msgstr "Четверг"
+
+msgctxt "#32018"
+msgid "Friday"
+msgstr "Пятница"
+
+msgctxt "#32019"
+msgid "Saturday"
+msgstr "Суббота"
+
+msgctxt "#32020"
+msgid "Sunday"
+msgstr "Воскресенье"
+
+msgctxt "#32021"
+msgid "Run time"
+msgstr "Время запуска"
+
+msgctxt "#32030"
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgctxt "#32031"
+msgid "Full description"
+msgstr "Полное описание"
+
+msgctxt "#32032"
+msgid "Replace special symbols"
+msgstr "Заменять специальные символы"
+
+msgctxt "#32033"
+msgid "Run script after update"
+msgstr "Запустить скрипт после обновления"
+
+msgctxt "#32034"
+msgid "- Script"
+msgstr "- Скрипт"
+
+msgctxt "#32035"
+msgid "Debug"
+msgstr "Отладка"
+
+###########################################################
+
+msgctxt "#32040"
+msgid "Editor Channels"
+msgstr "Редактор каналов"
+
+msgctxt "#32041"
+msgid "Update"
+msgstr "Обновить"
+
+msgctxt "#32042"
+msgid "Available channels : "
+msgstr "Доступные каналы : "
+
+msgctxt "#32043"
+msgid "Sort by"
+msgstr "Сортировать по"
+
+msgctxt "#32044"
+msgid "Index"
+msgstr "Индексу"
+
+msgctxt "#32045"
+msgid "Name"
+msgstr "Названию"
+
+msgctxt "#32046"
+msgid "Clear"
+msgstr "Очистить"
+
+msgctxt "#32047"
+msgid "Selected channels : "
+msgstr "Выбранные каналы : "
+
+msgctxt "#32048"
+msgid "Correction"
+msgstr "Коррекция"
+
+msgctxt "#32049"
+msgid "Save"
+msgstr "Сохранить"
+
+msgctxt "#32050"
+msgid "Cancel"
+msgstr "Отмена"
+
+msgctxt "#32051"
+msgid "Original Name"
+msgstr "Название"
+
+msgctxt "#32052"
+msgid "User Name"
+msgstr "Полз. название"
+
+msgctxt "#32053"
+msgid "Icon"
+msgstr "Иконка"
+
+msgctxt "#32054"
+msgid "OK"
+msgstr ""
+
+msgctxt "#32055"
+msgid "Delete"
+msgstr "Удалить"
+
+msgctxt "#32056"
+msgid "Edit"
+msgstr "Редактировать"
+
+###########################################################
+
+msgctxt "#33000"
+msgid "Do you want to update EPG?"
+msgstr "Вы хотите обновить EPG?"
+
+msgctxt "#33001"
+msgid "Started EPG update ..."
+msgstr "Начато обновление EPG ..."
+
+msgctxt "#33002"
+msgid "Update EPG completed."
+msgstr "Обновление EPG закончено."
+
+msgctxt "#33003"
+msgid "Error updating EPG, see the log."
+msgstr "Ошибка при обновлении EPG, смотрите лог."
+
+msgctxt "#33004"
+msgid "Update EPG ..."
+msgstr "Обновление EPG ..."
