@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <settings>
 	<category label="32000">
-        <setting label="32001" type="lsep"/>
+		<setting label="32001" type="lsep"/>
 		<setting action="RunScript(script.epg.vsetv,action=editchannels)" label="32002" type="action"/>    
 		<setting label="32003" type="lsep"/>
 		<setting default="" id="xmltv_path" label="32004" option="writeable" type="folder"/>
