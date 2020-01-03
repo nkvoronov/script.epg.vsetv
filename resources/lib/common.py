@@ -21,8 +21,6 @@ __common__ = sys.modules[globals()['__name__']]
 input_request = False
 logErorr = xbmc.LOGERROR
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 #BASE CLASS
 
@@ -63,7 +61,7 @@ class Base:
                         xbmc.executebuiltin('ActivateWindow(busydialognocancel)')
                 else:
                     xbmc.executebuiltin('Dialog.Close(busydialognocancel)')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::setBusy', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def loadUrl(self, url):
@@ -78,7 +76,7 @@ class Base:
             connect.close()
             self.addLog('Base::loadUrl', 'exit_function')
             return html.strip()
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::loadUrl(' + url + ')', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def removeSpecSym(self, mstr):
@@ -91,7 +89,7 @@ class Base:
             rstr = rstr.replace('&gt;', '>')
             self.addLog('Base::removeSpecSym', 'exit_function')
             return rstr
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::removeSpecSym', 'ERROR: (' + repr(e) + ')', logErorr)
             return vstr
 
@@ -106,7 +104,7 @@ class Base:
                 outputfile.write(data)
             outputfile.close()
             self.addLog('Base::saveXmlFile', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::saveXmlFile', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getIntToTime(self, val):
@@ -114,7 +112,7 @@ class Base:
             self.addLog('Base::getIntToTime', 'enter_function')
             return '{:02d}:{:02d}'.format(*divmod(int(val), 60))
             self.addLog('Base::getIntToTime', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::getIntToTime', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getTimeToInt(self, val):
@@ -123,7 +121,7 @@ class Base:
             h, m = val.split(':')
             return int(h) * 60 + int(m)
             self.addLog('Base::getTimeToInt', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::getTimeToInt', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getValueFromSettings(self, id, default):
@@ -144,7 +142,7 @@ class Base:
             self.addLog('Base::getValueFromSettings', 'RES - ' + res)
             self.addLog('Base::getValueFromSettings', 'exit_function')
             return res
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::getValueFromSettings', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setValueToSettings(self, id, val):
@@ -169,5 +167,5 @@ class Base:
                     if fvalue != '':
                         wfile.write('%s:%s\n' % (fid, fvalue))
             self.addLog('Base::getValueFromSettings', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Base::setValueToSettings', 'ERROR: (' + repr(e) + ')', logErorr)

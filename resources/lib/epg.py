@@ -7,10 +7,10 @@ import xbmcaddon
 import xbmcgui
 import subprocess
 import datetime
-from common import Base, logErorr
-from channels import Channel, ChannelList
-from parservsetv import Parser
-from editchannels import EditChannels
+from resources.lib.common import Base, logErorr
+from resources.lib.channels import Channel, ChannelList
+from resources.lib.parservsetv import Parser
+from resources.lib.editchannels import EditChannels
 
 class Epg(Base):
 
@@ -42,7 +42,7 @@ class Epg(Base):
                     self.runUpdateEpg()
                 else:
                     self.setAction()
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getParams(self):
@@ -55,7 +55,7 @@ class Epg(Base):
             self.addLog('Epg::getParams', 'params: %s' % params, logErorr)
             self._action = params.get('action', '')
             self.addLog('Epg::getParams', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::getParams', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setAction(self):
@@ -64,7 +64,7 @@ class Epg(Base):
             if self._action == 'editchannels':
                 self.editChannels()
             self.addLog('Epg::setAction', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::setAction', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def editChannels(self):
@@ -73,7 +73,7 @@ class Epg(Base):
             ui = EditChannels('script-vsetv-editchannels-main.xml', self._addonPath, 'default', None)
             del ui
             self.addLog('Epg::editChannels', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::editChannels', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setNotify(self, title, message, icon='icon', time=5000):
@@ -82,7 +82,7 @@ class Epg(Base):
             picon = xbmc.translatePath(os.path.join(self._addonMedia, icon + '.png'))
             xbmcgui.Dialog().notification(title, message, picon, time)
             self.addLog('Epg::setNotify', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::setNotify', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def Execute(self, command_line, get_result=0):
@@ -100,7 +100,7 @@ class Epg(Base):
                     result = result + line
                 return result
             self.addLog('Epg::Execute', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::Execute', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def saveXmltv(self):
@@ -119,7 +119,7 @@ class Epg(Base):
                 self.addLog('Epg::saveXmltv', 'execute script - ' + self._pathScript)
                 self.Execute(self._pathScript)
             self.addLog('Epg::saveXmltv', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.setNotify(self._addonName, self.getLang(33003), 'vsetv-error')
             self.addLog('Epg::saveXmltv', 'ERROR: (' + repr(e) + ')', logErorr)
 
@@ -150,7 +150,7 @@ class Epg(Base):
             if enable_upd_time and enable_upd_week and enable_upd_day:
                 self.saveXmltv()
             self.addLog('Epg::serviceUpdateEpg', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::serviceUpdateEpg', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def runUpdateEpg(self):
@@ -160,5 +160,5 @@ class Epg(Base):
             if dialog.yesno(self._addonName, self.getLang(33000)):
                 self.saveXmltv()
             self.addLog('Epg::runUpdateEpg', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::runUpdateEpg', 'ERROR: (' + repr(e) + ')', logErorr)

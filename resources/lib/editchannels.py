@@ -5,9 +5,9 @@ import sys
 import xbmc
 import xbmcaddon
 import xbmcgui
-from common import Base, logErorr
-from channels import Channel, ChannelList
-from channeledit import ChannelEdit
+from resources.lib.common import Base, logErorr
+from resources.lib.channels import Channel, ChannelList
+from resources.lib.channeledit import ChannelEdit
 
 class EditChannels(Base, xbmcgui.WindowXMLDialog):
 
@@ -18,7 +18,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self._sortBy = int(self.getValueFromSettings('sort_by', '0'))
             self._correction = int(self.getValueFromSettings('correct', '120'))
             self.doModal()
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onInit(self):
@@ -27,7 +27,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self.defineControls()
             self.showDialog()
             self.addLog('EditChannels::onInit', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::onInit', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def defineControls(self):
@@ -63,7 +63,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self._channellist.loadChannelsFromFile()
             self._channellist.sortChannels()
             self.addLog('EditChannels::defineControls', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::defineControls', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def showDialog(self):
@@ -82,7 +82,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self.updateChannelsList()
             self.setFocus(self._achannels_update_button)
             self.addLog('EditChannels::showDialog', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::showDialog', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onClick(self, controlId):
@@ -114,7 +114,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             elif controlId == self._control_cancel_button_id:
                 self.closeDialog()
             self.addLog('EditChannels::onClick', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::onClick', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onAction(self, action):
@@ -153,7 +153,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self._achannels_update_button.setLabel(label2='[COLOR selected]' + self.getLang(32042) + str(a) + '[/COLOR]')
             self._schannels_clear_button.setLabel(label2='[COLOR selected]' + self.getLang(32047) + str(s) + '[/COLOR]')
             self.addLog('EditChannels::updateChannelsList', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::updateChannelsList', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def changeSortBy(self):
@@ -169,7 +169,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 self._channellist.sortChannels()
                 self.updateChannelsList(1)
             self.addLog('EditChannels::changeSortBy', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::changeSortBy', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setAvailableListItem(self):
@@ -186,7 +186,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 self.updateChannelsList(1)
                 self._achannels_list.selectItem(selPos)
             self.addLog('EditChannels::selectAvailableListItem', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::selectAvailableListItem', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def updateAvailableChannels(self):
@@ -200,7 +200,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self.updateChannelsList(1)
             self.setBusy(0)
             self.addLog('EditChannels::updateAvailableChannels', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.setBusy(0)
             self.addLog('EditChannels::updateAvailableChannels', 'ERROR: (' + repr(e) + ')', logErorr)
 
@@ -210,7 +210,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self._channellist.setDisabledAll()
             self.updateChannelsList(1)
             self.addLog('EditChannels::clearSelectedChannels', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::clearSelectedChannels', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def changeCorrection(self):
@@ -227,7 +227,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 self._channellist.updateChannelCorrection(self._correction)
                 self.updateChannelsList(1)
             self.addLog('EditChannels::changeCorrection', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::changeCorrection', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setSelectedListItem(self):
@@ -251,7 +251,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
                 self.updateChannelsList(1)
                 self._schannels_list.selectItem(selPos)
             self.addLog('EditChannels::setSelectedListItem', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::setSelectedListItem', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def saveSelectedChannels(self):
@@ -259,7 +259,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self.addLog('EditChannels::saveSelectedChannels', 'enter_function')
             self._channellist.saveChannelsToFile()
             self.addLog('EditChannels::saveSelectedChannels', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::saveSelectedChannels', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def closeDialog(self):
@@ -267,7 +267,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             self.addLog('EditChannels::closeDialog', 'enter_function')
             self.close()
             self.addLog('EditChannels::closeDialog', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::closeDialog', 'ERROR: (' + repr(e) + ')', logErorr)
 
 

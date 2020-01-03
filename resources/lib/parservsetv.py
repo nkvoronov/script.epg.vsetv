@@ -4,9 +4,9 @@ import os
 import re
 import datetime
 import xbmc
-from common import Base, logErorr, host
-from channels import Channel, ChannelList
-from programmes import ProgrammeList, Programme
+from resources.lib.common import Base, logErorr, host
+from resources.lib.channels import Channel, ChannelList
+from resources.lib.programmes import ProgrammeList, Programme
 from xml.dom import minidom
 
 class Parser(Base):
@@ -21,7 +21,7 @@ class Parser(Base):
             self._fullDesc = self._addon.getSetting('full_desc')
             self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
             self._channels.loadChannelsFromFile(0)
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def removeTags(self, mstr):
@@ -30,7 +30,7 @@ class Parser(Base):
             rstr = re.sub('<([^!>]([^>]|\n)*)>', '', mstr)
             self.addLog('Parser::removeTags', 'exit_function')
             return rstr
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::removeTags', 'ERROR: (' + repr(e) + ')', logErorr)
             return vstr
 
@@ -44,7 +44,7 @@ class Parser(Base):
                 rstr = self.removeTags(rstr)
             self.addLog('Parser::parseStrings', 'exit_function')
             return rstr.strip(' \t\n\r')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::parseStrings', 'ERROR: (' + repr(e) + ')', logErorr)
             return vstr
 
@@ -57,7 +57,7 @@ class Parser(Base):
                 rstr = str(mstr)
             self.addLog('Parser::addZero', 'exit_function')
             return rstr
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::addZero', 'ERROR: (' + repr(e) + ')', logErorr)
             return '00'
 
@@ -79,7 +79,7 @@ class Parser(Base):
             datestr = datestr + ' ' + dstr
             self.addLog('Parser::getDateTimeFmt', 'exit_function')
             return datestr
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getDateTimeFmt', 'ERROR: (' + repr(e) + ')', logErorr)
             return '00000000000000 +0000'
 
@@ -100,7 +100,7 @@ class Parser(Base):
                     i += 1
             self._programmes.setProgrammeStop()
             self.addLog('Parser::getContent', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getContent', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getContentDay(self, channeldata, date):
@@ -143,7 +143,7 @@ class Parser(Base):
                     self.getDesc(prog, prdesc.decode('utf-8'))
                     self._programmes._data.append(prog)
             self.addLog('Parser::getContentDay', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getContentDay', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getDesc(self, programmedata, content):
@@ -154,7 +154,7 @@ class Parser(Base):
                 desc = self.removeSpecSym(self.removeTags(vdesc))
                 programmedata._desc = desc
             self.addLog('Parser::getDesc', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getDesc', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getFullDesc(self, programmedata, content):
@@ -228,7 +228,7 @@ class Parser(Base):
                     if crat != '':
                         programmedata._starrating = crat
             self.addLog('Parser::getFullDesc', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getFullDesc', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getCategoryFromTitle(self, programmedata):
@@ -279,7 +279,7 @@ class Parser(Base):
             else:
                 programmedata._categoryLang2 = ''
             self.addLog('Parser::getCategoryFromTitle', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::getCategoryFromTitle', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def saveXml(self):
@@ -290,5 +290,5 @@ class Parser(Base):
             self._programmes.getXml(xmldoc, xmldoc.documentElement)
             self.saveXmlFile(self._pathXml, xmldoc)
             self.addLog('Parser::saveXml', 'enter_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Parser::saveXml', 'ERROR: (' + repr(e) + ')', logErorr)

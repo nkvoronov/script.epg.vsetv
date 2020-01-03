@@ -5,8 +5,8 @@ import sys
 import xbmc
 import xbmcaddon
 import xbmcgui
-from common import Base, logErorr
-from channels import Channel, ChannelList
+from resources.lib.common import Base, logErorr
+from resources.lib.channels import Channel, ChannelList
 
 class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
 
@@ -19,7 +19,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self._icon = ''
             self._correction = 120
             self._result = 0
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onInit(self):
@@ -28,7 +28,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self.defineControls()
             self.showDialog()
             self.addLog('ChannelEdit::onInit', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::onInit', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def defineControls(self):
@@ -55,7 +55,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self._ok_button = self.getControl(self._control_ok_button_id)
             self._cancel_button = self.getControl(self._control_cancel_button_id)
             self.addLog('ChannelEdit::defineControls', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::defineControls', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def showDialog(self):
@@ -75,7 +75,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self._cancel_button.setLabel(self.getLang(32050))
             self.setFocus(self._user_name_button)
             self.addLog('ChannelEdit::showDialog', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::showDialog', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onClick(self, controlId):
@@ -102,7 +102,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             elif controlId == self._control_cancel_button_id:
                 self.closeDialog()
             self.addLog('ChannelEdit::onClick', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::onClick', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def onAction(self, action):
@@ -111,7 +111,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             if action in self._action_cancel_dialog:
                 self.closeDialog()
             self.addLog('ChannelEdit::onAction', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::onAction', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getEditData(self, chn):
@@ -122,7 +122,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self._icon = chn._icon
             self._correction = chn._correction
             self.addLog('ChannelEdit::getEditData', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::getEditData', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setEditData(self, chn):
@@ -132,7 +132,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             chn._icon = self._icon
             chn._correction = self._correction
             self.addLog('ChannelEdit::setEditData', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::setEditData', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def editName(self):
@@ -144,7 +144,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
                 self._user_name_button.setLabel(label2=res)
                 self._userName = res
             self.addLog('ChannelEdit::editName', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::editName', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def editIcon(self):
@@ -156,7 +156,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
                 self._icon_button.setLabel(label2=res)
                 self._icon = res
             self.addLog('ChannelEdit::editIcon', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::editIcon', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def editCorrect(self):
@@ -170,7 +170,7 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
                 self._correct_button.setLabel(label2=res)
                 self._correction = self.getTimeToInt(res)
             self.addLog('ChannelEdit::editCorrect', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::editCorrect', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def closeDialog(self):
@@ -178,6 +178,6 @@ class ChannelEdit(Base, xbmcgui.WindowXMLDialog):
             self.addLog('ChannelEdit::closeDialog', 'enter_function')
             self.close()
             self.addLog('ChannelEdit::closeDialog', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelEdit::closeDialog', 'ERROR: (' + repr(e) + ')', logErorr)
 

@@ -2,10 +2,10 @@
 <addon
 	id="script.epg.vsetv"
 	name="Vse TV"
-	version="3.0.6"
+	version="3.0.8"
 	provider-name="YLLOW_DRAGON">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py"/>
 	<extension point="xbmc.service" library="service.py" start="login"/>

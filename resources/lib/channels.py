@@ -4,7 +4,7 @@ import os
 import re
 import xbmc
 import xbmcaddon
-from common import Base, logErorr, host
+from resources.lib.common import Base, logErorr, host
 from xml.dom import minidom
 
 channels_file = 'channels-list'
@@ -22,7 +22,7 @@ class Channel(Base):
             # status : 0 - default; 1 - delete; 2 - new; 3 - update
             self._status = status
             self._enable = enable
-        except Exception, e:
+        except Exception as e:
             self.addLog('Channel::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getString(self):
@@ -32,7 +32,7 @@ class Channel(Base):
             self.addLog('Channel::getString', mstr)
             self.addLog('Channel::getString', 'exit_function')
             return mstr
-        except Exception, e:
+        except Exception as e:
             self.addLog('Channel::getString', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getXml(self, xmldoc, node):
@@ -53,7 +53,7 @@ class Channel(Base):
                 echannel.appendChild(eiconlink)
             node.appendChild(echannel)
             self.addLog('Channel::getXml', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Channel::getXml', 'ERROR: (' + repr(e) + ')', logErorr)
 
 class ChannelList(Base):
@@ -68,7 +68,7 @@ class ChannelList(Base):
             #channel list
             self._fileChannels = channelsDir + os.path.sep + channels_file
             self._data = []
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def loadChannelsFromUrl(self):
@@ -86,7 +86,7 @@ class ChannelList(Base):
             udata = sorted(udata, key = lambda chn: int(chn._index))
             self.addLog('ChannelList::loadChannelsFromUrl', 'exit_function')
             return udata
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::loadChannelsFromUrl', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def updateChannelsFromUrl(self):
@@ -139,7 +139,7 @@ class ChannelList(Base):
             del udata
             self.addLog('ChannelList::updateChannelsFromUrl', 'add - ' + str(ai) + ' upd - ' + str(ui) + ' del - ' + str(di))
             self.addLog('ChannelList::updateChannelsFromUrl', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::updateChannelsFromUrl', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def findChannel(self, index):
@@ -153,7 +153,7 @@ class ChannelList(Base):
                     return res
             self.addLog('ChannelList::findChannel', 'exit_function')
             return res
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::findChannel', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def sortChannels(self):
@@ -167,7 +167,7 @@ class ChannelList(Base):
                 self._data = sorted(self._data, key = lambda chn: str(chn._orgName))
                 self.addLog('ChannelList::sortChannels', 'Sort Org Name')
             self.addLog('ChannelList::sortChannels', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::sortChannels', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def loadChannelsFromFile(self, all=1):
@@ -189,7 +189,7 @@ class ChannelList(Base):
                         else:
                             pass
             self.addLog('ChannelList::loadChannelsFromFile', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::loadChannelsFromFile', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def saveChannelsToFile(self):
@@ -202,7 +202,7 @@ class ChannelList(Base):
                 for chn in self._data:
                     cfile.write(chn.getString())
             self.addLog('ChannelList::saveChannelsToFile', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::saveChannelsToFile', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setDisabledAll(self):
@@ -212,7 +212,7 @@ class ChannelList(Base):
                 if chn._enable == 1:
                     chn._enable = 0
             self.addLog('ChannelList::setDisabledAll', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::setDisabledAll', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def updateChannelCorrection(self, correction):
@@ -222,7 +222,7 @@ class ChannelList(Base):
                 if chn._enable == 1 and chn._status != 1:
                     chn._correction = correction
             self.addLog('ChannelList::setDisabledAll', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::setDisabledAll', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getXml(self, xmldoc, node):
@@ -231,5 +231,5 @@ class ChannelList(Base):
             for chn in self._data:
                 chn.getXml(xmldoc, node)
             self.addLog('ChannelList::getXml', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ChannelList::getXml', 'ERROR: (' + repr(e) + ')', logErorr)

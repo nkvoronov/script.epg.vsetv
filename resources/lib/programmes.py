@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from common import Base, logErorr
+from resources.lib.common import Base, logErorr
 from xml.dom import minidom
 
 class Programme(Base):
@@ -21,7 +21,7 @@ class Programme(Base):
             self._actors = actors
             self._date = date
             self._starrating = starrating
-        except Exception, e:
+        except Exception as e:
             self.addLog('Programme::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def copyFullDesc(self, prg):
@@ -36,7 +36,7 @@ class Programme(Base):
             self._date = prg._date
             self._starrating = prg._starrating
             self.addLog('Programme::copyFullDesc', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Programme::copyFullDesc', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getXml(self, xmldoc, node):
@@ -109,7 +109,7 @@ class Programme(Base):
                 eprogramme.appendChild(erating)
             node.appendChild(eprogramme)
             self.addLog('Programme::getXml', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('Programme::getXml', 'ERROR: (' + repr(e) + ')', logErorr)
 
 class ProgrammeList(Base):
@@ -118,7 +118,7 @@ class ProgrammeList(Base):
         try:
             Base.__init__(self)
             self._data = []
-        except Exception, e:
+        except Exception as e:
             self.addLog('ProgrammeList::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def setProgrammeStop(self):
@@ -142,7 +142,7 @@ class ProgrammeList(Base):
             for prg in self._data:
                 prg.getXml(xmldoc, node)
             self.addLog('ProgrammeList::getXml', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('ProgrammeList::getXml', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getProgrammeForUrl(self, url):
@@ -154,6 +154,6 @@ class ProgrammeList(Base):
                     return prg
             self.addLog('ProgrammeList::getProgrammeForUrl', '*NO FOUND* exit_function')
             return None
-        except Exception, e:
+        except Exception as e:
             self.addLog('ProgrammeList::getProgrammeForUrl', 'ERROR: (' + repr(e) + ')', logErorr)
             return None
