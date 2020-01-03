@@ -123,7 +123,7 @@ class EditChannels(Base, xbmcgui.WindowXMLDialog):
             if action in self._action_cancel_dialog:
                 self.closeDialog()
             self.addLog('EditChannels::onAction', 'exit_function')
-        except Exception, e:
+        except Exception as e:
             self.addLog('EditChannels::onAction', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def updateChannelsList(self, isClear=0):

@@ -3,7 +3,7 @@
 import os
 import sys
 import urllib
-import urllib2
+import urllib.request
 import traceback
 import xbmc
 import xbmcaddon
@@ -35,7 +35,7 @@ class Base:
             self._replaceSpecSym = self._addon.getSetting('replace_spec_sym')
             self._debug = self._addon.getSetting('debug')
             self._settingsFile = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels' + os.path.sep + settings_file
-        except Exception, e:
+        except Exception as e:
             common.addLog('Base::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 
     def getLang(self, code):
@@ -71,7 +71,7 @@ class Base:
             headers = {
             'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3',
             'Content-Type': 'application/x-www-form-urlencoded'}
-            connect = urllib2.urlopen(urllib2.Request(url, urllib.urlencode({}), headers))
+            connect = urllib.request.urlopen(urllib.request.Request(url, urllib.urlencode({}), headers))
             html = connect.read()
             connect.close()
             self.addLog('Base::loadUrl', 'exit_function')
