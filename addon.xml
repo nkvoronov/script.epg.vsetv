@@ -2,7 +2,7 @@
 <addon
 	id="script.epg.vsetv"
 	name="Vse TV"
-	version="3.0.9"
+	version="3.0.10"
 	provider-name="YLLOW_DRAGON">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -19,5 +19,8 @@
 		<platform>all</platform>
 		<email>nkvoronov@gmail.com</email>
 		<source>https://github.com/nkvoronov/script.epg.vsetv.git</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
 	</extension>
 </addon>
