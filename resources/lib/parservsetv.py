@@ -7,7 +7,7 @@ import xbmc
 from common import Base, logErorr, host
 from channels import Channel, ChannelList
 from programmes import ProgrammeList, Programme
-from xml.dom import minidom
+from xml.dom.minidom import parseString
 
 class Parser(Base):
 
@@ -20,6 +20,7 @@ class Parser(Base):
             self._countDay = int(self._addon.getSetting('count_day')) + 1
             self._fullDesc = self._addon.getSetting('full_desc')
             self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
+            self._date = datetime.datetime.now().strftime('%Y%m%d')
             self._channels.loadChannelsFromFile(0)
         except Exception, e:
             self.addLog('Parser::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
@@ -184,11 +185,21 @@ class Parser(Base):
                     if len(ctmp.split(',')) == 2:
                         ccountry = ctmp.split(',')[0].strip()
                         cdate = ctmp.split(',')[1].strip()
+                        self.addLog('Parser::getFullDesc', 'cdate2 :' + cdate)
                         if cdate[-1] == '-':
                             cdate = cdate[:-1]
                         if cdate != '':
                             ctmp = ccountry + ', ' + cdate
                             programmedata._date = cdate
+                    else:
+                        if len(ctmp.split(',')) == 1:
+                            cdate = ctmp.split(',')[0].strip()
+                            self.addLog('Parser::getFullDesc', 'cdate1 :' + cdate)
+                            if cdate[-1] == '-':
+                                cdate = cdate[:-1]
+                            if cdate != '':
+                                ctmp = cdate
+                                programmedata._date = cdate
                     ctmp = ctmp.decode('utf-8').strip(' \t\n\r')
                     cgenre = ''
                     cgenre = self.parseStrings(showname1,'<strong>','</strong>',1).replace(' / ', ',')
@@ -285,7 +296,7 @@ class Parser(Base):
     def saveXml(self):
         try:
             self.addLog('Parser::saveXml', 'enter_function')
-            xmldoc = minidom.parseString('<tv generator-info-name="vsetv"></tv>')
+            xmldoc = parseString('<tv generator-info-name="vsetv" date="{0}"></tv>'.format(self._date))
             self._channels.getXml(xmldoc, xmldoc.documentElement)
             self._programmes.getXml(xmldoc, xmldoc.documentElement)
             self.saveXmlFile(self._pathXml, xmldoc)

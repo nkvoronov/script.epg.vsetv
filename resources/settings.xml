@@ -8,7 +8,6 @@
 		<setting default="2" id="count_day" label="32005" type="enum" values="1|2|3|4|5|6|7"/>
 	</category>
 	<category label="32010">
-		<setting default="" id="last_update" label="32011" type="text" visible="false"/>
 		<setting default="false" id="enable_service" label="32012" type="bool"/>
 		<setting label="32013" type="lsep"/>
 		<setting default="true" enable="eq(-2,true)" id="enable_monday" label="32014" type="bool"/>
@@ -22,7 +21,6 @@
 	</category>
 	<category label="32030">
 		<setting default="true" id="full_desc" label="32031" type="bool"/>
-		<setting default="true" id="replace_spec_sym" label="32032" type="bool"/>
 		<setting default="false" id="execute_script" label="32033" type="bool"/>
 		<setting default="" id="script_path" label="32034" type="file" visible="eq(-1,true)"/>
 		<setting default="false" id="debug" label="32035" type="bool"/>

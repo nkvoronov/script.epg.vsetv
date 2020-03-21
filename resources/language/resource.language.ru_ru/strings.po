@@ -44,10 +44,6 @@ msgctxt "#32010"
 msgid "Service"
 msgstr "Сервис"
 
-msgctxt "#32011"
-msgid "Last update"
-msgstr "Последнее обновление"
-
 msgctxt "#32012"
 msgid "Enable Service"
 msgstr "Разрешить"
@@ -95,10 +91,6 @@ msgstr "Расширенные"
 msgctxt "#32031"
 msgid "Full description"
 msgstr "Полное описание"
-
-msgctxt "#32032"
-msgid "Replace special symbols"
-msgstr "Заменять специальные символы"
 
 msgctxt "#32033"
 msgid "Run script after update"
