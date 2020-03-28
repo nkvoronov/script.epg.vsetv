@@ -20,7 +20,6 @@ class Parser(Base):
             self._countDay = int(self._addon.getSetting('count_day')) + 1
             self._fullDesc = self._addon.getSetting('full_desc')
             self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
-            self._date = datetime.datetime.now().strftime('%Y%m%d')
             self._channels.loadChannelsFromFile(0)
         except Exception, e:
             self.addLog('Parser::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
@@ -296,7 +295,8 @@ class Parser(Base):
     def saveXml(self):
         try:
             self.addLog('Parser::saveXml', 'enter_function')
-            xmldoc = parseString('<tv generator-info-name="vsetv" date="{0}"></tv>'.format(self._date))
+            curr_date = datetime.datetime.now().strftime('%Y%m%d')
+            xmldoc = parseString('<tv generator-info-name="vsetv" date="{0}"></tv>'.format(curr_date))
             self._channels.getXml(xmldoc, xmldoc.documentElement)
             self._programmes.getXml(xmldoc, xmldoc.documentElement)
             self.saveXmlFile(self._pathXml, xmldoc)
