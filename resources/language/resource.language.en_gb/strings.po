@@ -44,10 +44,6 @@ msgctxt "#32010"
 msgid "Service"
 msgstr ""
 
-msgctxt "#32011"
-msgid "Last update"
-msgstr ""
-
 msgctxt "#32012"
 msgid "Enable Service"
 msgstr ""
@@ -94,10 +90,6 @@ msgstr ""
 
 msgctxt "#32031"
 msgid "Full description"
-msgstr ""
-
-msgctxt "#32032"
-msgid "Replace special symbols"
 msgstr ""
 
 msgctxt "#32033"

@@ -44,10 +44,6 @@ msgctxt "#32010"
 msgid "Service"
 msgstr "Сервіс"
 
-msgctxt "#32011"
-msgid "Last update"
-msgstr "Останнє оновлення"
-
 msgctxt "#32012"
 msgid "Enable Service"
 msgstr "Дозволити"
@@ -95,10 +91,6 @@ msgstr "Додаткові"
 msgctxt "#32031"
 msgid "Full description"
 msgstr "Повний опис"
-
-msgctxt "#32032"
-msgid "Replace special symbols"
-msgstr "Замінювати спеціальні символи"
 
 msgctxt "#32033"
 msgid "Run script after update"

@@ -184,11 +184,21 @@ class Parser(Base):
                     if len(ctmp.split(',')) == 2:
                         ccountry = ctmp.split(',')[0].strip()
                         cdate = ctmp.split(',')[1].strip()
+                        self.addLog('Parser::getFullDesc', 'cdate2 :' + cdate)
                         if cdate[-1] == '-':
                             cdate = cdate[:-1]
                         if cdate != '':
                             ctmp = ccountry + ', ' + cdate
                             programmedata._date = cdate
+                    else:
+                        if len(ctmp.split(',')) == 1:
+                            cdate = ctmp.split(',')[0].strip()
+                            self.addLog('Parser::getFullDesc', 'cdate1 :' + cdate)
+                            if cdate[-1] == '-':
+                                cdate = cdate[:-1]
+                            if cdate != '':
+                                ctmp = cdate
+                                programmedata._date = cdate
                     ctmp = ctmp.decode('utf-8').strip(' \t\n\r')
                     cgenre = ''
                     cgenre = self.parseStrings(showname1,'<strong>','</strong>',1).replace(' / ', ',')
@@ -285,7 +295,8 @@ class Parser(Base):
     def saveXml(self):
         try:
             self.addLog('Parser::saveXml', 'enter_function')
-            xmldoc = minidom.parseString('<tv generator-info-name="vsetv"></tv>')
+            curr_date = datetime.datetime.now().strftime('%Y%m%d')
+            xmldoc = parseString('<tv generator-info-name="vsetv" date="{0}"></tv>'.format(curr_date))
             self._channels.getXml(xmldoc, xmldoc.documentElement)
             self._programmes.getXml(xmldoc, xmldoc.documentElement)
             self.saveXmlFile(self._pathXml, xmldoc)

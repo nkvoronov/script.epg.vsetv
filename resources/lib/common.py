@@ -32,7 +32,6 @@ class Base:
             self._addon = xbmcaddon.Addon(self._addonid)
             self._addonName = self._addon.getAddonInfo('name')
             self._addonPath = self._addon.getAddonInfo('path')
-            self._replaceSpecSym = self._addon.getSetting('replace_spec_sym')
             self._debug = self._addon.getSetting('debug')
             self._settingsFile = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels' + os.path.sep + settings_file
         except Exception as e:
@@ -87,6 +86,7 @@ class Base:
             rstr = rstr.replace('&quot;','"')
             rstr = rstr.replace('&lt;', '<')
             rstr = rstr.replace('&gt;', '>')
+            rstr = rstr.replace('&', '&amp;')
             self.addLog('Base::removeSpecSym', 'exit_function')
             return rstr
         except Exception as e:
@@ -98,10 +98,7 @@ class Base:
             self.addLog('Base::saveXmlFile', 'enter_function')
             outputfile = open(filename, 'w')
             data = xmldoc.toprettyxml(encoding='utf-8')
-            if self._replaceSpecSym == 'true':
-                outputfile.write(self.removeSpecSym(data))
-            else:
-                outputfile.write(data)
+            outputfile.write(self.removeSpecSym(data))
             outputfile.close()
             self.addLog('Base::saveXmlFile', 'exit_function')
         except Exception as e:

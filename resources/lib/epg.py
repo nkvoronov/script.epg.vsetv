@@ -30,7 +30,8 @@ class Epg(Base):
             self._enableSaturday = self._addon.getSetting('enable_saturday')
             self._enableSunday = self._addon.getSetting('enable_sunday')
             self._runTime = self._addon.getSetting('run_time')
-            self._lastUpdate = self._addon.getSetting('last_update')
+            self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
+            self._lastUpdate = self.getLastUpdate()
 
             self._isService = isService
             if self._isService == 1:
@@ -44,6 +45,24 @@ class Epg(Base):
                     self.setAction()
         except Exception as e:
             self.addLog('Epg::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
+
+    def getLastUpdate(self):
+        try:
+            self.addLog('Epg::getLastUpdate', 'enter_function')
+            if os.path.exists(self._pathXml):
+                xmldoc = parse(self._pathXml)
+                tvtag = xmldoc.getElementsByTagName('tv')
+                for tv in tvtag:
+                    date = tv.getAttribute('date')
+                    self.addLog('Epg::getLastUpdate', 'date: ' + date, logErorr)
+                    self.addLog('Epg::getLastUpdate', 'exit_function')
+                    return date
+            else:
+                self.addLog('Epg::getLastUpdate', 'exit_function')
+                return ""
+        except Exception, e:
+            self.addLog('Epg::getLastUpdate', 'ERROR: (' + repr(e) + ')', logErorr)
+            return ""
 
     def getParams(self):
         try:
@@ -114,7 +133,6 @@ class Epg(Base):
             prs.saveXml()
             progressDialog.close()
             self.setNotify(self._addonName, self.getLang(33002), 'vsetv-info')
-            self._addon.setSetting('last_update', datetime.datetime.now().strftime('%Y%m%d'))
             if self._executeScript == 'true':
                 self.addLog('Epg::saveXmltv', 'execute script - ' + self._pathScript)
                 self.Execute(self._pathScript)
