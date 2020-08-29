@@ -60,7 +60,7 @@ class Epg(Base):
             else:
                 self.addLog('Epg::getLastUpdate', 'exit_function')
                 return ""
-        except Exception, e:
+        except Exception as e:
             self.addLog('Epg::getLastUpdate', 'ERROR: (' + repr(e) + ')', logErorr)
             return ""
 
