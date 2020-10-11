@@ -40,7 +40,7 @@ class Base:
     def getLang(self, code):
         return self._addon.getLocalizedString(code)
 
-    def addLog(self, source, text, level=xbmc.LOGNOTICE):
+    def addLog(self, source, text, level=xbmc.LOGINFO):
         if self._debug == 'false':
             return
         xbmc.log('## ' + self._addonName + ' ## ' + source + ' ## ' + text, level)
