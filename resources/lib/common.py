@@ -6,6 +6,7 @@ import urllib
 import urllib.request
 import traceback
 import xbmc
+import xbmcvfs
 import xbmcaddon
 from xml.dom import minidom
 
@@ -33,7 +34,7 @@ class Base:
             self._addonName = self._addon.getAddonInfo('name')
             self._addonPath = self._addon.getAddonInfo('path')
             self._debug = self._addon.getSetting('debug')
-            self._settingsFile = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels' + os.path.sep + settings_file
+            self._settingsFile = xbmcvfs.translatePath(self._addon.getAddonInfo('profile')) + 'channels' + os.path.sep + settings_file
         except Exception as e:
             common.addLog('Base::__init__', 'ERROR: (' + repr(e) + ')', logErorr)
 

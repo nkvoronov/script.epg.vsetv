@@ -3,6 +3,7 @@
 import os
 import sys
 import xbmc
+import xbmcvfs
 import xbmcaddon
 import xbmcgui
 import subprocess
@@ -17,7 +18,7 @@ class Epg(Base):
     def __init__(self, isService=0):
         try:
             Base.__init__(self)
-            self._addonMedia = xbmc.translatePath(os.path.join(os.path.join(os.path.join(os.path.join(self._addonPath, 'resources'), 'skins'), 'default'), 'media'))
+            self._addonMedia = xbmcvfs.translatePath(os.path.join(os.path.join(os.path.join(os.path.join(self._addonPath, 'resources'), 'skins'), 'default'), 'media'))
 
             self._executeScript = self._addon.getSetting('execute_script')
             self._pathScript = self._addon.getSetting('script_path')
@@ -30,7 +31,7 @@ class Epg(Base):
             self._enableSaturday = self._addon.getSetting('enable_saturday')
             self._enableSunday = self._addon.getSetting('enable_sunday')
             self._runTime = self._addon.getSetting('run_time')
-            self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
+            self._pathXml = xbmcvfs.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
             self._lastUpdate = self.getLastUpdate()
 
             self._isService = isService
@@ -98,7 +99,7 @@ class Epg(Base):
     def setNotify(self, title, message, icon='icon', time=5000):
         try:
             self.addLog('Epg::setNotify', 'enter_function')
-            picon = xbmc.translatePath(os.path.join(self._addonMedia, icon + '.png'))
+            picon = xbmcvfs.translatePath(os.path.join(self._addonMedia, icon + '.png'))
             xbmcgui.Dialog().notification(title, message, picon, time)
             self.addLog('Epg::setNotify', 'exit_function')
         except Exception as e:

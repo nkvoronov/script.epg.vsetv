@@ -4,6 +4,7 @@ import os
 import re
 import datetime
 import xbmc
+import xbmcvfs
 from resources.lib.common import Base, logErorr, host
 from resources.lib.channels import Channel, ChannelList
 from resources.lib.programmes import ProgrammeList, Programme
@@ -19,7 +20,7 @@ class Parser(Base):
             self._programmes = ProgrammeList()
             self._countDay = int(self._addon.getSetting('count_day')) + 1
             self._fullDesc = self._addon.getSetting('full_desc')
-            self._pathXml = xbmc.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
+            self._pathXml = xbmcvfs.translatePath(os.path.join(self._addon.getSetting('xmltv_path'), 'xmltv.xml'))
             self._channels.loadChannelsFromFile(0)
         except Exception as e:
             self.addLog('Parser::__init__', 'ERROR: (' + repr(e) + ')', logErorr)

@@ -3,6 +3,7 @@
 import os
 import re
 import xbmc
+import xbmcvfs
 import xbmcaddon
 from resources.lib.common import Base, logErorr, host
 from xml.dom import minidom
@@ -62,7 +63,7 @@ class ChannelList(Base):
         try:
             Base.__init__(self)
             #channels dir
-            channelsDir = xbmc.translatePath(self._addon.getAddonInfo('profile')) + 'channels'
+            channelsDir = xbmcvfs.translatePath(self._addon.getAddonInfo('profile')) + 'channels'
             if not os.path.exists(channelsDir):
                 os.makedirs(channelsDir)
             #channel list
