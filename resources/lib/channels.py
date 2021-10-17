@@ -43,9 +43,9 @@ class Channel(Base):
             echannel.setAttribute('id', str(self._index))
             edisplayname = xmldoc.createElement('display-name')
             if self._userName == '':
-                edisplayname_text = xmldoc.createTextNode(self._orgName.decode('utf-8'))
+                edisplayname_text = xmldoc.createTextNode(self._orgName)
             else:
-                edisplayname_text = xmldoc.createTextNode(self._userName.decode('utf-8'))
+                edisplayname_text = xmldoc.createTextNode(self._userName)
             edisplayname.appendChild(edisplayname_text)
             echannel.appendChild(edisplayname)
             if self._icon != '':
@@ -77,11 +77,10 @@ class ChannelList(Base):
             self.addLog('ChannelList::loadChannelsFromUrl', 'enter_function')
             udata = []
             html = self.loadUrl(host + 'channels.html')
-            html = html.decode('windows-1251').encode('utf-8')
             datalst = re.compile('<option value=channel_(.+?)>(.+?)</option>').findall(html)
             for index, oname in datalst:
                 icon = host + 'pic/channel_logos/' + index + '.gif'
-                chn = Channel(index, oname.decode('utf-8'), oname.decode('utf-8'), icon)
+                chn = Channel(index, oname, oname, icon)
                 chn._correction = int(self.getValueFromSettings('correct', '120'))
                 udata.append(chn)
             udata = sorted(udata, key = lambda chn: int(chn._index))
@@ -186,7 +185,7 @@ class ChannelList(Base):
                                 chn = Channel(int(index), oname, uname, icon, int(correction), istatus, ienable)
                                 self._data.append(chn)
                                 self.addLog('ChannelList::loadChannelsFromFile', line)
-                                self.addLog('ChannelList::loadChannelsFromFile', oname.strip('"').encode('utf-8') + '(' + index.strip('"') + ')')
+                                self.addLog('ChannelList::loadChannelsFromFile', oname.strip('"') + '(' + index.strip('"') + ')')
                         else:
                             pass
             self.addLog('ChannelList::loadChannelsFromFile', 'exit_function')

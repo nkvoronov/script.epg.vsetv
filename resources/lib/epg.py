@@ -12,6 +12,7 @@ from resources.lib.common import Base, logErorr
 from resources.lib.channels import Channel, ChannelList
 from resources.lib.parservsetv import Parser
 from resources.lib.editchannels import EditChannels
+from xml.dom.minidom import parse
 
 class Epg(Base):
 

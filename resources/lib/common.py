@@ -2,8 +2,7 @@
 
 import os
 import sys
-import urllib
-import urllib.request
+import requests
 import traceback
 import xbmc
 import xbmcvfs
@@ -55,7 +54,7 @@ class Base:
                     __busy__ = __busy__ + 1
                 else:
                     __busy__ = __busy__ - 1
-                self.addLog('Base::setBusy', '__busy__ = ' + unicode(__busy__))
+                self.addLog('Base::setBusy', '__busy__ = ' + str(__busy__))
                 if __busy__ > 0:
                     if not input_request:
                         xbmc.executebuiltin('ActivateWindow(busydialognocancel)')
@@ -68,12 +67,8 @@ class Base:
         try:
             self.addLog('Base::loadUrl', 'enter_function')
             self.addLog('Base::loadUrl','OPEN URL: ' + url)
-            headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3',
-            'Content-Type': 'application/x-www-form-urlencoded'}
-            connect = urllib.request.urlopen(urllib.request.Request(url, urllib.urlencode({}), headers))
-            html = connect.read()
-            connect.close()
+            response = requests.get(url, headers={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}, timeout=15)
+            html = response.text
             self.addLog('Base::loadUrl', 'exit_function')
             return html.strip()
         except Exception as e:
@@ -82,7 +77,8 @@ class Base:
     def removeSpecSym(self, mstr):
         try:
             self.addLog('Base::removeSpecSym', 'enter_function')
-            rstr = mstr.strip('&nbsp;')
+            rstr = mstr
+            rstr = rstr.strip('&nbsp;')
             rstr = rstr.replace('&amp;', '&')
             rstr = rstr.replace('&quot;','"')
             rstr = rstr.replace('&lt;', '<')
@@ -92,13 +88,13 @@ class Base:
             return rstr
         except Exception as e:
             self.addLog('Base::removeSpecSym', 'ERROR: (' + repr(e) + ')', logErorr)
-            return vstr
+            return rstr
 
     def saveXmlFile(self, filename, xmldoc):
         try:
             self.addLog('Base::saveXmlFile', 'enter_function')
             outputfile = open(filename, 'w')
-            data = xmldoc.toprettyxml(encoding='utf-8')
+            data = xmldoc.toprettyxml(encoding='utf-8').decode('utf-8')
             outputfile.write(self.removeSpecSym(data))
             outputfile.close()
             self.addLog('Base::saveXmlFile', 'exit_function')

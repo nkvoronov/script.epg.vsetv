@@ -8,7 +8,7 @@ import xbmcvfs
 from resources.lib.common import Base, logErorr, host
 from resources.lib.channels import Channel, ChannelList
 from resources.lib.programmes import ProgrammeList, Programme
-from xml.dom import minidom
+from xml.dom.minidom import parseString
 
 class Parser(Base):
 
@@ -103,6 +103,17 @@ class Parser(Base):
             self.addLog('Parser::getContent', 'exit_function')
         except Exception as e:
             self.addLog('Parser::getContent', 'ERROR: (' + repr(e) + ')', logErorr)
+            
+    def fixTime(self, sTime):
+        try:
+            self.addLog('Parser::fixTime', 'enter_function')
+            sTime = sTime.replace('<img src="/pic/aj.gif">', '0')
+            sTime = sTime.replace('<img src="/pic/o1.gif">', '5')            
+            self.addLog('Parser::fixTime', 'exit_function')
+            return sTime
+        except Exception as e:
+            self.addLog('Parser::fixTime', 'ERROR: (' + repr(e) + ')', logErorr)
+            return sTime
 
     def getContentDay(self, channeldata, date):
         try:
@@ -114,34 +125,37 @@ class Parser(Base):
             direction = 'schedule_channel_%s_day_%s.html' % (channeldata._index, date.strftime('%Y-%m-%d'))
             self.addLog('Parser::getContentDay', host + direction)
             html = self.loadUrl(host + direction)
-            html = html.decode('windows-1251').encode('utf-8')
             if self._fullDesc == 'true':
                 prdata = re.compile('<div class="(?:pasttime|onair|time)">(.+?)</div><div class="(?:pastprname2|prname2)">(.+?)</div>').findall(html)
                 for ctimeb, prtitle in prdata:
+                    ctimeb = self.fixTime(ctimeb)
                     if ctimeb < ltime:
                         date = date + datetime.timedelta(days=1)
                     ltime = ctimeb
                     oprtitle = prtitle
+                    self.addLog('Parser::getContentDay', ctimeb)
                     ctimeb = self.getDateTimeFmt(date, ctimeb + ':00', int(channeldata._correction))
                     ctimee = self.getDateTimeFmt(date, '23:59:59', int(channeldata._correction))
                     ctitle = self.removeSpecSym(self.removeTags(prtitle))
-                    prog = Programme(channeldata._index, ctimeb, ctitle.decode('utf-8'), ctimee)
+                    prog = Programme(channeldata._index, ctimeb, ctitle, ctimee)
                     self.getCategoryFromTitle(prog)
                     self.getFullDesc(prog, oprtitle)
                     self._programmes._data.append(prog)
             else:
                 prdata = re.compile('<div class="(?:pasttime|onair|time)">(.+?)</div><div class="(?:pastprname2|prname2)">(.+?)(?:</div><div id=desc\d{16} class="(?:pastdesc|prdesc)"><div class="desc"><b>(.+?)</div></div>|</div>)').findall(html)
                 for ctimeb, prtitle, prdesc in prdata:
+                    ctimeb = self.fixTime(ctimeb)
                     if ctimeb < ltime:
                         date = date + datetime.timedelta(days=1)
                     ltime = ctimeb
                     oprtitle = prtitle
+                    self.addLog('Parser::getContentDay', ctimeb)
                     ctimeb = self.getDateTimeFmt(date, ctimeb + ':00', int(channeldata._correction))
                     ctimee = self.getDateTimeFmt(date, '23:59:59', int(channeldata._correction))
                     ctitle = self.removeSpecSym(self.removeTags(prtitle))
-                    prog = Programme(channeldata._index, ctimeb, ctitle.decode('utf-8'), ctimee)
+                    prog = Programme(channeldata._index, ctimeb, ctitle, ctimee)
                     self.getCategoryFromTitle(prog)
-                    self.getDesc(prog, prdesc.decode('utf-8'))
+                    self.getDesc(prog, prdesc)
                     self._programmes._data.append(prog)
             self.addLog('Parser::getContentDay', 'exit_function')
         except Exception as e:
@@ -170,7 +184,6 @@ class Parser(Base):
                     programmedata.copyFullDesc(sprg)
                 else:
                     html = self.loadUrl(host + url)
-                    html = html.decode('windows-1251').encode('utf-8')
                     programmedata._urlDesc = url
                     showname = '<td colspan="2" valign="top" class="showname">'
                     showmain = '<td width="700" valign="top" class="showmain">'
@@ -200,11 +213,11 @@ class Parser(Base):
                             if cdate != '':
                                 ctmp = cdate
                                 programmedata._date = cdate
-                    ctmp = ctmp.decode('utf-8').strip(' \t\n\r')
+                    ctmp = ctmp.strip(' \t\n\r')
                     cgenre = ''
                     cgenre = self.parseStrings(showname1,'<strong>','</strong>',1).replace(' / ', ',')
                     if cgenre != '':
-                        cgenre = cgenre.decode('utf-8').strip(' \t\n\r')
+                        cgenre = cgenre.strip(' \t\n\r')
                         if programmedata._categoryLang1 != '':
                             programmedata._categoryLang1 = programmedata._categoryLang1 + ',' + cgenre
                         else:
@@ -216,24 +229,24 @@ class Parser(Base):
                     showmain1 = self.parseStrings(html, showmain, '<td valign="top">')
                     cdirectors = self.parseStrings(showmain1, 'Режиссер(ы):', '<br>',1)
                     if cdirectors != '':
-                        programmedata._directors = cdirectors.decode('utf-8')[12:].strip().strip(' \t\n\r')
+                        programmedata._directors = cdirectors[12:].strip().strip(' \t\n\r')
                     cactors = self.parseStrings(showmain1, 'Актеры:', '<div>',1)
                     if cactors != '':
-                        programmedata._actors = cactors.decode('utf-8')[7:].strip().strip(' \t\n\r')
+                        programmedata._actors = cactors[7:].strip().strip(' \t\n\r')
                     cactors1 = self.parseStrings(showmain1,'Ведущие:','<div>',1)
                     if cactors1 != '':
                         if programmedata._actors != '':
-                            programmedata._actors = programmedata.Actors + cactors1.decode('utf-8')[8:].strip().strip(' \t\n\r')
+                            programmedata._actors = programmedata.Actors + cactors1[8:].strip().strip(' \t\n\r')
                         else:
-                            programmedata._actors = cactors1.decode('utf-8')[8:].strip().strip(' \t\n\r')
+                            programmedata._actors = cactors1[8:].strip().strip(' \t\n\r')
                     cdesc = self.parseStrings(showmain1,'<span class="big">','<span class="name">',1)
                     if ctmp !='':
-                        programmedata._fullDesc = ctmp + '. ' + cdesc.decode('utf-8').strip().strip(' \t\n\r')
+                        programmedata._fullDesc = ctmp + '. ' + cdesc.strip().strip(' \t\n\r')
                     else:
-                        programmedata._fullDesc = cdesc.decode('utf-8').strip().strip(' \t\n\r')
+                        programmedata._fullDesc = cdesc.strip().strip(' \t\n\r')
                     crat = self.parseStrings(showmain1,'<span class="name">', 'Проголосовало',1)
-                    if len(crat.decode('utf-8').split(':')) > 1:
-                        crat = crat.decode('utf-8').split(':')[1].strip().strip(' \t\n\r')
+                    if len(crat.split(':')) > 1:
+                        crat = crat.split(':')[1].strip().strip(' \t\n\r')
                     else:
                         crat = ''
                     if crat != '':
@@ -245,47 +258,47 @@ class Parser(Base):
     def getCategoryFromTitle(self, programmedata):
         try:
             self.addLog('Parser::getCategoryFromTitle', 'enter_function')
-            title = programmedata._title.encode('utf-8').lower()
+            title = programmedata._title.lower()
             if (title.find('х/ф') != -1) or (title.find('д/ф') != -1) or \
             (title.find('Х/ф') != -1) or (title.find('Д/ф') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',фильм'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',фильм'
                 else:
-                    programmedata._categoryLang1 = 'фильм'.decode('utf-8')
+                    programmedata._categoryLang1 = 'фильм'
                 programmedata._categoryLang2 = 'Movie / Drama'
             elif (title.find('т/с') != -1) or (title.find('х/с') != -1) or (title.find('д/с') != -1) or \
             (title.find('Т/с') != -1) or (title.find('Х/с') != -1) or (title.find('Д/с') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',сериал'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',сериал'
                 else:
-                    programmedata._categoryLang1 = 'сериал'.decode('utf-8')
+                    programmedata._categoryLang1 = 'сериал'
                 programmedata._categoryLang2 = 'Movie / Drama'
             elif (title.find('м/ф') != -1) or (title.find('м/с') != -1) or \
             (title.find('М/ф') != -1) or (title.find('М/с') != -1) or (title.find('мульт') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',мультфильм'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',мультфильм'
                 else:
-                    programmedata._categoryLang1 = 'мультфильм'.decode('utf-8')
+                    programmedata._categoryLang1 = 'мультфильм'
                 programmedata._categoryLang2 = 'Cartoons / Puppets'
             elif (title.find('спорт') != -1) or (title.find('футбол') != -1) or (title.find('хоккей') != -1) or (title.find('uefa') != -1) or \
             (title.find('Спорт') != -1) or (title.find('Футбол') != -1) or (title.find('Хоккей') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',спорт'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',спорт'
                 else:
-                    programmedata._categoryLang1 = 'спорт'.decode('utf-8')
+                    programmedata._categoryLang1 = 'спорт'
                 programmedata._categoryLang2 = 'Sports'
             elif (title.find('новост') != -1) or (title.find('факты') != -1) or (title.find('тсн') != -1) or (title.find('новини') != -1) or (title.find('время') != -1) or (title.find('известия') != -1) or \
             (title.find('Новост') != -1) or (title.find('Факты') != -1) or (title.find('ТСН') != -1) or (title.find('Т.С.Н.') != -1)  or (title.find('Новини') != -1) or (title.find('Время') != -1) or (title.find('Известия') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',новости'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',новости'
                 else:
-                    programmedata._categoryLang1 = 'новости'.decode('utf-8')
+                    programmedata._categoryLang1 = 'новости'
                 programmedata._categoryLang2 = 'News / Current affairs'
             elif (title.find('истори') != -1) or (title.find('планет') != -1) or (title.find('разрушители') != -1) or (title.find('знаки') != -1) or (title.find('катастроф') != -1):
                 if programmedata._categoryLang1 != '':
-                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',досуг'.decode('utf-8')
+                    programmedata._categoryLang1 = programmedata._categoryLang1 + ',досуг'
                 else:
-                    programmedata._categoryLang1 = 'досуг'.decode('utf-8')
+                    programmedata._categoryLang1 = 'досуг'
                 programmedata._categoryLang2 = 'Leisure hobbies'
             else:
                 programmedata._categoryLang2 = ''
