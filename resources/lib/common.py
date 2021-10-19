@@ -93,7 +93,7 @@ class Base:
     def saveXmlFile(self, filename, xmldoc):
         try:
             self.addLog('Base::saveXmlFile', 'enter_function')
-            outputfile = open(filename, 'w')
+            outputfile = open(filename, 'w', encoding='utf-8')
             data = xmldoc.toprettyxml(encoding='utf-8').decode('utf-8')
             outputfile.write(self.removeSpecSym(data))
             outputfile.close()

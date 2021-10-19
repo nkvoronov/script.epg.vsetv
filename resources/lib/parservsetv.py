@@ -108,7 +108,10 @@ class Parser(Base):
         try:
             self.addLog('Parser::fixTime', 'enter_function')
             sTime = sTime.replace('<img src="/pic/aj.gif">', '0')
-            sTime = sTime.replace('<img src="/pic/o1.gif">', '5')            
+            sTime = sTime.replace('<img src="/pic/pl.gif">', '0')
+            sTime = sTime.replace('<img src="/pic/o1.gif">', '5') 
+            sTime = sTime.replace('<img src="/pic/ej.gif">', '5')
+            sTime = re.sub('<img src="/pic/..\.gif">', '0', sTime)
             self.addLog('Parser::fixTime', 'exit_function')
             return sTime
         except Exception as e:

@@ -175,7 +175,7 @@ class ChannelList(Base):
             self.addLog('ChannelList::loadChannelsFromFile', 'enter_function')
             self._data = []
             if os.path.exists(self._fileChannels):
-                with open(self._fileChannels) as cfile:
+                with open(self._fileChannels, 'r', encoding='utf-8') as cfile:
                     for line in cfile:
                         if ';' in line:
                             index, oname, uname, icon, correction, status, enable = line.split(';')
@@ -198,7 +198,7 @@ class ChannelList(Base):
             self._data = sorted(self._data, key = lambda chn: int(chn._index))
             if os.path.exists(self._fileChannels):
                 os.remove(self._fileChannels)
-            with open(self._fileChannels, 'w') as cfile:
+            with open(self._fileChannels, 'w', encoding='utf-8') as cfile:
                 for chn in self._data:
                     cfile.write(chn.getString())
             self.addLog('ChannelList::saveChannelsToFile', 'exit_function')
